@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "dependencies": {
     "body-parser": "latest",
+    "cheerio": "latest",
     "csvtojson": "^0.5.0",
     "excel": "^0.1.4",
     "excel-to-json": "latest",
     "express": "~4.2.0",
+    "jsonfile": "^2.2.3",
     "mongoose": "latest",
-    "cheerio": "latest",
     "request": "latest"
   }
 }
