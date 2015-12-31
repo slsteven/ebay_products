@@ -36,43 +36,44 @@ app.get('/scrape', function(req, res){
 app.get('/read_file', function(req, res){
   var output = 'output.json';
   output = jsonfile.readFileSync(output);
-  var original = 'output.json';
-  original = jsonfile.readFileSync(original);
-  console.log("length", output.length, original.length)
-  for(var x in original){
-    for(var y in output){
-      console.log(x, y);
-      if(x === y){
 
+  var original = 'original.json';
+  original = jsonfile.readFileSync(original);
+
+  var sorted_output = _.sortBy(output, 'Item_ID');
+  var sorted_original = _.sortBy(original, 'Item_ID');
+  console.log(sorted_original)
+  console.log("length", output.length, original.length)
+
+  for(var x in sorted_original){
+    var pick_from_original = _.pick(sorted_original[x], 'Item_ID', 'product_name', 'list_price', 'status');
+    var check_id = _.isMatch(pick_from_original, sorted_output[x].Item_ID)
+    if(check_id){
+      for(var y in pick_from_original){
+        switch (true) {
+          case (y === 'product_name'):
+            if(sorted_output[x][y] == pick_from_original[y]){
+              sorted_output[x].check_product_name = "pass";
+            }
+            else{
+              sorted_output[x].check_product_name = "fail";
+            }
+          case (y === 'list_price'):
+            if(sorted_output[x][y] == pick_from_original[y]){
+              sorted_output[x].check_list_price = "pass";
+            }
+            else{
+              sorted_output[x].check_list_price = "fail";
+            }
+          break;
+        }
       }
-      if(original[x].status == output[y].status){
-        original[x].availability_check = "pass";
-      }
-      if(original[x].status !== output[y].status){
-        original[x].availability_check = "fail";
-      }
-      if(original[x].product_name == output[y].product_name){
-        original[x].product_name_check = "pass";
-      }
-      if(original[x].product_name !== output[y].product_name){
-        original[x].product_name_check = "fail";
-      }
-      // switch (original[x].Item_ID == output[y].Item_ID) {
-      //   case (original[x].status == output[y].status):
-      //     original[x].availability_check = "pass";
-      //     break;
-      //   case (original[x].status !== output[y].status):
-      //     original[x].availability_check = "fail";
-      //     break;
-      //   case (original[x].product_name == output[y].product_name):
-      //     original[x].product_name_check = "pass";
-      //     break;
-      //   case (original[x].product_name !== output[y].product_name):
-      //     original[x].product_name_check = "fail";
-      //   }  break;
     }
   }
-  console.log(original);
+  console.log(sorted_output);
+  // fs.writeFile("./client/static/json/result.json", JSON.stringify(sorted_output, null, 4), function(err){
+  //   console.log("fille succesfully written")
+  // })
 })
 
 
@@ -93,7 +94,6 @@ function convertToJSON(array) {
       data[headers[x]] = row[x];
     }
     jsonData.push(data);
-
   }
   return jsonData;
 };
@@ -125,7 +125,6 @@ function get_item(url){
 
       $('#prcIsum').filter(function(){
         var data = $(this);
-        console.log("listing price", data.text());
         list_price = data.text().slice(4);
         json.list_price = list_price;
       })
@@ -136,7 +135,6 @@ function get_item(url){
         json.status = status;
       })
       arr.push(json);
-      console.log(arr)
       // JSON.stringify(json, null, 4) - the data to write, here we do an extra step by calling JSON.stringify to make our JSON easier to read
       // Parameter 3 :  callback function - a callback function to let us know the status of our
       // fs.appendFile('output.json', JSON.stringify(arr, null, 4), 'utf-8', function(err){
