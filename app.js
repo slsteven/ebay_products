@@ -42,7 +42,6 @@ app.get('/read_file', function(req, res){
 
   var sorted_output = _.sortBy(output, 'Item_ID');
   var sorted_original = _.sortBy(original, 'Item_ID');
-  console.log(sorted_original)
   console.log("length", output.length, original.length)
 
   for(var x in sorted_original){
@@ -71,7 +70,7 @@ app.get('/read_file', function(req, res){
     }
   }
   console.log(sorted_output);
-  // fs.writeFile("./client/static/json/result.json", JSON.stringify(sorted_output, null, 4), function(err){
+  // fs.writeFile("./client/static/json/result.json", 'var result = ' + JSON.stringify(sorted_output, null, 4), function(err){
   //   console.log("fille succesfully written")
   // })
 })
