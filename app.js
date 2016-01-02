@@ -9,6 +9,7 @@ var xls         = require('excel');
 var jsonfile    = require('jsonfile');
 var util        = require('util');
 var _ = require('underscore');
+var async = require('async');
 
 app.get('/scrape', function(req, res){
   //convert excel to json
@@ -21,12 +22,62 @@ app.get('/scrape', function(req, res){
       // fs.writeFile("original.json", JSON.stringify(original_json, null, 4), function(err){
       // console.log("fille succesfully written")
       // })
-      var arr = [];
+      var array_of_urls = [];
       for(var item in original_json){
         url = original_json[item].ebay_url;
-        console.log("URLL", url);
-        get_item(url);
+        array_of_urls.push(url);
+
       }
+      var arr = [];
+      async.each(array_of_urls,
+        function(url, callback){
+            request(url, function(error, response, html){
+            //check for errors
+              if(!error){
+                //utilize the cheerio library on returned html
+                var $ = cheerio.load(html);
+                var id = url.slice(20);
+                var json = {
+                  Item_ID: id,
+                  product_name: "",
+                  list_price: "",
+                  status: ""
+                }
+                //Using unique class as starting point
+                $('.it-ttl').filter(function(){
+                  //store data we filter into a variable
+                  var data = $(this);
+                  // json = {product_name: ""};
+                  prod_name = data.text().slice(16);
+                  //store as json object
+                  json.product_name = prod_name;
+                })
+                $('#prcIsum').filter(function(){
+                  var data = $(this);
+                  list_price = data.text().slice(4);
+                  json.list_price = list_price;
+                })
+                $('.msgTextAlign').filter(function(){
+                  var data = $(this);
+                  status = data.text()
+                  json.status = status;
+                })
+                arr.push(json);
+
+              callback();
+              }
+            })
+          },
+        function (error){
+          console.log("DONE", arr, arr.length);
+          // JSON.stringify(json, null, 4) - the data to write, here we do an extra step by calling JSON.stringify to make JSON easier to read
+          // Parameter 3 :  callback function - a callback function to let us know the status of our
+          // fs.appendFile('output.json', JSON.stringify(arr, null, 4), 'utf-8', function(err){
+          //   if(err){
+          //     console.log("fille error when writing")
+          //   }
+          //})
+        })
     }
   })
   res.send('Check your console!')
@@ -34,6 +85,7 @@ app.get('/scrape', function(req, res){
 
 
 app.get('/read_file', function(req, res){
+
   var output = 'output.json';
   output = jsonfile.readFileSync(output);
 
@@ -75,8 +127,6 @@ app.get('/read_file', function(req, res){
   // })
 })
 
-
-
 function convertToJSON(array) {
   var first = array[0].join()
   var headers = first.split(',');
@@ -96,54 +146,6 @@ function convertToJSON(array) {
   }
   return jsonData;
 };
-
-var arr = [];
-function get_item(url){
-  request(url, function(error, response, html){
-  //check for errors
-    if(!error){
-      //utilize the cheerio library on returned html
-      var $ = cheerio.load(html);
-      var id = url.slice(20);
-      var json = {
-        Item_ID: id,
-        product_name: "",
-        list_price: "",
-        status: ""
-      }
-
-      //Using unique class as starting point
-      $('.it-ttl').filter(function(){
-        //store data we filter into a variable
-        var data = $(this);
-        // json = {product_name: ""};
-        prod_name = data.text().slice(16);
-        //store as json object
-        json.product_name = prod_name;
-      })
-
-      $('#prcIsum').filter(function(){
-        var data = $(this);
-        list_price = data.text().slice(4);
-        json.list_price = list_price;
-      })
-
-      $('.msgTextAlign').filter(function(){
-        var data = $(this);
-        status = data.text()
-        json.status = status;
-      })
-      arr.push(json);
-      // JSON.stringify(json, null, 4) - the data to write, here we do an extra step by calling JSON.stringify to make our JSON easier to read
-      // Parameter 3 :  callback function - a callback function to let us know the status of our
-      // fs.appendFile('output.json', JSON.stringify(arr, null, 4), 'utf-8', function(err){
-      //   if(err){
-      //     console.log("fille error when writing")
-      //   }
-      //})
-    }
-  })
-}
 
 
 app.use(bodyParser.urlencoded({extended: true}));

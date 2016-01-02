@@ -10,6 +10,7 @@
     "express": "~4.2.0",
     "jsonfile": "^2.2.3",
     "mongoose": "latest",
-    "request": "latest"
+    "request": "latest",
+    "async": "latest"
   }
 }
