@@ -32,9 +32,33 @@ app.post('/scrape', multer({ dest: './uploads/'}).single('upl'), function(req, r
 })
 
 
+
+ var params = {
+        keywords: ["301803182706"],
+        // add additional fields
+        outputSelector: ['AspectHistogram'],
+
+        paginationInput: {
+          entriesPerPage: 1
+        }
+      };
+      ebay.xmlRequest({
+        serviceName: 'Finding',
+        opType: 'findItemsByKeywords',
+        appId: 'RideSnap-b66a-448f-9063-46ba6dbe1a3e',
+        params: params,
+        parser: ebay.parseResponseJson    // (default)
+      },
+      // gets all the items together in a merged array
+      function itemsCallback(error, itemsResponse) {
+        //console.log(_.has(itemsResponse.searchResult.item.discountPriceInfo.originalRetailPrice, "amount"))
+        console.log(_.has(itemsResponse.searchResult.item, "discountPriceInfo"))
+       //console.log(itemsResponse.searchResult.item.discountPriceInfo)
+      })
+
 app.get('/get_results', function(req, res){
   get_item(function(data){
-    console.log(data);
+
   var output = 'output.json';
   output = jsonfile.readFileSync(output);
 
@@ -43,7 +67,7 @@ app.get('/get_results', function(req, res){
 
   var sorted_output = _.sortBy(output, 'Item_ID');
   var sorted_original = _.sortBy(original, 'Item_ID');
-  console.log("length", output.length, original.length)
+
 
   for(var x in sorted_original){
     var pick_from_original = _.pick(sorted_original[x], 'Item_ID', 'product_name', 'list_price', 'status');
@@ -103,7 +127,6 @@ function get_item(callback2){
       }
       var params = {
         keywords: [url],
-
         // add additional fields
         outputSelector: ['AspectHistogram'],
 
@@ -114,26 +137,43 @@ function get_item(callback2){
       ebay.xmlRequest({
         serviceName: 'Finding',
         opType: 'findItemsByKeywords',
-        appId: 'RideSnap-b66a-448f-9063-46ba6dbe1a3e',      // FILL IN YOUR OWN APP KEY, GET ONE HERE: https://publisher.ebaypartnernetwork.com/PublisherToolsAPI
+        appId: 'RideSnap-b66a-448f-9063-46ba6dbe1a3e',
         params: params,
         parser: ebay.parseResponseJson    // (default)
       },
       // gets all the items together in a merged array
       function itemsCallback(error, itemsResponse) {
         if(itemsResponse.searchResult.$.count == 0){
-          json.Item_ID = url;
+          request("http://ebay.com/itm/"+url, function(error, response, html){
+          console.log(error);
+          //check for errors
+            if(!error){
+              //utilize the cheerio library on returned html
+              var $ = cheerio.load(html);
+              var id = url.slice(20);
+              //Using unique class as starting point
+              $('.msgTextAlign').filter(function(){
+                var data = $(this);
+                status = data.text()
+                json.status = status;
+                json.Item_ID = url;
+              })
+            }
           arr.push(json);
           callback();
+          })
         }
         else{
-        console.log(itemsResponse, arr.length)
         json = {
           Item_ID: itemsResponse.searchResult.item.itemId,
           product_name: itemsResponse.searchResult.item.title,
           list_price: itemsResponse.searchResult.item.sellingStatus.currentPrice.amount,
-          //msrp: itemsResponse.searchResult.item.discountPriceInfo.originalRetailPrice.amount,
           status: itemsResponse.searchResult.item.sellingStatus.sellingState,
           galleryURL: itemsResponse.searchResult.item.galleryURL
+        }
+
+        if(_.has(itemsResponse.searchResult.item, "discountPriceInfo")){
+          json.msrp = itemsResponse.searchResult.item.discountPriceInfo.originalRetailPrice.amount
         }
         arr.push(json)
         callback();
@@ -175,6 +215,70 @@ function convertToJSON(array) {
   }
   return jsonData;
 };
+
+
+// function get_item(callback2){
+//   var original = 'original.json'
+//   var original_json = jsonfile.readFileSync(original);
+//   var array_of_urls = [];
+//   for(var item in original_json){
+//     url = original_json[item].ebay_url;
+//     array_of_urls.push(url);
+//   }
+//   var arr = [];
+//   async.each(array_of_urls,
+//     function(url, callback){
+//         request(url, function(error, response, html){
+//           console.log(error);
+//         //check for errors
+//           if(!error){
+//             console.log("SDFKJD", arr.length)
+//             //utilize the cheerio library on returned html
+//             var $ = cheerio.load(html);
+//             var id = url.slice(20);
+//             var json = {
+//               Item_ID: id,
+//               product_name: "",
+//               list_price: "",
+//               status: ""
+//             }
+//             //Using unique class as starting point
+//             $('.it-ttl').filter(function(){
+//               //store data we filter into a variable
+//               var data = $(this);
+//               // json = {product_name: ""};
+//               prod_name = data.text().slice(16);
+//               //store as json object
+//               json.product_name = prod_name;
+//             })
+//             $('#prcIsum').filter(function(){
+//               var data = $(this);
+//               list_price = data.text().slice(4);
+//               json.list_price = list_price;
+//             })
+//             $('.msgTextAlign').filter(function(){
+//               var data = $(this);
+//               status = data.text()
+//               json.status = status;
+//             })
+//             arr.push(json);
+//           }
+//           callback();
+//         })
+//       },
+//     function (error){
+//       console.log("DONE", arr, arr.length);
+//       // JSON.stringify(json, null, 4) - the data to write, here we do an extra step by calling JSON.stringify to make JSON easier to read
+//       // Parameter 3 :  callback function - a callback function to let us know the status of our
+//       fs.writeFile('output.json', JSON.stringify(arr, null, 4), 'utf-8',
+//       function(err){
+//         if(err){
+//           console.log("fille error when writing")
+//         }
+//         callback2("complete")
+//       })
+//     })
+// }
 
 
 app.use(bodyParser.urlencoded({extended: true}));

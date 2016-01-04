@@ -1,12 +1,23 @@
 var result = [
     {
+        "Item_ID": "",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
         "Item_ID": "111831562940",
         "product_name": "Limited Edition White Wii U Deluxe Set 32GB - FACTORY REFURBISHED BY NINTENDO",
         "list_price": 235,
         "status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/mciNZ4jTqA_4W1FSPBvUFmA/140.jpg",
+        "msrp": 299.99,
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "Item_ID": "111845399602",
@@ -14,8 +25,8 @@ var result = [
         "list_price": 89.99,
         "status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/pict/111845399602404000000001_1.jpg",
-        "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
         "Item_ID": "111847056299",
@@ -23,6 +34,17 @@ var result = [
         "list_price": 60,
         "status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/m/mEP6qH9R6hEMb2LIFcObxDA/140.jpg",
+        "msrp": 99.99,
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "111847056347",
+        "product_name": "Nintendo 2DS (Electric Blue) *FACTORY REFURBISHED BY NINTENDO",
+        "list_price": 60,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/mcU8ZMehJk_tWpeFNOgjG0A/140.jpg",
+        "msrp": 99.99,
         "check_product_name": "fail",
         "check_list_price": "pass"
     },
@@ -32,6 +54,26 @@ var result = [
         "list_price": 339.99,
         "status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/mt4-9ozk5FIHsqvG1Fm5JuQ/140.jpg",
+        "msrp": 449.95,
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "121795370896",
+        "product_name": "KitchenAid® Professional 5™ Plus Series 5 Quart Bowl-Lift Stand Mixer",
+        "list_price": 249.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mNsAmRJUOoRbncy90sEg-Dg/140.jpg",
+        "msrp": 419.99,
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "121805370610",
+        "product_name": "Genuine Leather Replacement Classic Buckle Band Strap for Apple Watch 42mm Black",
+        "list_price": 14.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mFqyfj6gjXdAzdea7DNfLrQ/140.jpg",
         "check_product_name": "fail",
         "check_list_price": "fail"
     },
@@ -54,13 +96,54 @@ var result = [
         "check_list_price": "pass"
     },
     {
+        "Item_ID": "131593194519",
+        "product_name": "HTC Desire 626s 5\" Android Smartphone works with Virgin Mobile – NEW",
+        "list_price": 89.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/mEOeniYqYS0D8xpAK4SR6IQ/140.jpg",
+        "msrp": 129.99,
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
         "Item_ID": "131593551826",
         "product_name": "Red Pocket 1 Year Wireless Plan - Every Month 1000 Minutes/1000 Texts/1000MB",
         "list_price": 199,
         "status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/maJDtH38eh1sWrP5Okvq6ZQ/140.jpg",
+        "msrp": 399,
         "check_product_name": "fail",
         "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "141411138309",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "This item is out of stock.",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "141542489536",
+        "product_name": "Miller Millermatic 141 MIG Welder with Cart (951601)",
+        "list_price": 879,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/m1gEF_NCmvn2qO_wE1h1m2Q/140.jpg",
+        "msrp": 1013,
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "141664911474",
+        "product_name": "Computer Desk Home Office Workstation 4 Piece L Shaped Set in Espresso Oak",
+        "list_price": 814.19,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mNjsOUwqmRWIXkgAb_ZVO_w/140.jpg",
+        "msrp": 1399,
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
         "Item_ID": "141688838045",
@@ -68,6 +151,7 @@ var result = [
         "list_price": 1125,
         "status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/mftgvSFWwOoqMInIyV7lfNw/140.jpg",
+        "msrp": 1452,
         "check_product_name": "fail",
         "check_list_price": "fail"
     },
@@ -76,7 +160,7 @@ var result = [
         "product_name": "",
         "list_price": "",
         "msrp": "",
-        "status": "",
+        "status": "This item is out of stock.",
         "galleryURL": "",
         "check_product_name": "fail",
         "check_list_price": "fail"
@@ -91,11 +175,61 @@ var result = [
         "check_list_price": "pass"
     },
     {
+        "Item_ID": "141784809502",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "This item is out of stock.",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "151658273294",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "This item is out of stock.",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "151842349774",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "This item is out of stock.",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
         "Item_ID": "151850084287",
         "product_name": "Samsung Galaxy Note 4 SM-N910V 32GB Verizon Unlocked Black or White",
         "list_price": 319.99,
         "status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/pict/151850084287404000000001_1.jpg",
+        "msrp": 699.99,
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "151890568543",
+        "product_name": "Cat Ear Headphones",
+        "list_price": 129.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/151890568543404000000001_1.jpg",
+        "msrp": 149.99,
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "161665034263",
+        "product_name": "KitchenAid Artisan Series All Metal 5 Qt. Tilt Head Stand Mixer Many Colors",
+        "list_price": 229.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/161665034263404000000047_1.jpg",
         "check_product_name": "pass",
         "check_list_price": "pass"
     },
@@ -114,7 +248,28 @@ var result = [
         "list_price": 119.95,
         "status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/mOwlCuiapoNPq6foih8l5QA/140.jpg",
+        "msrp": 149.95,
         "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "171563659283",
+        "product_name": "Genuine LG Tone + HBS-900 Infinim Bluetooth Headeset Silver Harman Kardon Sound",
+        "list_price": 49.49,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/mkhKGwcX46rwm2BSG52uWmA/140.jpg",
+        "msrp": 169.99,
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "171623335113",
+        "product_name": "Women's Shoes UGG Australia Classic Tall Boots 5815 Black 5 6 7 8 9 10 *New*",
+        "list_price": 164,
+        "status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/pict/1716233351134040_1.jpg",
+        "msrp": 195,
+        "check_product_name": "pass",
         "check_list_price": "pass"
     },
     {
@@ -132,6 +287,7 @@ var result = [
         "list_price": 99.99,
         "status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/m0oriO9G-GFRMCZIoNijiLw/140.jpg",
+        "msrp": 179.99,
         "check_product_name": "fail",
         "check_list_price": "pass"
     },
@@ -140,10 +296,20 @@ var result = [
         "product_name": "",
         "list_price": "",
         "msrp": "",
-        "status": "",
+        "status": "This item is out of stock.",
         "galleryURL": "",
         "check_product_name": "fail",
         "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "181955805437",
+        "product_name": "Women's Shoes UGG Australia Classic Cardy Merino Wool Boots 5819 Grey *New*",
+        "list_price": 134,
+        "status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/pict/1819558054374040_1.jpg",
+        "msrp": 150,
+        "check_product_name": "pass",
+        "check_list_price": "pass"
     },
     {
         "Item_ID": "191345402556",
@@ -153,6 +319,15 @@ var result = [
         "galleryURL": "http://thumbs1.ebaystatic.com/m/msTuIyopirabn7uI-Q_N2AQ/140.jpg",
         "check_product_name": "fail",
         "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "191398227282",
+        "product_name": "Factory Unlocked Apple iPhone 5 32GB iOS Smartphone 4G GSM Retina White / Black",
+        "list_price": 164.77,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/191398227282404000000002_1.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "fail"
     },
     {
         "Item_ID": "191739888902",
@@ -173,11 +348,39 @@ var result = [
         "check_list_price": "fail"
     },
     {
+        "Item_ID": "191751341508",
+        "product_name": "Westinghouse - 50\" Class (49.5\" Diag.) - LED - 1080p - HDTV - Black",
+        "list_price": 379.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mEjQNBXPL7JxCEo8zk30K7Q/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "191752215056",
+        "product_name": "Hisense - 50\" Class (49.5 Diag.) - LED - 1080p - Smart - HDTV - Black",
+        "list_price": 449.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mXgX3CBT4uM902zKX__iDFg/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
         "Item_ID": "191757220477",
         "product_name": "KitchenAid - Professional 5 Plus Series Bowl-Lift Stand Mixer - Silver",
         "list_price": 449.99,
         "status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/m6ah5-2ADMmoXEKBag3Ao0A/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "191757474545",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "This listing has ended. ",
+        "galleryURL": "",
         "check_product_name": "fail",
         "check_list_price": "fail"
     },
@@ -205,6 +408,7 @@ var result = [
         "list_price": 149.99,
         "status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/mwhNpdVQQksuh4CRcKR05_g/140.jpg",
+        "msrp": 179.99,
         "check_product_name": "fail",
         "check_list_price": "pass"
     },
@@ -213,18 +417,27 @@ var result = [
         "product_name": "",
         "list_price": "",
         "msrp": "",
-        "status": "",
+        "status": "This item is out of stock.",
         "galleryURL": "",
         "check_product_name": "fail",
         "check_list_price": "fail"
     },
     {
+        "Item_ID": "201468353922",
+        "product_name": "Lenovo - G51 15.6\" Laptop - AMD A8-Series - 8GB Memory - 1TB Hard Drive - Black",
+        "list_price": 329.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mFqXamemhWa5m0A0DO2uxAA/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
         "Item_ID": "201477134918",
-        "product_name": "",
-        "list_price": "",
-        "msrp": "",
-        "status": "",
-        "galleryURL": "",
+        "product_name": "Dell Inspiron 15.6\" Touch-Screen Laptop Intel Core i3 8GB Memory 1TB HDD Gloss",
+        "list_price": 386.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/modDSBjHbVG-embI3YwQ7rA/140.jpg",
+        "msrp": 429.99,
         "check_product_name": "fail",
         "check_list_price": "fail"
     },
@@ -239,6 +452,16 @@ var result = [
         "check_list_price": "fail"
     },
     {
+        "Item_ID": "201483366864",
+        "product_name": "Insignia - 32\" Class (31.5\" Diag.) - LED - 1080p - Smart - HDTV Roku TV - Black",
+        "list_price": 219.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mIwwgVXfbFK7t-GH3CBEZGw/140.jpg",
+        "msrp": 239.99,
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
         "Item_ID": "201483404976",
         "product_name": "Google - Chromecast (2015 Model) - Black",
         "list_price": 35,
@@ -248,21 +471,59 @@ var result = [
         "check_list_price": "fail"
     },
     {
+        "Item_ID": "201483780246",
+        "product_name": "Amazon Kindle Fire 7 7\" 5th Gen 2015 Light Weight Shock Proof Kids Case Cover",
+        "list_price": 19.59,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/201483780246404000000001_1.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "201485726935",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "This listing was ended by the seller because the item is no longer available.",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
         "Item_ID": "201486359986",
         "product_name": "",
         "list_price": "",
         "msrp": "",
-        "status": "",
+        "status": "This item is out of stock.",
         "galleryURL": "",
         "check_product_name": "fail",
         "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "221798688620",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "This item is out of stock.",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "221914763932",
+        "product_name": "Nikon COOLPIX P900 Digital Camera with 83x Optical Zoom and Built-In Wi-Fi Black",
+        "list_price": 596.95,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mwvbw4X_JNXubtacNvtP54w/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
     },
     {
         "Item_ID": "221915533414",
         "product_name": "",
         "list_price": "",
         "msrp": "",
-        "status": "",
+        "status": "This item is out of stock.",
         "galleryURL": "",
         "check_product_name": "fail",
         "check_list_price": "fail"
@@ -273,6 +534,27 @@ var result = [
         "list_price": 369,
         "status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/mf7T8-WPKjMQq1Aqkn2LXRA/140.jpg",
+        "msrp": 699.99,
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "231725907420",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "This listing was ended by the seller because the item is no longer available.",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "231772075645",
+        "product_name": "HP V242h 24\" LED Backlit Monitor -  1920 x 1080, 16:9, 0.276 mm, 5ms, HDMI, VGA,",
+        "list_price": 109.97,
+        "status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/mVU67g10-i7sJWp9Afzw2Hg/140.jpg",
+        "msrp": 199.99,
         "check_product_name": "fail",
         "check_list_price": "pass"
     },
@@ -282,6 +564,7 @@ var result = [
         "list_price": 439.99,
         "status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/pict/231785013115404000000002_1.jpg",
+        "msrp": 749,
         "check_product_name": "pass",
         "check_list_price": "pass"
     },
@@ -291,6 +574,7 @@ var result = [
         "list_price": 429.99,
         "status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/pict/252062798827404000000002_4.jpg",
+        "msrp": 749,
         "check_product_name": "pass",
         "check_list_price": "pass"
     },
@@ -309,6 +593,7 @@ var result = [
         "list_price": 279.95,
         "status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/m/m5HG52OH4fd40zkB8R9y82w/140.jpg",
+        "msrp": 539.96,
         "check_product_name": "fail",
         "check_list_price": "fail"
     },
@@ -322,12 +607,42 @@ var result = [
         "check_list_price": "pass"
     },
     {
+        "Item_ID": "262185180571",
+        "product_name": "Microsoft Certified Xbox One 500GB Gaming Console w/Kinect - 3 GAME BUNDLE",
+        "list_price": 314.95,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/mg8u7T3jnC1ZPlB0IYWV6jw/140.jpg",
+        "msrp": 589.96,
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "262185391748",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "This item is out of stock.",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
         "Item_ID": "271353600688",
         "product_name": "D/VVS1 Engagement Ring 2 Carat Round Cut 14k White Gold Bridal Jewelry",
         "list_price": 550,
         "status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/m0Q6GMzl3gMjNrmCtfQZ66A/140.jpg",
+        "msrp": 1802,
         "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "271381308408",
+        "product_name": "Powersmith PAVC101 Electric 3 Gallon Ash Vacuum Pellet Stove Fireplace 10 Amp",
+        "list_price": 69.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mjcWm6_bVt2eXwu2uxraoJQ/140.jpg",
+        "check_product_name": "fail",
         "check_list_price": "pass"
     },
     {
@@ -349,6 +664,53 @@ var result = [
         "check_list_price": "pass"
     },
     {
+        "Item_ID": "272064152004",
+        "product_name": "Nikon D7000 16.2MP DSLR Camera with 3.0-Inch LCD (Body Only)",
+        "list_price": 379,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mhrN7eKgMHWPs_c2m32lXYA/140.jpg",
+        "msrp": 799.99,
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "281425871064",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "This item is out of stock.",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "281629003983",
+        "product_name": "iRobot Roomba 650 Vacuum Cleaning Robot",
+        "list_price": 399.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/mYCR1V_yZRJrcuf8U8J-fgA/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "281629040825",
+        "product_name": "LEGO Minecraft Creative Adventures The Ender Dragon 21117",
+        "list_price": 55.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/m5n5va1pQ9pP-mDu8_HdGfQ/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "281829358569",
+        "product_name": "Apple iPhone 5s - 64GB - Verizon (Factory Unlocked) Smartphone Gold Gray Silver ",
+        "list_price": 279.88,
+        "status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/pict/281829358569404000000002_1.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
         "Item_ID": "281842311886",
         "product_name": "Xbox One 1TB Holiday Bundle with Gears of War: Ultimate Edition, Rare Replay,...",
         "list_price": 399.99,
@@ -363,6 +725,7 @@ var result = [
         "list_price": 349.99,
         "status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/m3vDbAxVWDPJuHrLQluK55g/140.jpg",
+        "msrp": 429.99,
         "check_product_name": "pass",
         "check_list_price": "fail"
     },
@@ -385,11 +748,39 @@ var result = [
         "check_list_price": "fail"
     },
     {
+        "Item_ID": "301791107096",
+        "product_name": "Sony PS3 CECHG01 (80GB)",
+        "list_price": 99.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mB2nuST_HLR5qkucYl469SA/140.jpg",
+        "msrp": 119.99,
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "301803182706",
+        "product_name": "ASUS RT-AC5300 Wireless AC5300 Tri-Band Gigabit Router, AiProtection with Trend",
+        "list_price": 399.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mOfuMfOsF7ah6GVpgw9bOjw/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "311241524505",
+        "product_name": "Apple iPhone 5s - 16GB (Factory Unlocked) Smartphone - Gold - Silver - Gray",
+        "list_price": 249.88,
+        "status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/pict/311241524505404000000003_1.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
         "Item_ID": "311394588586",
         "product_name": "",
         "list_price": "",
         "msrp": "",
-        "status": "",
+        "status": "This item is out of stock.",
         "galleryURL": "",
         "check_product_name": "fail",
         "check_list_price": "fail"
@@ -399,7 +790,7 @@ var result = [
         "product_name": "",
         "list_price": "",
         "msrp": "",
-        "status": "",
+        "status": "This item is out of stock.",
         "galleryURL": "",
         "check_product_name": "fail",
         "check_list_price": "fail"
@@ -414,6 +805,25 @@ var result = [
         "check_list_price": "pass"
     },
     {
+        "Item_ID": "311469058091",
+        "product_name": "NEW KREG K5MS POCKET HOLE JIG MASTER SYSTEM & DVD KIT FREE SKO3 675 SCREW SET",
+        "list_price": 159,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/mLnCLx01wPQrCwAmyTIyuhA/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "311474842640",
+        "product_name": "Nikon COOLPIX S9900 16MP HD 1080p 30x Opt Zoom Digital Camera Black REFURBISHED",
+        "list_price": 209.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/meKkJdHX8EoJy9ROhtb83PQ/140.jpg",
+        "msrp": 349.95,
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
         "Item_ID": "311485990508",
         "product_name": "TEAC TN-300-TB Turquoise Turntable w/ Built-in Pre-amplifier & USB Output",
         "list_price": 229,
@@ -423,11 +833,21 @@ var result = [
         "check_list_price": "pass"
     },
     {
+        "Item_ID": "311499226679",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "This listing has ended.  The seller has relisted this item or one like this. ",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
         "Item_ID": "311500897381",
         "product_name": "",
         "list_price": "",
         "msrp": "",
-        "status": "",
+        "status": "This listing was ended by the seller because the item is no longer available.",
         "galleryURL": "",
         "check_product_name": "fail",
         "check_list_price": "fail"
@@ -447,8 +867,18 @@ var result = [
         "list_price": 599.99,
         "status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/m/mVin0T-jwLFSieVFIgHEbVg/140.jpg",
+        "msrp": 799.99,
         "check_product_name": "fail",
         "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "321936503067",
+        "product_name": "Samsung - Gear S2 Smartwatch 42mm Stainless Steel - White Elastomer",
+        "list_price": 299.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/mqcAwc7N5hGwBfxSq86j_9A/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
         "Item_ID": "321946287942",
@@ -460,20 +890,39 @@ var result = [
         "check_list_price": "fail"
     },
     {
+        "Item_ID": "321946333754",
+        "product_name": "Westinghouse - 40\" Class (39.5\" Diag.) - LED - 1080p - HDTV - Black",
+        "list_price": 249.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mwnYvjCEefeYe0pluZo-uEQ/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
         "Item_ID": "321946334254",
         "product_name": "Westinghouse - 32\" Class (31.5\" Diag.) - LED - 720p - HDTV - Black",
         "list_price": 129.99,
         "status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mFPkHogFCtOUyrLvXQ1P6aw/140.jpg",
+        "msrp": 169.99,
         "check_product_name": "fail",
         "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "331339660485",
+        "product_name": "MILLER BY HONEYWELL 1005709 Shuttle, Silver/Orange, 7 In. L",
+        "list_price": 561.96,
+        "status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/meEx2RBESgcFOi_SzqMMWFg/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
     },
     {
         "Item_ID": "331600322791",
         "product_name": "",
         "list_price": "",
         "msrp": "",
-        "status": "",
+        "status": "This item is out of stock.",
         "galleryURL": "",
         "check_product_name": "fail",
         "check_list_price": "fail"
@@ -484,8 +933,38 @@ var result = [
         "list_price": 499.99,
         "status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/pict/331606539978404000000002_7.jpg",
+        "msrp": 849.99,
         "check_product_name": "pass",
         "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "331675629579",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "This item is out of stock.",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "331683356110",
+        "product_name": "DJI Phantom 3 Intelligent Flight Battery - 4480mah -  For the Phantom 3",
+        "list_price": 149,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mQ4LV3Fw6adgwyW1--EPOzA/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "331700620726",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "This item is out of stock.",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
         "Item_ID": "331735423534",
@@ -493,6 +972,16 @@ var result = [
         "list_price": 409.99,
         "status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/pict/331735423534404000000001_1.jpg",
+        "msrp": 659.99,
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "351519082040",
+        "product_name": "New Tone Infinim HBS-900 Bluetooth Headset for iPhone Samsung LG ",
+        "list_price": 31.95,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/pict/351519082040404000000002_4.jpg",
         "check_product_name": "pass",
         "check_list_price": "pass"
     },
@@ -502,6 +991,7 @@ var result = [
         "list_price": 629.99,
         "status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/pict/3515955038154040_1.jpg",
+        "msrp": 2150.5,
         "check_product_name": "pass",
         "check_list_price": "pass"
     },
@@ -511,15 +1001,63 @@ var result = [
         "list_price": 1299.99,
         "status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/pict/3515973941144040_1.jpg",
+        "msrp": 3299.97,
         "check_product_name": "pass",
         "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "351605575901",
+        "product_name": "LG G3 Android Phone Verizon VS985 32GB Black White  Blue  Red ",
+        "list_price": 144.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/pict/351605575901404000000001_1.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "361230610041",
+        "product_name": "Optima® 8004-003 RedTop® Starting AGM Battery 34/78",
+        "list_price": 158.67,
+        "status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/mkoVpgznbPqJEnQsvISJObg/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "361449357253",
+        "product_name": "Ameristep 1RX2S010 Doghouse Spring Steel Ground Hunting Blind Realtree XTRA Camo",
+        "list_price": 44.47,
+        "status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/mvhHs8aZLoe1-dxyQG6NpbQ/140.jpg",
+        "msrp": 79.99,
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "361449668932",
+        "product_name": "Blue Smart Self Balancing Electric Scooter Unicycle 2 Wheels Hover Board Balance",
+        "list_price": 279.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mnJZPt7WifaQQK2hkcxDleA/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
         "Item_ID": "371499462775",
         "product_name": "",
         "list_price": "",
         "msrp": "",
-        "status": "",
+        "status": "This listing has ended.  The seller has relisted this item or one like this. ",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "371500081521",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "This item is out of stock.",
         "galleryURL": "",
         "check_product_name": "fail",
         "check_list_price": "fail"
@@ -530,8 +1068,19 @@ var result = [
         "list_price": 209.99,
         "status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/m/m557ia9YgJK8ZX9euctB4jQ/140.jpg",
+        "msrp": 399.99,
         "check_product_name": "fail",
         "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "381455825439",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "This item is out of stock.",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
         "Item_ID": "381494735267",
@@ -539,7 +1088,18 @@ var result = [
         "list_price": 399.99,
         "status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/pict/381494735267404000000001_1.jpg",
+        "msrp": 649,
         "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "390675093338",
+        "product_name": "4'x10'x2\" Folding 4 Panel Gym Mat Gymnastics Tumbling Yoga Sports Floor 4-Color",
+        "list_price": 135.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mvU6oEfgX41Azbp8HVQjVxw/140.jpg",
+        "msrp": 159.99,
+        "check_product_name": "fail",
         "check_list_price": "pass"
     },
     {
@@ -548,8 +1108,47 @@ var result = [
         "list_price": 32.95,
         "status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/m4moH6Kz2nD7tZIjiRCcUzg/140.jpg",
+        "msrp": 74.49,
         "check_product_name": "fail",
         "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "391340740378",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "This item is out of stock.",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "400659106230",
+        "product_name": "STILETTO 15OZ TITANIUM TIBONE CLAW HAMMER TB15MC NEW SALE PRICE GREAT DEAL",
+        "list_price": 169.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mt4M1Zg78ljCLedFkQxH_Vg/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "400670037138",
+        "product_name": "4~All Purpose Hydraulic Recline Barber Chairs Salon Beauty Spa Shampoo Equipment",
+        "list_price": 1059.95,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mQ1l1ldgqT-79G6R_bnk72g/140.jpg",
+        "msrp": 1766.58,
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "400914230916",
+        "product_name": "For Apple iPhone 6 6S Plus Shockproof Leather Ultra Thin Hard Back Stand Case",
+        "list_price": 9.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/pict/400914230916404000000005_3.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "pass"
     },
     {
         "Item_ID": "401041944954",

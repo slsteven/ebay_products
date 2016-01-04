@@ -24,7 +24,9 @@
     <h1>Hello Ann :)</h1>
     <form method="post", enctype="multipart/form-data", action="/scrape">
       <input type="file" name="upl" />
+      <p>
       <input type="submit" name="submit">
+      </p>
     </form>
 
     <form method="get", action="/get_results">
@@ -35,9 +37,10 @@
         <tr>
           <th>Item_ID</th>
           <th>Product Name From Site</th>
-          <th>Name Match?</th>
-          <th>List Price From Site</th>
-          <th>Price Match?</th>
+          <th>CSV Name Match?</th>
+          <th>MSRP</th>
+          <th>Ebay Price</th>
+          <th>CSV Price Match?</th>
           <th>Availability Status</th>
           <th>Image</th>
         </tr>
@@ -47,11 +50,12 @@
           <td>{{product.Item_ID}}</td>
           <td>{{product.product_name}}</td>
           <td>{{product.check_product_name}}</td>
+          <td>{{product.msrp}}</td>
           <td>{{product.list_price}}</td>
           <td>{{product.check_list_price}}</td>
           <td>{{product.status}}</td>
-          <td class="good" ng-if="product.check_product_name && product.check_list_price == 'pass'">GOOD</td>
           <td><img ng-src="{{product.galleryURL}}"></td>
+          <td class="good" ng-if="product.check_product_name && product.check_list_price == 'pass'">GOOD</td>
         </tr>
       </tbody>
     </table>
