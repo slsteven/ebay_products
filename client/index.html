@@ -35,10 +35,11 @@
         <tr>
           <th>Item_ID</th>
           <th>Product Name From Site</th>
-          <th>Check1</th>
+          <th>Name Match?</th>
           <th>List Price From Site</th>
-          <th>Check2</th>
+          <th>Price Match?</th>
           <th>Availability Status</th>
+          <th>Image</th>
         </tr>
       </thead>
       <tbody>
@@ -50,6 +51,7 @@
           <td>{{product.check_list_price}}</td>
           <td>{{product.status}}</td>
           <td class="good" ng-if="product.check_product_name && product.check_list_price == 'pass'">GOOD</td>
+          <td><img ng-src="{{product.galleryURL}}"></td>
         </tr>
       </tbody>
     </table>

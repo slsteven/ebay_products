@@ -1,0 +1,563 @@
+var result = [
+    {
+        "Item_ID": "111831562940",
+        "product_name": "Limited Edition White Wii U Deluxe Set 32GB - FACTORY REFURBISHED BY NINTENDO",
+        "list_price": 235,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mciNZ4jTqA_4W1FSPBvUFmA/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "111845399602",
+        "product_name": "Brand New Fitbit Charge Wireless Activity Wristband Retail Packaging",
+        "list_price": 89.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/111845399602404000000001_1.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "111847056299",
+        "product_name": "Nintendo 2DS (Crimson Red) *FACTORY REFURBISHED BY NINTENDO",
+        "list_price": 60,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/mEP6qH9R6hEMb2LIFcObxDA/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "121675222805",
+        "product_name": "Escort Passport 9500ix Blue Display Radar & Laser Detector & GPS Camera Database",
+        "list_price": 339.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/mt4-9ozk5FIHsqvG1Fm5JuQ/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "121835912373",
+        "product_name": "Zmodo 8 CH HDMI DVR 4 CCTV Outdoor Home Surveillance Security Camera System 1TB",
+        "list_price": 159.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/mFtOrfFfzOKf0xAmxne2xXg/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "121835963092",
+        "product_name": "Zmodo 8 CH HDMI DVR 8 CCTV IR Outdoor Home Security Camera System 1TB Hard Drive",
+        "list_price": 219.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mN5YYGibtPU9hq35UGIzL7w/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "131593551826",
+        "product_name": "Red Pocket 1 Year Wireless Plan - Every Month 1000 Minutes/1000 Texts/1000MB",
+        "list_price": 199,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/maJDtH38eh1sWrP5Okvq6ZQ/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "141688838045",
+        "product_name": "Miller Millermatic 211 MIG Welder with Advanced Auto-Set (907614)",
+        "list_price": 1125,
+        "status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/mftgvSFWwOoqMInIyV7lfNw/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "141688998396",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "141708710411",
+        "product_name": "Apple iPhone 5 32GB 4G LTE FACTORY UNLOCKED Clean ESN Black or White",
+        "list_price": 167.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/141708710411404000000001_1.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "151850084287",
+        "product_name": "Samsung Galaxy Note 4 SM-N910V 32GB Verizon Unlocked Black or White",
+        "list_price": 319.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/151850084287404000000001_1.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "161737513026",
+        "product_name": "LG G3 VS985 32GB (Verizon) Smartphone Metallic Black or Silk White or Blaze Red",
+        "list_price": 144.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/161737513026404000000001_1.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "171393498957",
+        "product_name": "NEW Fuji instax mini 8 Pink Fujifilm instant Film Camera + 50 Film + Case",
+        "list_price": 119.95,
+        "status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/mOwlCuiapoNPq6foih8l5QA/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "171956743631",
+        "product_name": "Nikon D750 Digital SLR Camera Body. Brand New Full Frame DSLR + 1yr Warranty",
+        "list_price": 1464.39,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/mGIIdi4Mb-u-e_8KGK9TLaQ/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "171987473846",
+        "product_name": "Star Wars Legendary Jedi Master Yoda - Collector Box Edition",
+        "list_price": 99.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/m0oriO9G-GFRMCZIoNijiLw/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "172025332840",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "191345402556",
+        "product_name": "Canon EF 24-70mm f/2.8L II USM Zoom Lens w/82mm UV Filter",
+        "list_price": 1620.27,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/msTuIyopirabn7uI-Q_N2AQ/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "191739888902",
+        "product_name": "HP - 15.6\" Laptop - AMD A6-Series - 4GB Memory - 500GB Hard Drive - Black",
+        "list_price": 279.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mKq80mRSM3-cUHpyzJ2JYEA/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "191740800311",
+        "product_name": "Toshiba - Canvio Connect II 2.5TB External USB 3.0 Portable Hard Drive - Black",
+        "list_price": 99.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/mChizh3qR5EQ3oig3orjTbg/140.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "191757220477",
+        "product_name": "KitchenAid - Professional 5 Plus Series Bowl-Lift Stand Mixer - Silver",
+        "list_price": 449.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/m6ah5-2ADMmoXEKBag3Ao0A/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "191760070654",
+        "product_name": "Microsoft - Xbox One The Lego Movie Videogame Bundle - Black",
+        "list_price": 349.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mxAQ2JsrT2kDHbO-KlmSTYw/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "201430716039",
+        "product_name": "Samsung Galaxy Gear Smart Watch Live Android  SM-R382 Black Waterproof Bluetooth",
+        "list_price": 109.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/m-CPOdK5rLbLNAdTzL1JDPA/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "201454343824",
+        "product_name": "Ninja - Coffee Bar Brewer with Glass Carafe - Stainless Steel/Black",
+        "list_price": 149.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mwhNpdVQQksuh4CRcKR05_g/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "201456626293",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "201477134918",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "201482326990",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "201483404976",
+        "product_name": "Google - Chromecast (2015 Model) - Black",
+        "list_price": 35,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/m5G07kyhGN8JIA11KSGiXhA/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "201486359986",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "221915533414",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "231289283577",
+        "product_name": "Intex Pure Spa 4-Person Inflatable Portable Heated Bubble Hot Tub | 28403E ",
+        "list_price": 369,
+        "status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/mf7T8-WPKjMQq1Aqkn2LXRA/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "231785013115",
+        "product_name": "Apple iPhone 6 a1549 64GB T-Mobile GSM Unlocked Gold Silver or Gray",
+        "list_price": 439.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/231785013115404000000002_1.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "252062798827",
+        "product_name": "Apple iPhone 6 Plus a1522 16GB Smartphone for AT&T Gold Silver or Gray",
+        "list_price": 429.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/252062798827404000000002_4.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "252186080995",
+        "product_name": "TCL 32S3800 32\" 720p 60Hz Roku Smart LED HDTV w/ Built-in WiFi & 3 HDMI Inputs",
+        "list_price": 179.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/mK7W9WfI2EDOxGf1zvnDnEQ/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "252207751275",
+        "product_name": "Microsoft Certified Xbox One 500GB Gaming Console - 3 GAME BUNDLE",
+        "list_price": 279.95,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/m5HG52OH4fd40zkB8R9y82w/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "262049179503",
+        "product_name": "TCL 40FS3750 40-inch 1080p 120Hz Roku Smart LED HDTV w/ Built-in Wi-Fi & 3 HDMI",
+        "list_price": 269.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/mfdBZZOXrbihWATrD584vvg/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "271353600688",
+        "product_name": "D/VVS1 Engagement Ring 2 Carat Round Cut 14k White Gold Bridal Jewelry",
+        "list_price": 550,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/m0Q6GMzl3gMjNrmCtfQZ66A/140.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "272015431840",
+        "product_name": "Bear Archery Apprentice 3 Youth Bow RTH Package 20-60LB FREE Hip Quiver Included",
+        "list_price": 199.88,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mFIdcNI-Olv19haTzix2BxQ/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "272027945980",
+        "product_name": "Apple iPad 2 16GB Wi-Fi 9.7\" iOS Tablet Choice of Colors (C)",
+        "list_price": 159.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/pict/272027945980404000000001_1.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "281842311886",
+        "product_name": "Xbox One 1TB Holiday Bundle with Gears of War: Ultimate Edition, Rare Replay,...",
+        "list_price": 399.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mt5SdlYOGxhlcXS-HekKACw/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "291633840318",
+        "product_name": "New Nintendo Wii U Super Smash Bros/Splatoon Bundle Deluxe Set",
+        "list_price": 349.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/m3vDbAxVWDPJuHrLQluK55g/140.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "301730591340",
+        "product_name": "Xbox One 500GB Gears of War: Ultimate Edition Bundle",
+        "list_price": 349.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mTRkVycO0mvgWUpT3inBjng/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "301780490088",
+        "product_name": "Nintendo Wii U Mario Kart 8 Deluxe Set Bundle",
+        "list_price": 299.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mSD5-3vYiM6GN7GbQnqI9eQ/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "311394588586",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "311404632748",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "311452584240",
+        "product_name": "Apple iPhone 6 - 16GB (Factory Unlocked) Smartphone Gold Gray Silver",
+        "list_price": 429.88,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/pict/311452584240404000000002_1.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "311485990508",
+        "product_name": "TEAC TN-300-TB Turquoise Turntable w/ Built-in Pre-amplifier & USB Output",
+        "list_price": 229,
+        "status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mPz3pMuwZzaZI5gTZl5DTVQ/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "311500897381",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "321566164162",
+        "product_name": "Nikon D750 Digital SLR Camera Body 24.3MP FX-format Brand New",
+        "list_price": 1469.95,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mCKH4DGsAX_9_kOncccRYKw/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "321906667863",
+        "product_name": "Microsoft - Surface Pro 3 - 12\" - Intel Core i3 - 128GB - Silver",
+        "list_price": 599.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/mVin0T-jwLFSieVFIgHEbVg/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "321946287942",
+        "product_name": "Toshiba Satellite 15.6\" Touch-Screen Laptop Intel Core i3 6GB Mem 1TB HDD Bru...",
+        "list_price": 399.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/m-EzRfC7jcQUGgokyvQbRSA/140.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "321946334254",
+        "product_name": "Westinghouse - 32\" Class (31.5\" Diag.) - LED - 720p - HDTV - Black",
+        "list_price": 129.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mFPkHogFCtOUyrLvXQ1P6aw/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "331600322791",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "331606539978",
+        "product_name": "Apple iPhone 6 Plus a1522 64GB Smartphone for AT&T Gold Silver or Gray",
+        "list_price": 499.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/331606539978404000000002_7.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "331735423534",
+        "product_name": "Samsung Galaxy S6 Edge SM-G925A 32GB Smartphone for AT&T Sapphire White or Gold",
+        "list_price": 409.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/331735423534404000000001_1.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "351595503815",
+        "product_name": "SI1/G Forever Us Two Stone Round Diamond 1.00Ct Solitaire Ring 14K White Gold",
+        "list_price": 629.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/3515955038154040_1.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "351597394114",
+        "product_name": "2.00CT Forever Us Two Stone Round Real Diamond Solitaire Ring 14K White Gold",
+        "list_price": 1299.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/3515973941144040_1.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "371499462775",
+        "product_name": "",
+        "list_price": "",
+        "msrp": "",
+        "status": "",
+        "galleryURL": "",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "381451971271",
+        "product_name": "HP All-in-One Computer 19-2113W Celeron J1800 (2.41 GHz) 4 GB 500 GB HDD 19.5\" W",
+        "list_price": 209.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/m557ia9YgJK8ZX9euctB4jQ/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "381494735267",
+        "product_name": "Apple iPhone 6 a1549 16GB T-Mobile GSM Unlocked Gold Silver or Gray",
+        "list_price": 399.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/381494735267404000000001_1.jpg",
+        "check_product_name": "pass",
+        "check_list_price": "pass"
+    },
+    {
+        "Item_ID": "390981943402",
+        "product_name": "D & G Light Blue Dolce Gabbana Perfume 3.3 / 3.4 oz edt NEW tester WITH CAP",
+        "list_price": 32.95,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/m4moH6Kz2nD7tZIjiRCcUzg/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    },
+    {
+        "Item_ID": "401041944954",
+        "product_name": "Smart Self Balancing Electric Scooter Unicycle 2 Wheels Hover Board Balance New",
+        "list_price": 259.99,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mfObU_Gue47agHzlZOE3w2Q/140.jpg",
+        "check_product_name": "fail",
+        "check_list_price": "fail"
+    }
+]
