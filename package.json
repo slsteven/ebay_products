@@ -11,6 +11,7 @@
     "jsonfile": "^2.2.3",
     "mongoose": "latest",
     "request": "latest",
-    "async": "latest"
+    "async": "latest",
+    "multer": "latest"
   }
 }

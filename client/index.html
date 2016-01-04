@@ -22,7 +22,14 @@
 <div ng-controller='resultController'>
   <div class="container">
     <h1>Hello Ann :)</h1>
-    <button id="see_results" class="btn btn-info">See Your Results</button>
+    <form method="post", enctype="multipart/form-data", action="/scrape">
+      <input type="file" name="upl" />
+      <input type="submit" name="submit">
+    </form>
+
+    <form method="get", action="/get_results">
+      <button id="see_results" class="btn btn-info">See Your Results</button>
+    </form>
     <table id="myTable" class="table table-bordered table-striped">
       <thead>
         <tr>
