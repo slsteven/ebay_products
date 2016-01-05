@@ -59,7 +59,7 @@ app.get('/export', function(req, res){
   fs.readFile(result, 'utf8', function(err, data){
     new_result = JSON.parse(data.slice(13));
 
-    var fields = ['ebay_Item_ID', 'Vertical', 'ebay_product_name', 'ebay_status', 'ebay_msrp', 'list_price', 'ebay_list_price', 'Seller_Name', 'Account_Manager'];
+    var fields = ['ebay_Item_ID', 'Vertical', 'ebay_product_name', 'ebay_status', 'ebay_msrp', 'list_price', 'ebay_list_price', 'Seller_Name', 'Account_Manager', 'Sum_of_GMV'];
 
     json2csv({data: new_result, fields: fields}, function(err, csv){
       if(!err){
@@ -104,7 +104,7 @@ app.get('/get_results', function(req, res){
 
 
   for(var x in sorted_original){
-    var account_info = _.pick(sorted_original[x], 'Vertical', 'Seller_Name', 'Account_Manager', 'list_price');
+    var account_info = _.pick(sorted_original[x], 'Vertical', 'Seller_Name', 'Account_Manager', 'list_price', 'Sum_of_GMV');
     console.log("SLDKFJSLKDFJ ACCOUNT INFO", account_info)
     sorted_output[x] = _.extend(sorted_output[x], account_info);
 
@@ -112,25 +112,23 @@ app.get('/get_results', function(req, res){
     var check_id = _.isMatch(sorted_original[x], sorted_output[x].Item_ID)
     if(check_id){
       for(var y in sorted_original[x]){
-        // switch (true) {
-        //   case (y === 'product_name'):
-        //     if(sorted_original[x].product_name == sorted_output[x].ebay_product_name){
-        //       sorted_output[x].check_product_name = "pass";
-        //     }
-        //     else{
-        //       sorted_output[x].check_product_name = "fail";
-        //     }
-        //   case (y === 'list_price'):
-        //    console.log("yyyyyyyyyyyy", y, sorted_original[x].list_price, sorted_output[x].ebay_list_price)
-
-        //     if(sorted_original[x].list_price == sorted_output[x].ebay_list_price){
-        //       sorted_output[x].check_list_price = "pass";
-        //     }
-        //     else{
-        //       sorted_output[x].check_list_price = "fail";
-        //     }
-        //   break;
-        // }
+        switch (true) {
+          case (y === 'product_name'):
+            if(sorted_original[x].product_name == sorted_output[x].ebay_product_name){
+              sorted_output[x].check_product_name = "pass";
+            }
+            else{
+              sorted_output[x].check_product_name = "fail";
+            }
+          case (y === 'list_price'):
+            if(sorted_original[x].list_price == sorted_output[x].ebay_list_price){
+              sorted_output[x].check_list_price = "pass";
+            }
+            else{
+              sorted_output[x].check_list_price = "fail";
+            }
+          break;
+        }
       }
     }
   }
@@ -198,6 +196,12 @@ function get_item(callback2){
               //utilize the cheerio library on returned html
               var $ = cheerio.load(html);
               var id = url.slice(20);
+
+              $('.it-ttl').filter(function(){
+              var data = $(this);
+              title = data.text().slice(16);
+              json.ebay_product_name = title;
+              })
               //Using unique class as starting point
               $('.msgTextAlign').filter(function(){
                 var data = $(this);
