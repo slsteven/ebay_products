@@ -88,8 +88,7 @@
           <th>
             <a href="#" ng-click="sortType = 'ebay_status'">
               Current Availability
-              <span ng-show="sortType == 'name' && !sortReverse" class="fa fa-caret-down"></span>
-              <span ng-show="sortType == 'name' && sortReverse" class="fa fa-caret-up"></span>
+              <span ng-show="sortType == 'ebay_status' && !sortReverse" class="fa fa-caret-down"></span>
             </a>
           </th>
           <th>
@@ -98,7 +97,12 @@
             <span ng-show="sortType == 'msrp'" class="fa fa-caret-down"></span>
           </a>
           </th>
-          <th>CSV List Price</th>
+          <th>
+            <a href="#" ng-click="sortType = 'list_price'">
+              CSV List Price
+            <span ng-show="sortType == 'list_price'" class="fa fa-caret-down"></span>
+          </a>
+          </th>
           <th>
             <a href="#" ng-click="sortType = 'ebay_list_price'">
               Ebay List Price

@@ -16,6 +16,27 @@ var amazon = require('amazon-product-api');
 var json2csv = require('json2csv');
 
 
+var params = {
+        keywords: ['111856230292'],
+        // add additional fields
+        outputSelector: ['AspectHistogram'],
+
+        paginationInput: {
+          entriesPerPage: 1
+        }
+      };
+      ebay.xmlRequest({
+        serviceName: 'Finding',
+        opType: 'findItemsByKeywords',
+        appId: 'RideSnap-b66a-448f-9063-46ba6dbe1a3e',
+        params: params,
+        parser: ebay.parseResponseJson    // (default)
+      },
+      // gets all the items together in a merged array
+      function itemsCallback(error, itemsResponse) {
+        console.log("FAIL", itemsResponse.searchResult.item.sellingStatus.currentPrice.amount)
+        });
+
 var client = amazon.createClient({
   awsId: "",
   awsSecret: "",
@@ -84,31 +105,32 @@ app.get('/get_results', function(req, res){
 
   for(var x in sorted_original){
     var account_info = _.pick(sorted_original[x], 'Vertical', 'Seller_Name', 'Account_Manager', 'list_price');
+    console.log("SLDKFJSLKDFJ ACCOUNT INFO", account_info)
     sorted_output[x] = _.extend(sorted_output[x], account_info);
 
     // var pick_from_original = _.pick(sorted_original[x], 'Item_ID', 'product_name', 'list_price', 'status');
     var check_id = _.isMatch(sorted_original[x], sorted_output[x].Item_ID)
     if(check_id){
       for(var y in sorted_original[x]){
-        switch (true) {
-          case (y === 'product_name'):
-            if(sorted_original[x].product_name == sorted_output[x].ebay_product_name){
-              sorted_output[x].check_product_name = "pass";
-            }
-            else{
-              sorted_output[x].check_product_name = "fail";
-            }
-          case (y === 'list_price'):
-           console.log("yyyyyyyyyyyy", y, sorted_original[x].list_price, sorted_output[x].ebay_list_price)
+        // switch (true) {
+        //   case (y === 'product_name'):
+        //     if(sorted_original[x].product_name == sorted_output[x].ebay_product_name){
+        //       sorted_output[x].check_product_name = "pass";
+        //     }
+        //     else{
+        //       sorted_output[x].check_product_name = "fail";
+        //     }
+        //   case (y === 'list_price'):
+        //    console.log("yyyyyyyyyyyy", y, sorted_original[x].list_price, sorted_output[x].ebay_list_price)
 
-            if(sorted_original[x].list_price == sorted_output[x].ebay_list_price){
-              sorted_output[x].check_list_price = "pass";
-            }
-            else{
-              sorted_output[x].check_list_price = "fail";
-            }
-          break;
-        }
+        //     if(sorted_original[x].list_price == sorted_output[x].ebay_list_price){
+        //       sorted_output[x].check_list_price = "pass";
+        //     }
+        //     else{
+        //       sorted_output[x].check_list_price = "fail";
+        //     }
+        //   break;
+        // }
       }
     }
   }
@@ -161,7 +183,14 @@ function get_item(callback2){
       },
       // gets all the items together in a merged array
       function itemsCallback(error, itemsResponse) {
-        if(itemsResponse.searchResult.$.count == 0){
+        console.log("FAIL", itemsResponse)
+        console.log("FAILING", itemsResponse.searchResult)
+        if(itemsResponse.ack == "Failure"){
+          json.ebay_Item_ID = url;
+          arr.push(json);
+          callback();
+        }
+        else if(itemsResponse.searchResult.$.count == 0){
           request("http://ebay.com/itm/"+url, function(error, response, html){
           console.log(error);
           //check for errors
@@ -221,12 +250,22 @@ function get_item(callback2){
 function convertToJSON(array) {
   var first = array[0].join()
   var headers = first.split(',');
-
   var jsonData = [];
   for ( var i = 1, length = array.length; i < length; i++ )
   {
     var myRow = array[i].join();
+
+    var n = myRow.search(/\b\d{12}\b/g);
+    var new_name = myRow.slice(0, n);
+    var regex = new RegExp(',', 'g');
+    var beg_of_string = new_name.replace(/,/g,'');
+
+    beg_of_string = beg_of_string + ",";
+    var end_of_string = myRow.slice(n)
+    myRow = beg_of_string.concat(end_of_string);
+
     var row = myRow.split(',');
+    console.log("ROW", row)
 
     var data = {};
     for ( var x = 0; x < row.length; x++ )
