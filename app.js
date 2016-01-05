@@ -22,7 +22,6 @@ var client = amazon.createClient({
   awsTag: "6411-9118-9385"
 });
 
-
  console.log("amazon client", client)
 
 client.itemSearch({
@@ -238,71 +237,6 @@ function convertToJSON(array) {
   }
   return jsonData;
 };
-
-
-// function get_item(callback2){
-//   var original = 'original.json'
-//   var original_json = jsonfile.readFileSync(original);
-//   var array_of_urls = [];
-//   for(var item in original_json){
-//     url = original_json[item].ebay_url;
-//     array_of_urls.push(url);
-//   }
-//   var arr = [];
-//   async.each(array_of_urls,
-//     function(url, callback){
-//         request(url, function(error, response, html){
-//           console.log(error);
-//         //check for errors
-//           if(!error){
-//             console.log("SDFKJD", arr.length)
-//             //utilize the cheerio library on returned html
-//             var $ = cheerio.load(html);
-//             var id = url.slice(20);
-//             var json = {
-//               Item_ID: id,
-//               product_name: "",
-//               list_price: "",
-//               status: ""
-//             }
-//             //Using unique class as starting point
-//             $('.it-ttl').filter(function(){
-//               //store data we filter into a variable
-//               var data = $(this);
-//               // json = {product_name: ""};
-//               prod_name = data.text().slice(16);
-//               //store as json object
-//               json.product_name = prod_name;
-//             })
-//             $('#prcIsum').filter(function(){
-//               var data = $(this);
-//               list_price = data.text().slice(4);
-//               json.list_price = list_price;
-//             })
-//             $('.msgTextAlign').filter(function(){
-//               var data = $(this);
-//               status = data.text()
-//               json.status = status;
-//             })
-//             arr.push(json);
-//           }
-//           callback();
-//         })
-//       },
-//     function (error){
-//       console.log("DONE", arr, arr.length);
-//       // JSON.stringify(json, null, 4) - the data to write, here we do an extra step by calling JSON.stringify to make JSON easier to read
-//       // Parameter 3 :  callback function - a callback function to let us know the status of our
-//       fs.writeFile('output.json', JSON.stringify(arr, null, 4), 'utf-8',
-//       function(err){
-//         if(err){
-//           console.log("fille error when writing")
-//         }
-//         callback2("complete")
-//       })
-//     })
-// }
-
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
