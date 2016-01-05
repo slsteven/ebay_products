@@ -12,6 +12,7 @@
     "mongoose": "latest",
     "request": "latest",
     "async": "latest",
-    "multer": "latest"
+    "multer": "latest",
+    "json2csv": "latest"
   }
 }

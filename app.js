@@ -13,6 +13,7 @@ var async = require('async');
 var multer = require('multer');
 var ebay = require('ebay-api');
 var amazon = require('amazon-product-api');
+var json2csv = require('json2csv');
 
 
 var client = amazon.createClient({
@@ -22,7 +23,7 @@ var client = amazon.createClient({
 });
 
 
-console.log("amazon client", client)
+ console.log("amazon client", client)
 
 client.itemSearch({
   keywords: 'Zmodo 8 CH HDMI DVR 4 CCTV Outdoor Home Surveillance Security Camera',
@@ -33,7 +34,24 @@ client.itemSearch({
   console.log("errror", err);
 });
 
+app.get('/export', function(req, res){
+  var result = './client/static/json/result.json';
+  fs.readFile(result, 'utf8', function(err, data){
+    new_result = JSON.parse(data.slice(13));
 
+    var fields = ['ebay_Item_ID', 'Vertical', 'ebay_product_name', 'ebay_status', 'ebay_msrp', 'list_price', 'ebay_list_price', 'Seller_Name', 'Account_Manager'];
+
+    json2csv({data: new_result, fields: fields}, function(err, csv){
+      if(!err){
+        fs.writeFile('file.csv', csv, function(err) {
+          if (err) throw err;
+          res.send("check file.csv")
+          console.log('file saved');
+        });
+      }
+    })
+  })
+})
 
 app.post('/scrape', multer({ dest: './uploads/'}).single('upl'), function(req, res){
   //convert excel to json
@@ -55,32 +73,36 @@ app.post('/scrape', multer({ dest: './uploads/'}).single('upl'), function(req, r
 
 app.get('/get_results', function(req, res){
   get_item(function(data){
-    console.log("inside get")
   var output = 'output.json';
   output = jsonfile.readFileSync(output);
 
   var original = 'original.json';
   original = jsonfile.readFileSync(original);
 
-  var sorted_output = _.sortBy(output, 'Item_ID');
+  var sorted_output = _.sortBy(output, 'ebay_Item_ID');
   var sorted_original = _.sortBy(original, 'Item_ID');
 
 
   for(var x in sorted_original){
-    var pick_from_original = _.pick(sorted_original[x], 'Item_ID', 'product_name', 'list_price', 'status');
-    var check_id = _.isMatch(pick_from_original, sorted_output[x].Item_ID)
+    var account_info = _.pick(sorted_original[x], 'Vertical', 'Seller_Name', 'Account_Manager', 'list_price');
+    sorted_output[x] = _.extend(sorted_output[x], account_info);
+
+    // var pick_from_original = _.pick(sorted_original[x], 'Item_ID', 'product_name', 'list_price', 'status');
+    var check_id = _.isMatch(sorted_original[x], sorted_output[x].Item_ID)
     if(check_id){
-      for(var y in pick_from_original){
+      for(var y in sorted_original[x]){
         switch (true) {
           case (y === 'product_name'):
-            if(sorted_output[x][y] == pick_from_original[y]){
+            if(sorted_original[x].product_name == sorted_output[x].ebay_product_name){
               sorted_output[x].check_product_name = "pass";
             }
             else{
               sorted_output[x].check_product_name = "fail";
             }
           case (y === 'list_price'):
-            if(sorted_output[x][y] == pick_from_original[y]){
+           console.log("yyyyyyyyyyyy", y, sorted_original[x].list_price, sorted_output[x].ebay_list_price)
+
+            if(sorted_original[x].list_price == sorted_output[x].ebay_list_price){
               sorted_output[x].check_list_price = "pass";
             }
             else{
@@ -94,7 +116,6 @@ app.get('/get_results', function(req, res){
   console.log(sorted_output);
   fs.writeFile("./client/static/json/result.json", 'var result = ' + JSON.stringify(sorted_output, null, 4), function(err){
     console.log("fille succesfully written")
-
   })
 })
 console.log("END")
@@ -116,11 +137,11 @@ function get_item(callback2){
   async.eachSeries(array_of_urls,
     function(url, callback){
      var json = {
-        Item_ID: "",
-        product_name: "",
-        list_price: "",
-        msrp: "",
-        status: "",
+        ebay_Item_ID: "",
+        ebay_product_name: "",
+        ebay_list_price: "",
+        ebay_msrp: "",
+        ebay_status: "",
         galleryURL: ""
       }
       var params = {
@@ -153,8 +174,8 @@ function get_item(callback2){
               $('.msgTextAlign').filter(function(){
                 var data = $(this);
                 status = data.text()
-                json.status = status;
-                json.Item_ID = url;
+                json.ebay_status = status;
+                json.ebay_Item_ID = url;
               })
             }
           arr.push(json);
@@ -162,18 +183,20 @@ function get_item(callback2){
           })
         }
         else{
-          // console.log("a;lsdkjf;alksdjf", itemsResponse)
+          console.log("a;lsdkjf;alksdjf", itemsResponse.searchResult.item.discountPriceInfo)
           // console.log("a;lsdkjf;alksdjf", itemsResponse.searchResult.item.itemId)
         json = {
-          Item_ID: itemsResponse.searchResult.item.itemId,
-          product_name: itemsResponse.searchResult.item.title,
-          list_price: itemsResponse.searchResult.item.sellingStatus.currentPrice.amount,
-          status: itemsResponse.searchResult.item.sellingStatus.sellingState,
+          ebay_Item_ID: itemsResponse.searchResult.item.itemId,
+          ebay_product_name: itemsResponse.searchResult.item.title,
+          ebay_list_price: itemsResponse.searchResult.item.sellingStatus.currentPrice.amount,
+          ebay_status: itemsResponse.searchResult.item.sellingStatus.sellingState,
           galleryURL: itemsResponse.searchResult.item.galleryURL
         }
 
         if(_.has(itemsResponse.searchResult.item, "discountPriceInfo")){
-          json.msrp = itemsResponse.searchResult.item.discountPriceInfo.originalRetailPrice.amount
+          if(_.has(itemsResponse.searchResult.item.discountPriceInfo, "originalRetailPrice")){
+          json.ebay_msrp = itemsResponse.searchResult.item.discountPriceInfo.originalRetailPrice.amount
+        }
         }
         arr.push(json)
         callback();

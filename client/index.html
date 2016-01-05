@@ -24,9 +24,10 @@
     </script>
 </head>
 <body>
-<div ng-controller='resultController'>
+
   <div class="container">
 
+  <div class="row" ng-controller='resultController'>
     <div class="alert alert-info">
       <p>Sort Type: {{ sortType }}</p>
       <p>Sort Reverse: {{ sortReverse }}</p>
@@ -42,11 +43,14 @@
       <input type="submit" name="submit">
       </p>
     </form>
-
+    <div class="button_request">
     <form method="get", action="/get_results">
-      <button id="see_results" class="btn btn-info form-control">See Your Results</button>
+      <button id="see_results" class="btn btn-info col-md-12">See Your Results</button>
     </form>
 
+    <form method="get", action="/export">
+      <button id="see_results" class="btn btn-warning col-md-12">Export your results to CSV</button>
+    </form>
 
     <form class="search_bar">
       <div class="form-group">
@@ -62,64 +66,69 @@
     <table id="myTable" class="table table-bordered table-striped">
       <thead>
         <tr>
-          <th>Index</th>
+          <th>No.</th>
           <th>
-            <a href="#" ng-click="sortType = 'Item_ID'">
+            <a href="#" ng-click="sortType = 'ebay_Item_ID'">
               Item_ID
             <span ng-show="sortType == 'Item_ID'" class="fa fa-caret-down"></span>
           </a>
           </th>
           <th>
-            <a href="#" ng-click="sortType = 'product_name'">
-              Listing Product Name
+            <a href="#" ng-click="sortType = 'Vertical'">
+              Category
             <span ng-show="sortType == 'product_name'" class="fa fa-caret-down"></span>
           </a>
           </th>
           <th>
-            <a href="#" ng-click="sortType = 'status'">
+            <a href="#" ng-click="sortType = 'ebay_product_name'">
+              Ebay Product Name
+            <span ng-show="sortType == 'product_name'" class="fa fa-caret-down"></span>
+          </a>
+          </th>
+          <th>
+            <a href="#" ng-click="sortType = 'ebay_status'">
               Current Availability
               <span ng-show="sortType == 'name' && !sortReverse" class="fa fa-caret-down"></span>
               <span ng-show="sortType == 'name' && sortReverse" class="fa fa-caret-up"></span>
             </a>
           </th>
           <th>
-            <a href="#" ng-click="sortType = 'check_product_name'">
-            CSV name match?
-            <span ng-show="sortType == 'check_product_name'" class="fa fa-caret-down"></span>
-          </a>
-          </th>
-          <th>
-            <a href="#" ng-click="sortType = 'msrp'">
+            <a href="#" ng-click="sortType = 'ebay_msrp'">
               MSRP
             <span ng-show="sortType == 'msrp'" class="fa fa-caret-down"></span>
           </a>
           </th>
+          <th>CSV List Price</th>
           <th>
-            <a href="#" ng-click="sortType = 'list_price'">
-              Ebay Price
-            <span ng-show="sortType == 'list_price'; sortReverse = !sortReverse" class="fa fa-caret-down"></span>
+            <a href="#" ng-click="sortType = 'ebay_list_price'">
+              Ebay List Price
+            <span ng-show="sortType == 'list_price'; sortReverse = !sortReverse" class="fa fa-angle-down"></span>
           </a>
           </th>
-          <th>CSV Price Match?</th>
+          <th>Seller Name</th>
+          <th>Account Manager</th>
           <th>Image</th>
         </tr>
       </thead>
       <tbody>
         <tr ng-repeat="product in results | orderBy:sortType:sortReverse | filter:product_name">
           <td>{{$index}}</td>
-          <td>{{product.Item_ID}}</td>
-          <td>{{product.product_name}}</td>
-          <td>{{product.status}}</td>
-          <td>{{product.check_product_name}}</td>
-          <td>{{product.msrp}}</td>
-          <td>{{product.list_price}}</td>
-          <td>{{product.check_list_price}}</td>
+          <td>{{product.ebay_Item_ID}}</td>
+          <td>{{product.Vertical}}</td>
+          <td>{{product.ebay_product_name}}</td>
+          <td>{{product.ebay_status}}</td>
+          <td>{{product.ebay_msrp}}</td>
+          <td>{{product.list_price | number:2}}</td>
+          <td>{{product.ebay_list_price}}</td>
+          <td>{{product.Seller_Name}}</td>
+          <td>{{product.Account_Manager}}</td>
           <td><img ng-src="{{product.galleryURL}}"></td>
-          <td class="good" ng-if="product.check_product_name && product.check_list_price == 'pass'">GOOD</td>
+          <!-- <td class="good" ng-if="product.check_product_name && product.check_list_price == 'pass'">GOOD</td> -->
         </tr>
       </tbody>
     </table>
   </div>
-</div>
+  </div>
+
 </body>
 </html>
