@@ -17,7 +17,7 @@ var json2csv = require('json2csv');
 
 
 var params = {
-        keywords: ['111856230292'],
+        keywords: ['371039735916'],
         // add additional fields
         outputSelector: ['AspectHistogram'],
 
@@ -34,7 +34,7 @@ var params = {
       },
       // gets all the items together in a merged array
       function itemsCallback(error, itemsResponse) {
-        console.log("FAIL", itemsResponse.searchResult.item.sellingStatus.currentPrice.amount)
+        console.log("FAIL", itemsResponse.searchResult.item)
         });
 
 var client = amazon.createClient({
@@ -59,7 +59,9 @@ app.get('/export', function(req, res){
   fs.readFile(result, 'utf8', function(err, data){
     new_result = JSON.parse(data.slice(13));
 
-    var fields = ['ebay_Item_ID', 'Vertical', 'ebay_product_name', 'ebay_status', 'ebay_msrp', 'list_price', 'ebay_list_price', 'Seller_Name', 'Account_Manager', 'Sum_of_GMV'];
+   var fields = ['product_name',  'Item_ID',   'Item_Condition',  'Vertical',  'Seller_Name', 'Account_Manager', 'MSRP', 'ebay_msrp',  'list_price', 'ebay_list_price', '%_off', 'Sum_of_GMV',  'Sum_of_Qty',  'Sum_of_Views/SI', 'Sum_of_Seller_rating',  'Sum_of_Buyer_Count',  'Sum_of_Defect_Rate']
+
+    // var fields = ['ebay_Item_ID', 'Vertical', 'ebay_product_name', 'ebay_status', 'ebay_msrp', 'list_price', 'ebay_list_price', 'Seller_Name', 'Account_Manager', 'Sum_of_GMV', 'Sum_of_Qty', 'Sum_of_Views/SI', 'Sum_of_Seller_rating', 'Sum_of_Buyer_Count', 'Sum_of_Defect_Rate' ];
 
     json2csv({data: new_result, fields: fields}, function(err, csv){
       if(!err){
@@ -104,9 +106,9 @@ app.get('/get_results', function(req, res){
 
 
   for(var x in sorted_original){
-    var account_info = _.pick(sorted_original[x], 'Vertical', 'Seller_Name', 'Account_Manager', 'list_price', 'Sum_of_GMV');
-    console.log("SLDKFJSLKDFJ ACCOUNT INFO", account_info)
-    sorted_output[x] = _.extend(sorted_output[x], account_info);
+
+    // var account_info = _.pick(sorted_original[x], 'Vertical', 'Seller_Name', 'Account_Manager', 'list_price', 'Sum_of_GMV');
+    sorted_output[x] = _.extend(sorted_output[x], sorted_original[x]);
 
     // var pick_from_original = _.pick(sorted_original[x], 'Item_ID', 'product_name', 'list_price', 'status');
     var check_id = _.isMatch(sorted_original[x], sorted_output[x].Item_ID)
