@@ -51,7 +51,7 @@ var result = [
     {
         "Item_ID": "121675222805",
         "product_name": "Escort Passport 9500ix Blue Display Radar & Laser Detector & GPS Camera Database",
-        "list_price": 339.99,
+        "list_price": 347.99,
         "status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/mt4-9ozk5FIHsqvG1Fm5JuQ/140.jpg",
         "msrp": 449.95,
@@ -219,7 +219,7 @@ var result = [
         "product_name": "Cat Ear Headphones",
         "list_price": 129.99,
         "status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/151890568543404000000001_1.jpg",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/151890568543404000000002_1.jpg",
         "msrp": 149.99,
         "check_product_name": "pass",
         "check_list_price": "pass"
@@ -475,7 +475,7 @@ var result = [
         "product_name": "Amazon Kindle Fire 7 7\" 5th Gen 2015 Light Weight Shock Proof Kids Case Cover",
         "list_price": 19.59,
         "status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/pict/201483780246404000000001_1.jpg",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/201483780246404000000006_1.jpg",
         "check_product_name": "pass",
         "check_list_price": "pass"
     },
@@ -621,7 +621,7 @@ var result = [
         "product_name": "",
         "list_price": "",
         "msrp": "",
-        "status": "This item is out of stock.",
+        "status": "This listing was ended by the seller because the item is no longer available.",
         "galleryURL": "",
         "check_product_name": "fail",
         "check_list_price": "fail"
@@ -771,7 +771,7 @@ var result = [
         "product_name": "Apple iPhone 5s - 16GB (Factory Unlocked) Smartphone - Gold - Silver - Gray",
         "list_price": 249.88,
         "status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/pict/311241524505404000000003_1.jpg",
+        "galleryURL": "http://thumbs2.ebaystatic.com/pict/311241524505404000000001_1.jpg",
         "check_product_name": "pass",
         "check_list_price": "pass"
     },
@@ -826,11 +826,11 @@ var result = [
     {
         "Item_ID": "311485990508",
         "product_name": "TEAC TN-300-TB Turquoise Turntable w/ Built-in Pre-amplifier & USB Output",
-        "list_price": 229,
+        "list_price": 279.99,
         "status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/mPz3pMuwZzaZI5gTZl5DTVQ/140.jpg",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "Item_ID": "311499226679",
@@ -958,13 +958,12 @@ var result = [
     },
     {
         "Item_ID": "331700620726",
-        "product_name": "",
-        "list_price": "",
-        "msrp": "",
-        "status": "This item is out of stock.",
-        "galleryURL": "",
+        "product_name": "Bose Wave SoundTouch Music System IV, Espresso Black #738031-1710",
+        "list_price": 599,
+        "status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mPBrG_SdiT5Q6SQOCP1PvkQ/140.jpg",
         "check_product_name": "fail",
-        "check_list_price": "fail"
+        "check_list_price": "pass"
     },
     {
         "Item_ID": "331735423534",

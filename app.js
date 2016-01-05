@@ -12,6 +12,28 @@ var _ = require('underscore');
 var async = require('async');
 var multer = require('multer');
 var ebay = require('ebay-api');
+var amazon = require('amazon-product-api');
+
+
+var client = amazon.createClient({
+  awsId: "AKIAIFXB5PKOMC5TSOCA",
+  awsSecret: "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",
+  awsTag: "6411-9118-9385"
+});
+
+
+console.log("amazon client", client)
+
+client.itemSearch({
+  keywords: 'Zmodo 8 CH HDMI DVR 4 CCTV Outdoor Home Surveillance Security Camera',
+  responseGroup: 'ItemAttributes,Offers,Images'
+}).then(function(results){
+  console.log("results", results);
+}).catch(function(err){
+  console.log("errror", err);
+});
+
+
 
 app.post('/scrape', multer({ dest: './uploads/'}).single('upl'), function(req, res){
   //convert excel to json
@@ -31,34 +53,9 @@ app.post('/scrape', multer({ dest: './uploads/'}).single('upl'), function(req, r
   })
 })
 
-
-
- var params = {
-        keywords: ["301803182706"],
-        // add additional fields
-        outputSelector: ['AspectHistogram'],
-
-        paginationInput: {
-          entriesPerPage: 1
-        }
-      };
-      ebay.xmlRequest({
-        serviceName: 'Finding',
-        opType: 'findItemsByKeywords',
-        appId: 'RideSnap-b66a-448f-9063-46ba6dbe1a3e',
-        params: params,
-        parser: ebay.parseResponseJson    // (default)
-      },
-      // gets all the items together in a merged array
-      function itemsCallback(error, itemsResponse) {
-        //console.log(_.has(itemsResponse.searchResult.item.discountPriceInfo.originalRetailPrice, "amount"))
-        console.log(_.has(itemsResponse.searchResult.item, "discountPriceInfo"))
-       //console.log(itemsResponse.searchResult.item.discountPriceInfo)
-      })
-
 app.get('/get_results', function(req, res){
   get_item(function(data){
-
+    console.log("inside get")
   var output = 'output.json';
   output = jsonfile.readFileSync(output);
 
@@ -114,6 +111,7 @@ function get_item(callback2){
     url = original_json[item].Item_ID;
     array_of_urls.push(url);
   }
+
   var arr = [];
   async.eachSeries(array_of_urls,
     function(url, callback){
@@ -164,6 +162,8 @@ function get_item(callback2){
           })
         }
         else{
+          // console.log("a;lsdkjf;alksdjf", itemsResponse)
+          // console.log("a;lsdkjf;alksdjf", itemsResponse.searchResult.item.itemId)
         json = {
           Item_ID: itemsResponse.searchResult.item.itemId,
           product_name: itemsResponse.searchResult.item.title,
