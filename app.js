@@ -17,9 +17,9 @@ var json2csv = require('json2csv');
 
 
 var client = amazon.createClient({
-  awsId: "AKIAIFXB5PKOMC5TSOCA",
-  awsSecret: "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",
-  awsTag: "6411-9118-9385"
+  awsId: "",
+  awsSecret: "",
+  awsTag: ""
 });
 
  console.log("amazon client", client)
