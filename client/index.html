@@ -107,11 +107,12 @@
             <a href="#" ng-click="sortType = 'ebay_list_price'">
               Ebay List Price
             <span ng-show="sortType == 'list_price'; sortReverse = !sortReverse" class="fa fa-angle-down"></span>
-          </a>
+            </a>
           </th>
           <th>Seller Name</th>
           <th>Account Manager</th>
           <th>Image</th>
+          <th>GMV</th>
         </tr>
       </thead>
       <tbody>
@@ -128,6 +129,7 @@
           <td>{{product.Account_Manager}}</td>
           <td><img ng-src="{{product.galleryURL}}"></td>
           <!-- <td class="good" ng-if="product.check_product_name && product.check_list_price == 'pass'">GOOD</td> -->
+          <td>{{product.Sum_of_GMV}}</td>
         </tr>
       </tbody>
     </table>

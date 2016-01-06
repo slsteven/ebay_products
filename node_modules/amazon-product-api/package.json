@@ -1,0 +1,67 @@
+{
+  "name": "amazon-product-api",
+  "version": "0.3.5",
+  "description": "Amazon Product Advertising API client",
+  "main": "./lib/index.js",
+  "directories": {
+    "lib": "./lib/"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "amazon",
+    "aws",
+    "product",
+    "ads",
+    "advertising"
+  ],
+  "author": {
+    "name": "Dmitry Mazuro",
+    "email": "dmitry.mazuro@icloud.com"
+  },
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "es6-promise": "^2.0.1",
+    "xml2js": "^0.4.5",
+    "request": "^2.53.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "mocha": "^1.20.1",
+    "should": "^4.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/t3chnoboy/amazon-product-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/t3chnoboy/amazon-product-api/issues"
+  },
+  "homepage": "https://github.com/t3chnoboy/amazon-product-api",
+  "gitHead": "96e1f8b395bfcef655562470ecbb4cf88db81368",
+  "_id": "amazon-product-api@0.3.5",
+  "_shasum": "adacb2e304bf0f1d3cc8a505bcbf3ae07596ed62",
+  "_from": "amazon-product-api@*",
+  "_npmVersion": "2.14.4",
+  "_nodeVersion": "4.1.0",
+  "_npmUser": {
+    "name": "mastert",
+    "email": "simonthiboutot.qc@gmail.com"
+  },
+  "dist": {
+    "shasum": "adacb2e304bf0f1d3cc8a505bcbf3ae07596ed62",
+    "tarball": "http://registry.npmjs.org/amazon-product-api/-/amazon-product-api-0.3.5.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "t3chnoboy",
+      "email": "dmitry.mazuro@icloud.com"
+    },
+    {
+      "name": "mastert",
+      "email": "simonthiboutot.qc@gmail.com"
+    }
+  ],
+  "_resolved": "https://registry.npmjs.org/amazon-product-api/-/amazon-product-api-0.3.5.tgz"
+}

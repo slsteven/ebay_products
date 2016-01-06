@@ -10,10 +10,11 @@
     {
         "ebay_Item_ID": "191747512283",
         "ebay_product_name": "HP ENVY 15.6\" Touch-Screen Laptop Intel Core i5 6GB Memory 1TB HDD",
-        "ebay_list_price": 499.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/m/m2WcxVLnZA_agAYx1jIlAFA/140.jpg",
-        "ebay_msrp": 679.99
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "",
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "201443445981",
@@ -57,7 +58,7 @@
         "ebay_product_name": "Beats Solo 2 On-Ear Headphones - Assorted Colors",
         "ebay_list_price": 99.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/pict/301722981086404000000008_3.jpg",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/301722981086404000000009_3.jpg",
         "ebay_msrp": 199.99
     },
     {
@@ -88,14 +89,15 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "400943948435",
         "ebay_product_name": "Samsung Galaxy S5 G900V Verizon 4G LTE 16GB Android Smartphone Black Gold White",
         "ebay_list_price": 167.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/400943948435404000000001_3.jpg"
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/400943948435404000000002_3.jpg"
     },
     {
         "ebay_Item_ID": "361318765958",
@@ -109,7 +111,7 @@
         "ebay_product_name": "ASICS Men's GEL-Sendai 2 Running Shoes T4A1N",
         "ebay_list_price": 59.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/111799359647404000000002_1.jpg",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/111799359647404000000001_1.jpg",
         "ebay_msrp": 150
     },
     {
@@ -138,7 +140,7 @@
         "ebay_product_name": "Apple iPhone 5S 16GB Smartphone for AT&T A1533  4G LTE Silver Gold Grey",
         "ebay_list_price": 199.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/401044980095404000000002_1.jpg"
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/401044980095404000000001_1.jpg"
     },
     {
         "ebay_Item_ID": "381493915707",
@@ -408,7 +410,7 @@
         "ebay_product_name": "ASICS Women's GEL-Noosa Tri 10 Running Shoes T580N",
         "ebay_list_price": 49.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/pict/111799359661404000000001_1.jpg",
+        "galleryURL": "http://thumbs2.ebaystatic.com/pict/111799359661404000000003_1.jpg",
         "ebay_msrp": 140
     },
     {
@@ -432,7 +434,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "361451391761",
@@ -484,7 +487,7 @@
         "ebay_product_name": "Samsung Galaxy S3 III SCH-I535 16GB Verizon Smartphone 8MP Camera",
         "ebay_list_price": 81.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/pict/131541736938404000000002_1.jpg"
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/131541736938404000000004_1.jpg"
     },
     {
         "ebay_Item_ID": "351588697855",
@@ -492,7 +495,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "391158210881",
@@ -551,29 +555,30 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "370911039868",
         "ebay_product_name": "2 Front Wheel Hubs & Bearings Pair Set w/ ABS for Chevy GMC Truck 4X4 4WD AWD",
-        "ebay_list_price": 70.12,
+        "ebay_list_price": 69.86,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/mhWINYP_koeSAmw4sNUZ95A/140.jpg"
     },
     {
         "ebay_Item_ID": "311338200711",
         "ebay_product_name": "Samsung Galaxy Note 4 SM-N910A - 32GB AT&T (Unlocked) Smartphone - Black - White",
-        "ebay_list_price": 319.88,
+        "ebay_list_price": 299.88,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/pict/311338200711404000000002_1.jpg"
     },
     {
         "ebay_Item_ID": "321824047976",
         "ebay_product_name": "Garmin nuvi 55LMT GPS Navigation System with Lifetime Maps and Traffic 5\" Displa",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "ebay_list_price": 109.99,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mVoM6M55bT04m7thFU_IokA/140.jpg",
+        "ebay_msrp": 179.99
     },
     {
         "ebay_Item_ID": "131522681602",
@@ -581,7 +586,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "111649281552",
@@ -589,7 +595,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "361166991735",
@@ -633,7 +640,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "300788562674",
@@ -672,7 +680,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This listing was ended by the seller because there was an error in the listing.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "321719776922",
@@ -687,7 +696,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "131579864455",
@@ -702,7 +712,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "171899836262",
@@ -724,7 +735,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "310919932747",
@@ -774,7 +786,7 @@
     {
         "ebay_Item_ID": "141617379054",
         "ebay_product_name": "Samsung Galaxy Note 4 SM-N910V - 32GB - Verizon Smartphone - Black or White",
-        "ebay_list_price": 279.88,
+        "ebay_list_price": 269.88,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/pict/141617379054404000000001_1.jpg"
     },
@@ -789,7 +801,7 @@
     {
         "ebay_Item_ID": "321911838050",
         "ebay_product_name": "Nike Air Force 1 High '07 LV8 Flax Wheat Collection 806403 200 GS & MEN SZ:4Y-13",
-        "ebay_list_price": 189.95,
+        "ebay_list_price": 209.95,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/pict/3219118380504040_1.jpg"
     },
@@ -830,7 +842,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "252214208812",
@@ -846,7 +859,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "331713216154",
@@ -902,10 +916,11 @@
     {
         "ebay_Item_ID": "351405780961",
         "ebay_product_name": "Digital Clamshell Heat Press Transfer T-Shirt Sublimation Machine 15\" x 15\"",
-        "ebay_list_price": 169.19,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/m/m4byJm2Mmtprj7IR6WI5zqQ/140.jpg",
-        "ebay_msrp": 667.99
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "161808703050",
@@ -950,7 +965,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This listing has ended. ",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "191756197310",
@@ -1032,7 +1048,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "131527275745",
@@ -1072,9 +1089,11 @@
     {
         "ebay_Item_ID": "141847308666",
         "ebay_product_name": "Apple iPhone 5s - 32GB (AT&T) Smartphone - Gold - Silver - Gray",
-        "ebay_list_price": 219.88,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/pict/141847308666404000000001_1.jpg"
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "121841606991",
@@ -1082,7 +1101,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "291286875132",
@@ -1098,7 +1118,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "111856230292",
@@ -1113,7 +1134,7 @@
         "ebay_product_name": "Samsung Galaxy S4 - FreedomPop (Certified pre-owned)",
         "ebay_list_price": 109.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/pict/111850159446404000000002_1.jpg",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/111850159446404000000001_1.jpg",
         "ebay_msrp": 449.99
     },
     {
@@ -1187,7 +1208,7 @@
         "ebay_product_name": "Apple iPhone 5c 16GB Verizon + GSM Unlocked Smartphone 16 GB 4G LTE Clean ESN",
         "ebay_list_price": 169.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/pict/291484668528404000000002_1.jpg"
+        "galleryURL": "http://thumbs1.ebaystatic.com/pict/291484668528404000000001_1.jpg"
     },
     {
         "ebay_Item_ID": "131352611790",
@@ -1224,7 +1245,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "321954082033",
@@ -1329,7 +1351,7 @@
         "ebay_product_name": "Otterbox Defender Phone Case for iPhone 6",
         "ebay_list_price": 24.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/pict/291641140998404000000005_1.jpg"
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/291641140998404000000010_1.jpg"
     },
     {
         "ebay_Item_ID": "201466962150",
@@ -1352,7 +1374,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "131611837030",
@@ -1390,7 +1413,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "121156168683",
@@ -1436,7 +1460,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "321946287495",
@@ -1520,7 +1545,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "191132884570",
@@ -1528,7 +1554,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "390973318423",
@@ -1566,7 +1593,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "161527428399",
@@ -1595,7 +1623,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "361412155216",
@@ -1610,7 +1639,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "131457154800",
@@ -1641,7 +1671,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "281829358569",
@@ -1649,7 +1680,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "301633120282",
@@ -1701,7 +1733,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "360885280284",
@@ -1769,7 +1802,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "311241524505",
@@ -1791,7 +1825,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "161673806208",
@@ -1822,7 +1857,7 @@
         "ebay_product_name": "HID Xenon/Led Headlight Conversion KIT H1 H3 H4 H7 H10/9005 9006 880/881 9004/7",
         "ebay_list_price": 19.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/pict/390883328013404000000010_5.jpg"
+        "galleryURL": "http://thumbs2.ebaystatic.com/pict/390883328013404000000003_4.jpg"
     },
     {
         "ebay_Item_ID": "371444454712",
@@ -1851,7 +1886,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "371385445155",
@@ -1865,7 +1901,7 @@
         "ebay_product_name": "Sony 10-18mm f/4 OSS Alpha E-mount Wide-Angle Zoom Lens",
         "ebay_list_price": 599.95,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/m/mlwxvpl7I8lrSydpsI8AtfQ/140.jpg"
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/m1r3NS5tO9ZDGUwscRepT6A/140.jpg"
     },
     {
         "ebay_Item_ID": "391237643416",
@@ -1903,7 +1939,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "311497787874",
@@ -2023,7 +2060,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "141825590299",
@@ -2058,9 +2096,11 @@
     {
         "ebay_Item_ID": "191715897020",
         "ebay_product_name": "Asus - ZenWatch 2 Smartwatch 49mm Stainless Steel - Gunmetal/Brown Leather",
-        "ebay_list_price": 149.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/m/mtuAr-h3k4_dMUHtoZP591Q/140.jpg"
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "",
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "400928882910",
@@ -2119,7 +2159,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "201270579399",
@@ -2149,7 +2190,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "311441957514",
@@ -2164,7 +2206,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "171838677560",
@@ -2179,7 +2222,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "161928365487",
@@ -2217,7 +2261,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "181818642637",
@@ -2229,7 +2274,7 @@
     {
         "ebay_Item_ID": "331477218905",
         "ebay_product_name": "Dewalt 20v 20 Volt Premium Brushless Hammerdrill Driver Li-Ion Model DCD995 New",
-        "ebay_list_price": 85.99,
+        "ebay_list_price": 87.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/m-b5fG_Hs4abZZR64rXlCcw/140.jpg"
     },
@@ -2267,7 +2312,7 @@
         "ebay_product_name": "Crocs Crocband Unisex Clog",
         "ebay_list_price": 19.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/161673806379404000000009_4.jpg",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/161673806379404000000005_5.jpg",
         "ebay_msrp": 39.99
     },
     {
@@ -2276,7 +2321,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "172046305010",
@@ -2320,7 +2366,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "321937590431",
@@ -2391,9 +2438,9 @@
     {
         "ebay_Item_ID": "141849834968",
         "ebay_product_name": "NEW!!!  OtterBox Symmetry Series Case For iPhone 6 & iPhone 6s",
-        "ebay_list_price": 24.99,
+        "ebay_list_price": 21.95,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/pict/141849834968404000000005_1.jpg",
+        "galleryURL": "http://thumbs1.ebaystatic.com/pict/141849834968404000000002_2.jpg",
         "ebay_msrp": 39.99
     },
     {
@@ -2423,7 +2470,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "131415290930",
@@ -2510,7 +2558,7 @@
     {
         "ebay_Item_ID": "221963411322",
         "ebay_product_name": "Nike Air Jordan 11 Retro XI 72-10 72 10 Black Red White 378037-002 Sz: 3.5y-16",
-        "ebay_list_price": 219.95,
+        "ebay_list_price": 239.95,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/pict/2219634113224040_2.jpg"
     },
@@ -2566,7 +2614,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "231732745890",
@@ -2615,7 +2664,7 @@
     {
         "ebay_Item_ID": "370776358502",
         "ebay_product_name": "Headlights Headlamps Left & Right Pair Set NEW for 97-03 Pontiac Grand Prix",
-        "ebay_list_price": 64.3,
+        "ebay_list_price": 64.7,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mRngxtVo-UjCXQb-4DBVmwg/140.jpg"
     },
@@ -2677,7 +2726,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "131349127788",
@@ -2692,7 +2742,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "351401163936",
@@ -2712,7 +2763,7 @@
     {
         "ebay_Item_ID": "131110816600",
         "ebay_product_name": "Exhaust Manifold w/ Catalytic Converter 2.5L for 02-06 Nissan Sentra Altima",
-        "ebay_list_price": 197.15,
+        "ebay_list_price": 198.45,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/mRNJ_6agpyhDZ9XGKHhTfBw/140.jpg"
     },
@@ -2818,7 +2869,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "361219073890",
@@ -2826,7 +2878,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "311292411598",
@@ -2840,7 +2893,7 @@
         "ebay_product_name": "Slim Leather Case Cover with Bluetooth keyboard for Samsung Galaxy Tab A tablet",
         "ebay_list_price": 26.59,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/351556465247404000000003_1.jpg"
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/351556465247404000000002_1.jpg"
     },
     {
         "ebay_Item_ID": "161605353249",
@@ -2871,7 +2924,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "252005970504",
@@ -2879,7 +2933,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "141848204719",
@@ -2887,12 +2942,13 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "291628164790",
         "ebay_product_name": "Samsung Level U Bluetooth Wireless Around the Neck Design Headphones with Microp",
-        "ebay_list_price": 53.99,
+        "ebay_list_price": 34.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mzjvKLIxAeEM3U6cVn1qKyA/140.jpg",
         "ebay_msrp": 69.99
@@ -2975,7 +3031,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "131016077540",
@@ -3019,7 +3076,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "271947153842",
@@ -3115,7 +3173,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "361125355695",
@@ -3192,7 +3251,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "This item is out of stock.",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "371409059992",
@@ -3237,7 +3297,7 @@
     {
         "ebay_Item_ID": "371146231998",
         "ebay_product_name": "Side View Mirrors Power Heated Towing Pair Set for Silverado Tahoe Sierra Yukon",
-        "ebay_list_price": 113.18,
+        "ebay_list_price": 108.75,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mBKka9zbBTo-h5zX60hScMA/140.jpg"
     },
@@ -3276,7 +3336,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "",
@@ -3284,7 +3345,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "",
@@ -3292,7 +3354,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "",
@@ -3300,7 +3363,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "",
@@ -3308,7 +3372,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "",
@@ -3316,7 +3381,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "",
@@ -3324,7 +3390,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "",
@@ -3332,7 +3399,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "",
@@ -3340,7 +3408,8 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     },
     {
         "ebay_Item_ID": "",
@@ -3348,6 +3417,7 @@
         "ebay_list_price": "",
         "ebay_msrp": "",
         "ebay_status": "",
-        "galleryURL": ""
+        "galleryURL": "",
+        "recal_perc_off": ""
     }
 ]

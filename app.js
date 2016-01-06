@@ -8,14 +8,14 @@ var request     = require('request');
 var xls         = require('excel');
 var jsonfile    = require('jsonfile');
 var util        = require('util');
-var _ = require('underscore');
-var async = require('async');
-var multer = require('multer');
-var ebay = require('ebay-api');
-var amazon = require('amazon-product-api');
-var json2csv = require('json2csv');
+var _           = require('underscore');
+var async       = require('async');
+var multer      = require('multer');
+var ebay        = require('ebay-api');
+var amazon      = require('amazon-product-api');
+var json2csv    = require('json2csv');
 
-
+//START: for testing ======================================================
 var params = {
         keywords: ['371039735916'],
         // add additional fields
@@ -53,17 +53,35 @@ client.itemSearch({
 }).catch(function(err){
   console.log("errror", err);
 });
+//END: for testing ======================================================
 
 app.get('/export', function(req, res){
   var result = './client/static/json/result.json';
   fs.readFile(result, 'utf8', function(err, data){
     new_result = JSON.parse(data.slice(13));
 
-   var fields = ['product_name',  'Item_ID',   'Item_Condition',  'Vertical',  'Seller_Name', 'Account_Manager', 'MSRP', 'ebay_msrp',  'list_price', 'ebay_list_price', '%_off', 'Sum_of_GMV',  'Sum_of_Qty',  'Sum_of_Views/SI', 'Sum_of_Seller_rating',  'Sum_of_Buyer_Count',  'Sum_of_Defect_Rate']
 
-    // var fields = ['ebay_Item_ID', 'Vertical', 'ebay_product_name', 'ebay_status', 'ebay_msrp', 'list_price', 'ebay_list_price', 'Seller_Name', 'Account_Manager', 'Sum_of_GMV', 'Sum_of_Qty', 'Sum_of_Views/SI', 'Sum_of_Seller_rating', 'Sum_of_Buyer_Count', 'Sum_of_Defect_Rate' ];
 
-    json2csv({data: new_result, fields: fields}, function(err, csv){
+    for(var obj in new_result){
+      console.log(new_result[obj])
+      if(new_result[obj].ebay_list_price !== "" && (new_result[obj].ebay_msrp !== "" || new_result[obj].msrp !== "")){
+        if(new_result[obj].ebay_msrp !== ""){
+          var recal_perc_off = ((parseInt(new_result[obj].ebay_msrp) - parseInt(new_result[obj].ebay_list_price))/parseInt(new_result[obj].ebay_msrp));
+          new_result[obj].recal_perc_off = recal_perc_off;
+        }
+        else{
+          var recal_perc_off = ((parseInt(new_result[obj].msrp) - parseInt(new_result[obj].ebay_list_price))/parseInt(new_result[obj].msrp));
+          new_result[obj].recal_perc_off = recal_perc_off;
+        }
+      }
+    }
+
+    var sort_by_GMV = _.sortBy(new_result, 'Sum_of_GMV');
+
+    var fields = ['product_name',  'Item_ID',   'Item_Condition', 'ebay_status',  'Vertical',  'Seller_Name', 'Account_Manager', 'MSRP', 'ebay_msrp',  'list_price', 'ebay_list_price', 'recal_perc_off', '%_off', 'Sum_of_GMV',  'Sum_of_Qty',  'Sum_of_Views/SI', 'Sum_of_Seller_rating',  'Sum_of_Buyer_Count',  'Sum_of_Defect_Rate']
+
+
+    json2csv({data: sort_by_GMV, fields: fields}, function(err, csv){
       if(!err){
         fs.writeFile('file.csv', csv, function(err) {
           if (err) throw err;
@@ -163,7 +181,8 @@ function get_item(callback2){
         ebay_list_price: "",
         ebay_msrp: "",
         ebay_status: "",
-        galleryURL: ""
+        galleryURL: "",
+        recal_perc_off: ""
       }
       var params = {
         keywords: [url],
