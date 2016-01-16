@@ -15,7 +15,7 @@ var ebay        = require('ebay-api');
 var amazon      = require('amazon-product-api');
 var json2csv    = require('json2csv');
 
-//START: for testing ======================================================
+//START: Amazon API still testing ======================================================
 var params = {
         keywords: ['371039735916'],
         // add additional fields
@@ -55,6 +55,27 @@ client.itemSearch({
 });
 //END: for testing ======================================================
 
+//User uploads formated CSV file. Make sure column headers are formated with no spaces.
+// 'product_name',  'Item_ID',   'Item_Condition', 'ebay_status',  'Vertical',  'Seller_Name', 'Account_Manager', 'MSRP', 'ebay_msrp',  'list_price', 'ebay_list_price', 'recal_perc_off', '%_off', 'Sum_of_GMV',  'Sum_of_Qty',  'Sum_of_Views/SI', 'Sum_of_Seller_rating',  'Sum_of_Buyer_Count',  'Sum_of_Defect_Rate'
+app.post('/scrape', multer({ dest: './uploads/'}).single('upl'), function(req, res){
+  //convert excel to json
+  xls('./uploads/'+req.file.filename, function(err, data) {
+    if(err) {
+      console.log("error converting")
+    }
+    else {
+      //call convertToJSON method to change CSV to right format
+      original_json = convertToJSON(data);
+      fs.writeFile("original.json", JSON.stringify(original_json, null, 4),
+
+      function(err){
+        console.log("fille succesfully written");
+        res.status(204).end();
+      })
+    }
+  })
+})
+
 app.get('/export', function(req, res){
   var result = './client/static/json/result.json';
   fs.readFile(result, 'utf8', function(err, data){
@@ -93,24 +114,8 @@ app.get('/export', function(req, res){
   })
 })
 
-app.post('/scrape', multer({ dest: './uploads/'}).single('upl'), function(req, res){
-  //convert excel to json
-  xls('./uploads/'+req.file.filename, function(err, data) {
-    if(err) {
-      console.log("error converting")
-    }
-    else {
-      original_json = convertToJSON(data);
-      fs.writeFile("original.json", JSON.stringify(original_json, null, 4),
-
-      function(err){
-        console.log("fille succesfully written");
-        res.status(204).end();
-      })
-    }
-  })
-})
-
+//user selects "get results on frontend"
+//compare original.json with output.json
 app.get('/get_results', function(req, res){
   get_item(function(data){
   var output = 'output.json';
@@ -161,7 +166,8 @@ console.log("END")
 res.status(204).end();
 })
 
-
+//method loops through array of objects in original.json to grab url
+//pass url to ebay API to gather info
 function get_item(callback2){
   var original = 'original.json'
   var original_json = jsonfile.readFileSync(original);
@@ -172,6 +178,7 @@ function get_item(callback2){
     array_of_urls.push(url);
   }
 
+  //asyncjs library to make synchronous call to ebay api
   var arr = [];
   async.eachSeries(array_of_urls,
     function(url, callback){
@@ -193,6 +200,7 @@ function get_item(callback2){
           entriesPerPage: 1
         }
       };
+      //ebay request
       ebay.xmlRequest({
         serviceName: 'Finding',
         opType: 'findItemsByKeywords',
@@ -202,13 +210,14 @@ function get_item(callback2){
       },
       // gets all the items together in a merged array
       function itemsCallback(error, itemsResponse) {
-        console.log("FAIL", itemsResponse)
         console.log("FAILING", itemsResponse.searchResult)
+        //push empty object if failure
         if(itemsResponse.ack == "Failure"){
           json.ebay_Item_ID = url;
           arr.push(json);
           callback();
         }
+        //if ebay returns count of 0, then manually grab product listing by crawling website with cheerio
         else if(itemsResponse.searchResult.$.count == 0){
           request("http://ebay.com/itm/"+url, function(error, response, html){
           console.log(error);
@@ -217,13 +226,13 @@ function get_item(callback2){
               //utilize the cheerio library on returned html
               var $ = cheerio.load(html);
               var id = url.slice(20);
-
+              //get product name using unique class as starting point
               $('.it-ttl').filter(function(){
               var data = $(this);
               title = data.text().slice(16);
               json.ebay_product_name = title;
               })
-              //Using unique class as starting point
+              //grab status and item id with unique class
               $('.msgTextAlign').filter(function(){
                 var data = $(this);
                 status = data.text()
@@ -235,9 +244,8 @@ function get_item(callback2){
           callback();
           })
         }
-        else{
+        else{ //if we are able to find product with ebay call and count is 0 then store info
           console.log("a;lsdkjf;alksdjf", itemsResponse.searchResult.item.discountPriceInfo)
-          // console.log("a;lsdkjf;alksdjf", itemsResponse.searchResult.item.itemId)
         json = {
           ebay_Item_ID: itemsResponse.searchResult.item.itemId,
           ebay_product_name: itemsResponse.searchResult.item.title,
@@ -245,7 +253,7 @@ function get_item(callback2){
           ebay_status: itemsResponse.searchResult.item.sellingStatus.sellingState,
           galleryURL: itemsResponse.searchResult.item.galleryURL
         }
-
+        //this is to check for msrp.
         if(_.has(itemsResponse.searchResult.item, "discountPriceInfo")){
           if(_.has(itemsResponse.searchResult.item.discountPriceInfo, "originalRetailPrice")){
           json.ebay_msrp = itemsResponse.searchResult.item.discountPriceInfo.originalRetailPrice.amount
@@ -271,7 +279,7 @@ function get_item(callback2){
   console.log("orig leng", original_json.length)
 }
 
-
+//method creats an array of objects.
 function convertToJSON(array) {
   var first = array[0].join()
   var headers = first.split(',');
@@ -279,7 +287,9 @@ function convertToJSON(array) {
   for ( var i = 1, length = array.length; i < length; i++ )
   {
     var myRow = array[i].join();
-
+    //use regext to find when discription name ends
+    //slice that name and remove all commas
+    //concat reformated listing description back to original
     var n = myRow.search(/\b\d{12}\b/g);
     var new_name = myRow.slice(0, n);
     var regex = new RegExp(',', 'g');
