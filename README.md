@@ -1,8 +1,16 @@
-# ebay_products
-NodeJS, AngularJS, EBAY API
+# Ebay Query #
 
-Script to help Ebay Merchandise Client automate process of "top trending module refresh". 
+System to automate querying top performing Ebay products for client at Ebay.
 
-CSV uploaded by user gets converted to JSON. Use Ebay GetItem search to find product info. If not found, use Cheerio to crawl DOM. After scan output JSON file and run comparison. Manipulate data for report and export as CSV.
+Tools used:
+* Node.js
+* AngularJS
+* EBAY API
+
+Also used node modeuls such as: async, cheerio, underscore, json2csv
+
+How it works:
+
+Interface allows user to upload CSV document so application can crawl Ebay web pages and Ebay API for product details. This system eleminates the need for the user manually check hundreds of rows of internal data with online listings. On completion, user can export file for complete report. Visual data table also provided using AnguarJS.
 
 Created by: Steven Lam

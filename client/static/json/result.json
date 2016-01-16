@@ -167,8 +167,8 @@ var result = [
     },
     {
         "ebay_Item_ID": "111379761365",
-        "ebay_product_name": "Proactiv 3pc 60 day Kit  ~ Proactive ~ ",
-        "ebay_list_price": 31.95,
+        "ebay_product_name": "Proactiv 3pc 60 day Kit  ~ Proactive ~ FRESH 2017!!",
+        "ebay_list_price": 33.95,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/mhKeVM_nbz_72PdPPkYgkhw/140.jpg",
         "ebay_msrp": 39.95,
@@ -189,7 +189,7 @@ var result = [
         "Sum_of_Buyer_Count": "63",
         "Sum_of_Defect_Rate": "0.006193730695932181",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "111649281552",
@@ -221,10 +221,11 @@ var result = [
     {
         "ebay_Item_ID": "111692660720",
         "ebay_product_name": "ESCORT REDLINE PASSPORT EARS9 POLICE RADAR LASER DETECTOR NEW IN SEALED BOX",
-        "ebay_list_price": 447.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/m/mpTXpXcaz-6x70ZgJnGLbCg/140.jpg",
-        "ebay_msrp": 549.95,
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Escort RedLine Radar Detector",
         "Item_ID": "111692660720",
         "": "http://ebay.com/itm/111692660720",
@@ -242,12 +243,12 @@ var result = [
         "Sum_of_Buyer_Count": "6",
         "Sum_of_Defect_Rate": "0.01937695632732151",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "111799359548",
         "ebay_product_name": "ASICS Women's GEL-Fit Nova Training Shoes S466N",
-        "ebay_list_price": 27.99,
+        "ebay_list_price": 32.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/pict/111799359548404000000004_1.jpg",
         "ebay_msrp": 90,
@@ -268,14 +269,14 @@ var result = [
         "Sum_of_Buyer_Count": "309",
         "Sum_of_Defect_Rate": "0.02013570469176972",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "111799359647",
         "ebay_product_name": "ASICS Men's GEL-Sendai 2 Running Shoes T4A1N",
         "ebay_list_price": 59.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/111799359647404000000001_1.jpg",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/111799359647404000000002_1.jpg",
         "ebay_msrp": 150,
         "product_name": "ASICS Men's GEL-Sendai 2 Running Shoes T4A1N",
         "Item_ID": "111799359647",
@@ -299,9 +300,9 @@ var result = [
     {
         "ebay_Item_ID": "111799359661",
         "ebay_product_name": "ASICS Women's GEL-Noosa Tri 10 Running Shoes T580N",
-        "ebay_list_price": 49.99,
+        "ebay_list_price": 59.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/pict/111799359661404000000003_1.jpg",
+        "galleryURL": "http://thumbs2.ebaystatic.com/pict/111799359661404000000001_1.jpg",
         "ebay_msrp": 140,
         "product_name": "ASICS Women's GEL-Noosa Tri 10 Running Shoes T580N",
         "Item_ID": "111799359661",
@@ -320,7 +321,7 @@ var result = [
         "Sum_of_Buyer_Count": "106",
         "Sum_of_Defect_Rate": "0.02013570469176972",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "111850159446",
@@ -353,7 +354,7 @@ var result = [
         "ebay_product_name": "ASICS Men's GEL-Flux 2 Running Shoes T518N",
         "ebay_list_price": 39.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/pict/111853285092404000000001_1.jpg",
+        "galleryURL": "http://thumbs1.ebaystatic.com/pict/111853285092404000000002_1.jpg",
         "ebay_msrp": 100,
         "product_name": "ASICS Men's GEL-Flux 2 Running Shoes T518N",
         "Item_ID": "111853285092",
@@ -377,7 +378,7 @@ var result = [
     {
         "ebay_Item_ID": "111853297121",
         "ebay_product_name": "ASICS Women's GEL-Havoc 2 Running Shoes T4H6N",
-        "ebay_list_price": 29.99,
+        "ebay_list_price": 34.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/pict/111853297121404000000001_1.jpg",
         "ebay_msrp": 85,
@@ -398,14 +399,14 @@ var result = [
         "Sum_of_Buyer_Count": "109",
         "Sum_of_Defect_Rate": "0.02013570469176972",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "111853408317",
         "ebay_product_name": "ASICS Women's GEL-Flux 2 Running Shoes T568N",
         "ebay_list_price": 39.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/pict/111853408317404000000002_1.jpg",
+        "galleryURL": "http://thumbs2.ebaystatic.com/pict/111853408317404000000001_2.jpg",
         "ebay_msrp": 100,
         "product_name": "ASICS Women's GEL-Flux 2 Running Shoes T568N",
         "Item_ID": "111853408317",
@@ -456,7 +457,7 @@ var result = [
     {
         "ebay_Item_ID": "111856230292",
         "ebay_product_name": "ASICS Men's GEL-Excite 2 Running Shoes T423Q",
-        "ebay_list_price": 27.99,
+        "ebay_list_price": 29.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/pict/1118562302924040_1.jpg",
         "ebay_msrp": 70,
@@ -477,7 +478,7 @@ var result = [
         "Sum_of_Buyer_Count": "124",
         "Sum_of_Defect_Rate": "0.02013570469176972",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "121156168683",
@@ -507,7 +508,7 @@ var result = [
     {
         "ebay_Item_ID": "121465791172",
         "ebay_product_name": "Vizio S3821w-C0 38\" 2.1 Home Theater Bluetooth Sound Bar w/ Wireless Subwoofer",
-        "ebay_list_price": 119.99,
+        "ebay_list_price": 89.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/mL2zq9oQ2IfYsKndNcOZttA/140.jpg",
         "product_name": "Vizio S3821W-C0 38-Inch 2.1 Home Theater Bluetooth Sound Bar With Wireless Subwoofer",
@@ -527,7 +528,7 @@ var result = [
         "Sum_of_Buyer_Count": "27",
         "Sum_of_Defect_Rate": "0.03532135376474479",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "121487615238",
@@ -584,7 +585,7 @@ var result = [
     {
         "ebay_Item_ID": "121805869954",
         "ebay_product_name": "Lenovo B50-80 15.6\" Notebook - Intel Core i3-4005U - 4GB RAM - 500GB HDD-Win7Pro",
-        "ebay_list_price": 249.99,
+        "ebay_list_price": 299.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mWgX0N8mWHO2BeoHxjtrJnQ/140.jpg",
         "ebay_msrp": 499,
@@ -605,7 +606,7 @@ var result = [
         "Sum_of_Buyer_Count": "7",
         "Sum_of_Defect_Rate": "0.02741673964502172",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "121811160185",
@@ -714,7 +715,7 @@ var result = [
     {
         "ebay_Item_ID": "131016077540",
         "ebay_product_name": "Mirror Power Heated Signal Puddle PTM Driver Side Left for Chevy GMC Pickup SUV",
-        "ebay_list_price": 114.35,
+        "ebay_list_price": 121.55,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/mYGovTQ40Z9PfuhpuDPwjjQ/140.jpg",
         "product_name": "Mirror Power Heated Signal Puddle PTM Driver Side Left for Chevy GMC Pickup SUV",
@@ -739,7 +740,7 @@ var result = [
     {
         "ebay_Item_ID": "131110816600",
         "ebay_product_name": "Exhaust Manifold w/ Catalytic Converter 2.5L for 02-06 Nissan Sentra Altima",
-        "ebay_list_price": 198.45,
+        "ebay_list_price": 205.05,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/mRNJ_6agpyhDZ9XGKHhTfBw/140.jpg",
         "product_name": "Exhaust Manifold w/ Catalytic Converter 2.5L for 02-06 Nissan Sentra Altima",
@@ -764,7 +765,7 @@ var result = [
     {
         "ebay_Item_ID": "131157651229",
         "ebay_product_name": "Mirrors Power Heated Towing Turn Signal Textured Pair Set for Ford Excursion",
-        "ebay_list_price": 185.74,
+        "ebay_list_price": 190.74,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/mFGnPZ3t-KAKPztsG7o4bVQ/140.jpg",
         "product_name": "Mirrors Power Heated Towing Turn Signal Textured Pair Set for Ford Excursion",
@@ -784,7 +785,7 @@ var result = [
         "Sum_of_Buyer_Count": "11",
         "Sum_of_Defect_Rate": "0.01550827579493001",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "131349127788",
@@ -892,7 +893,7 @@ var result = [
     {
         "ebay_Item_ID": "131415290930",
         "ebay_product_name": "Proactiv Deep Cleansing Wash 24 oz  Proactive Face/Body Cleanser  ",
-        "ebay_list_price": 34.95,
+        "ebay_list_price": 35.95,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mfX-cGz9-M-dVS-5jKW_3fg/140.jpg",
         "ebay_msrp": 64.95,
@@ -913,7 +914,7 @@ var result = [
         "Sum_of_Buyer_Count": "83",
         "Sum_of_Defect_Rate": "0.006193730695932181",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "131437443435",
@@ -968,9 +969,9 @@ var result = [
     {
         "ebay_Item_ID": "131487769296",
         "ebay_product_name": "Crocs Baya Heathered Lined Unisex Clog",
-        "ebay_list_price": 19.99,
+        "ebay_list_price": 24.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/pict/1314877692964040_130.jpg",
+        "galleryURL": "http://thumbs1.ebaystatic.com/pict/131487769296404000000001_5.jpg",
         "ebay_msrp": 44.99,
         "product_name": "Crocs Baya Heathered Lined Unisex Clog",
         "Item_ID": "131487769296",
@@ -989,7 +990,7 @@ var result = [
         "Sum_of_Buyer_Count": "130",
         "Sum_of_Defect_Rate": "0.01351678258240097",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "131515784017",
@@ -1044,11 +1045,9 @@ var result = [
     {
         "ebay_Item_ID": "131522681602",
         "ebay_product_name": "Samsung i545 Galaxy S4 16GB Verizon 13MP Camera WiFi Cell Phone",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_list_price": 108.99,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/131522681602404000000001_2.jpg",
         "product_name": "Samsung i545 Galaxy S4 16GB Verizon 13MP Camera WiFi Cell Phone",
         "Item_ID": "131522681602",
         "": "http://ebay.com/itm/131522681602",
@@ -1098,7 +1097,7 @@ var result = [
         "ebay_product_name": "Samsung Galaxy S3 III SCH-I535 16GB Verizon Smartphone 8MP Camera",
         "ebay_list_price": 81.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/pict/131541736938404000000004_1.jpg",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/131541736938404000000001_1.jpg",
         "product_name": "Samsung Galaxy S3 III SCH-I535 16GB Verizon Smartphone 8MP Camera",
         "Item_ID": "131541736938",
         "": "http://ebay.com/itm/131541736938",
@@ -1147,9 +1146,11 @@ var result = [
     {
         "ebay_Item_ID": "131579025473",
         "ebay_product_name": "Samsung Galaxy S 4 IV VERIZON SCH-I545 - 16GB (B)",
-        "ebay_list_price": 109.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/pict/131579025473404000000005_1.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Samsung Galaxy S 4 IV VERIZON SCH-I545 - 16GB (B)",
         "Item_ID": "131579025473",
         "": "http://ebay.com/itm/131579025473",
@@ -1167,14 +1168,16 @@ var result = [
         "Sum_of_Buyer_Count": "6",
         "Sum_of_Defect_Rate": "0.045844002076395",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "131579864455",
         "ebay_product_name": "NEW DEWALT DW716 12\" DOUBLE BEVEL COMPOUND MITER SAW 15AMP SALE NEW IN BOX SALE",
-        "ebay_list_price": 289.95,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/m/mFW2g4f7XYhFWoYKhks5_7g/140.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "DeWalt DW716 Miter Saw",
         "Item_ID": "131579864455",
         "": "http://ebay.com/itm/131579864455",
@@ -1192,7 +1195,7 @@ var result = [
         "Sum_of_Buyer_Count": "16",
         "Sum_of_Defect_Rate": "0.02832953748282258",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "131588348144",
@@ -1222,10 +1225,11 @@ var result = [
     {
         "ebay_Item_ID": "131611834434",
         "ebay_product_name": "Wonder Core Smart Complete Body Workout, Green",
-        "ebay_list_price": 99.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/m/mQ5htPIJwjG-5JGwsbMtNYw/140.jpg",
-        "ebay_msrp": 139.99,
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Wonder Core Smart Body AB Exercise System Workout Fitness Train Home Gym w DVD",
         "Item_ID": "131611834434",
         "": "http://ebay.com/itm/131611834434",
@@ -1243,7 +1247,7 @@ var result = [
         "Sum_of_Buyer_Count": "30",
         "Sum_of_Defect_Rate": "0.04820936639118457",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "131611837030",
@@ -1299,10 +1303,11 @@ var result = [
     {
         "ebay_Item_ID": "131650222655",
         "ebay_product_name": "LG G Stylo LTE Android 5.7\" Smartphone works with Virgin Mobile - NEW",
-        "ebay_list_price": 99.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/m/m5OskzItdjWzV2vAPGsAxuw/140.jpg",
-        "ebay_msrp": 199.99,
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "LG G Stylo Android 5.7\" 4G LTE Smartphone for Virgin Mobile -",
         "Item_ID": "131650222655",
         "": "http://ebay.com/itm/131650222655",
@@ -1320,12 +1325,12 @@ var result = [
         "Sum_of_Buyer_Count": "82",
         "Sum_of_Defect_Rate": "0.02057919644035521",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "131660177976",
         "ebay_product_name": "Vizio E390i-B0/B1 39\" Full-Array LED Smart TV HDTV 1080p 120Hz WiFi 2014 Model",
-        "ebay_list_price": 284.99,
+        "ebay_list_price": 319.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/m3b4hmGgg6LcUOe58VeHGBA/140.jpg",
         "product_name": "Vizio E-Series E390i-B0 39\" 1080p HD Full Array LED Internet TV",
@@ -1345,14 +1350,16 @@ var result = [
         "Sum_of_Buyer_Count": "13",
         "Sum_of_Defect_Rate": "0.03532135376474479",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "131671560502",
         "ebay_product_name": "NEW V2 Silhouette CAMEO Digital Cutting Machine Vinyl Kit & tools FREE COVER",
-        "ebay_list_price": 239.95,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/m/mb8zQbe7rZacliy2NtlZGTA/140.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This listing was ended by the seller because the item is no longer available.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "V2 Silhouette CAMEO Digital Cutting Machine Vinyl Kit & tools COVER",
         "Item_ID": "131671560502",
         "": "http://ebay.com/itm/131671560502",
@@ -1370,7 +1377,7 @@ var result = [
         "Sum_of_Buyer_Count": "13",
         "Sum_of_Defect_Rate": "0.03126738053380214",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "131672287055",
@@ -1400,7 +1407,7 @@ var result = [
     {
         "ebay_Item_ID": "131679015081",
         "ebay_product_name": "Cuisinart CPC-600 1000W 6qt. Pressure Cooker Brushed Stainless Steel",
-        "ebay_list_price": 54.99,
+        "ebay_list_price": 49.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/m15aGupi7tNP_VHkbxGyvTg/140.jpg",
         "product_name": "Cuisinart CPC-600 1000W 6qt. Pressure Cooker Brushed Stainless Steel",
@@ -1420,14 +1427,16 @@ var result = [
         "Sum_of_Buyer_Count": "39",
         "Sum_of_Defect_Rate": "0.03126738053380214",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "131682069849",
         "ebay_product_name": "Samsung Galaxy S5 16GB SM-G900A (GSM Unlocked) Black, White, Gold Blue",
-        "ebay_list_price": 199.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/pict/1316820698494040_1.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Samsung Galaxy S5 16GB SM-G900A (GSM Unlocked) Black White Gold Blue",
         "Item_ID": "131682069849",
         "": "http://ebay.com/itm/131682069849",
@@ -1445,14 +1454,16 @@ var result = [
         "Sum_of_Buyer_Count": "37",
         "Sum_of_Defect_Rate": "0.02721816033970818",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "131685620189",
         "ebay_product_name": "NEW DEWALT DWX723 UNIVERSAL MITER SAW LEG STAND KIT FOR MITER SAWS SALE PRICE",
-        "ebay_list_price": 179.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/m/m1uHOYzfGd4FJZRhvJQfTlQ/140.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "DEWALT DWX723 Heavy Duty Compound Miter Saw Stand",
         "Item_ID": "131685620189",
         "": "http://ebay.com/itm/131685620189",
@@ -1470,7 +1481,7 @@ var result = [
         "Sum_of_Buyer_Count": "17",
         "Sum_of_Defect_Rate": "0.02832953748282258",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "140975810534",
@@ -1604,9 +1615,11 @@ var result = [
     {
         "ebay_Item_ID": "141490525697",
         "ebay_product_name": "Apple iPhone 5 64GB - Verizon - Clean ESN - Black or White FACTORY UNLOCKED!!",
-        "ebay_list_price": 183.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/pict/141490525697404000000001_1.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Apple iPhone 5 64GB - Verizon - Clean ESN - Black or White FACTORY UNLOCKED!!",
         "Item_ID": "141490525697",
         "": "http://ebay.com/itm/141490525697",
@@ -1624,16 +1637,14 @@ var result = [
         "Sum_of_Buyer_Count": "19",
         "Sum_of_Defect_Rate": "0.04557045405777647",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "141528024258",
         "ebay_product_name": "Apple iPhone 5s - 64GB (Factory Unlocked) Smartphone - Gray Silver Gold ",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_list_price": 294.88,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/141528024258404000000001_1.jpg",
         "product_name": "Apple iPhone 5s - 64GB (Factory Unlocked) Smartphone - Gray Silver Gold ",
         "Item_ID": "141528024258",
         "": "http://ebay.com/itm/141528024258",
@@ -1651,14 +1662,16 @@ var result = [
         "Sum_of_Buyer_Count": "9",
         "Sum_of_Defect_Rate": "0.04661525713222735",
         "check_product_name": "pass",
-        "check_list_price": "fail"
+        "check_list_price": "pass"
     },
     {
         "ebay_Item_ID": "141617379054",
         "ebay_product_name": "Samsung Galaxy Note 4 SM-N910V - 32GB - Verizon Smartphone - Black or White",
-        "ebay_list_price": 269.88,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/pict/141617379054404000000001_1.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Samsung Galaxy Note 4 SM-N910V - 32GB - Verizon Smartphone - Black or White",
         "Item_ID": "141617379054",
         "": "http://ebay.com/itm/141617379054",
@@ -1707,11 +1720,9 @@ var result = [
     {
         "ebay_Item_ID": "141650801109",
         "ebay_product_name": "HTC 6525 One M8 32GB Factory Unlocked Phone Gray - Silver - Gold - Red",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_list_price": 134.99,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/pict/141650801109404000000004_1.jpg",
         "product_name": "HTC 6525 One M8 32GB Factory Unlocked Phone Gray - Silver - Gold - Red",
         "Item_ID": "141650801109",
         "": "http://ebay.com/itm/141650801109",
@@ -1729,7 +1740,7 @@ var result = [
         "Sum_of_Buyer_Count": "30",
         "Sum_of_Defect_Rate": "0.04557045405777647",
         "check_product_name": "pass",
-        "check_list_price": "fail"
+        "check_list_price": "pass"
     },
     {
         "ebay_Item_ID": "141660956261",
@@ -1785,9 +1796,11 @@ var result = [
     {
         "ebay_Item_ID": "141708630407",
         "ebay_product_name": "Apple iPhone 6 - 64GB (AT&T) Smartphone - Space Gray - Gold - Silver",
-        "ebay_list_price": 419.88,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/141708630407404000000001_1.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Apple iPhone 6 - 64GB (AT&T) Smartphone - Space Gray - Gold - Silver",
         "Item_ID": "141708630407",
         "": "http://ebay.com/itm/141708630407",
@@ -1805,16 +1818,14 @@ var result = [
         "Sum_of_Buyer_Count": "23",
         "Sum_of_Defect_Rate": "0.04661525713222735",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "141708646451",
         "ebay_product_name": "Apple iPhone 6 - 128GB (AT&T) Smartphone - Space Gray -Silver - Gold",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_list_price": 469.88,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/141708646451404000000002_1.jpg",
         "product_name": "Apple iPhone 6 - 128GB (AT&T) Smartphone - Space Gray -Silver - Gold",
         "Item_ID": "141708646451",
         "": "http://ebay.com/itm/141708646451",
@@ -1832,14 +1843,14 @@ var result = [
         "Sum_of_Buyer_Count": "5",
         "Sum_of_Defect_Rate": "0.04661525713222735",
         "check_product_name": "pass",
-        "check_list_price": "fail"
+        "check_list_price": "pass"
     },
     {
         "ebay_Item_ID": "141714555440",
         "ebay_product_name": "Apple iPhone 5C - 16gb - Factory GSM Unlocked Smartphone (B)",
         "ebay_list_price": 152.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/pict/141714555440404000000003_1.jpg",
+        "galleryURL": "http://thumbs1.ebaystatic.com/pict/141714555440404000000002_1.jpg",
         "product_name": "Apple iPhone 5C - 16gb - Factory GSM Unlocked Smartphone (B)",
         "Item_ID": "141714555440",
         "": "http://ebay.com/itm/141714555440",
@@ -1912,11 +1923,9 @@ var result = [
     {
         "ebay_Item_ID": "141764712234",
         "ebay_product_name": "Apple iPhone 5s - 32GB - Verizon (Factory Unlocked) Smartphone Gold Gray Silver ",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_list_price": 249.88,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/141764712234404000000001_1.jpg",
         "product_name": "Apple iPhone 5s - 32GB - Verizon (Factory Unlocked) Smartphone Gold Gray Silver ",
         "Item_ID": "141764712234",
         "": "http://ebay.com/itm/141764712234",
@@ -1934,7 +1943,7 @@ var result = [
         "Sum_of_Buyer_Count": "10",
         "Sum_of_Defect_Rate": "0.04661525713222735",
         "check_product_name": "pass",
-        "check_list_price": "fail"
+        "check_list_price": "pass"
     },
     {
         "ebay_Item_ID": "141793501939",
@@ -2069,11 +2078,9 @@ var result = [
     {
         "ebay_Item_ID": "141847308666",
         "ebay_product_name": "Apple iPhone 5s - 32GB (AT&T) Smartphone - Gold - Silver - Gray",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_list_price": 219.88,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/141847308666404000000001_1.jpg",
         "product_name": "Apple iPhone 5s - 32GB (AT&T) Smartphone - Gold - Silver - Gray",
         "Item_ID": "141847308666",
         "": "http://ebay.com/itm/141847308666",
@@ -2091,7 +2098,7 @@ var result = [
         "Sum_of_Buyer_Count": "13",
         "Sum_of_Defect_Rate": "0.04661525713222735",
         "check_product_name": "pass",
-        "check_list_price": "fail"
+        "check_list_price": "pass"
     },
     {
         "ebay_Item_ID": "141848154559",
@@ -2176,9 +2183,9 @@ var result = [
     {
         "ebay_Item_ID": "141849834968",
         "ebay_product_name": "NEW!!!  OtterBox Symmetry Series Case For iPhone 6 & iPhone 6s",
-        "ebay_list_price": 21.95,
+        "ebay_list_price": 24.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/pict/141849834968404000000002_2.jpg",
+        "galleryURL": "http://thumbs1.ebaystatic.com/pict/141849834968404000000005_1.jpg",
         "ebay_msrp": 39.99,
         "product_name": "NEW!!!  OtterBox Symmetry Series Case For iPhone 6 & iPhone 6s",
         "Item_ID": "141849834968",
@@ -2197,7 +2204,7 @@ var result = [
         "Sum_of_Buyer_Count": "112",
         "Sum_of_Defect_Rate": "0.01444342324627025",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "141858996698",
@@ -2279,10 +2286,11 @@ var result = [
     {
         "ebay_Item_ID": "151593468963",
         "ebay_product_name": "Citizen Eco Drive Stainless Steel Mens Watch AT9010-52E",
-        "ebay_list_price": 299.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/m/m_VCOyA2VkfhQyLL-qb-i9Q/140.jpg",
-        "ebay_msrp": 595,
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Citizen World A-T Eco-Drive 26 Time Zones AT9010-52E Wrist Watch For Men",
         "Item_ID": "151593468963",
         "": "http://ebay.com/itm/151593468963",
@@ -2300,7 +2308,7 @@ var result = [
         "Sum_of_Buyer_Count": "7",
         "Sum_of_Defect_Rate": "0.01801846768155728",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "151651459667",
@@ -2463,7 +2471,7 @@ var result = [
         "ebay_product_name": "Samsung Galaxy S6 Edge SM-G925A 64GB Smartphone for AT&T Sapphire White or Gold",
         "ebay_list_price": 439.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/pict/151919701461404000000001_1.jpg",
+        "galleryURL": "http://thumbs2.ebaystatic.com/pict/151919701461404000000002_1.jpg",
         "ebay_msrp": 759.99,
         "product_name": "Samsung Galaxy S6 Edge SM-G925A 64GB Smartphone for AT&T Sapphire White or Gold",
         "Item_ID": "151919701461",
@@ -2512,10 +2520,9 @@ var result = [
     {
         "ebay_Item_ID": "151931175889",
         "ebay_product_name": "Samsung Gear VR Innovator Edition Virtural Reality Headset for Galaxy Note 4",
-        "ebay_list_price": 149.99,
+        "ebay_list_price": 199.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/mUziSbh9tUwYL1hTDS1dciA/140.jpg",
-        "ebay_msrp": 169.99,
         "product_name": "Samsung Gear VR Note 4 SM-R320 Innovator Edition Virtual Reality Oculus Rift",
         "Item_ID": "151931175889",
         "": "http://ebay.com/itm/151931175889",
@@ -2533,16 +2540,14 @@ var result = [
         "Sum_of_Buyer_Count": "41",
         "Sum_of_Defect_Rate": "0.03649597357010118",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "161404125508",
         "ebay_product_name": "Maxxis  MT-762 Bighorn 255/85R16 TL28394000",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_list_price": 182.88,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mUveGGvIf-9j0eOwsqJOROA/140.jpg",
         "product_name": "Maxxis MT-762 Bighorn 255 85R16 TL28394000",
         "Item_ID": "161404125508",
         "": "http://ebay.com/itm/161404125508",
@@ -2560,7 +2565,7 @@ var result = [
         "Sum_of_Buyer_Count": "3",
         "Sum_of_Defect_Rate": "0.02947097189789838",
         "check_product_name": "fail",
-        "check_list_price": "fail"
+        "check_list_price": "pass"
     },
     {
         "ebay_Item_ID": "161473375746",
@@ -2615,9 +2620,11 @@ var result = [
     {
         "ebay_Item_ID": "161527428399",
         "ebay_product_name": "Apple iPhone 4  16GB  Black or White Verizon or Page Plus MD146LL/A",
-        "ebay_list_price": 44.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/161527428399404000000001_1.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Apple iPhone 4  16GB  Black or White Verizon or Page Plus MD146LL/A",
         "Item_ID": "161527428399",
         "": "http://ebay.com/itm/161527428399",
@@ -2635,7 +2642,7 @@ var result = [
         "Sum_of_Buyer_Count": "62",
         "Sum_of_Defect_Rate": "0.04557045405777647",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "161532752887",
@@ -2818,9 +2825,9 @@ var result = [
     {
         "ebay_Item_ID": "161770166670",
         "ebay_product_name": "Apple iPhone 5c - 32GB (Unlocked) Smartphone - White Blue Green Pink Yellow",
-        "ebay_list_price": 179.99,
+        "ebay_list_price": 174.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/pict/161770166670404000000004_1.jpg",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/161770166670404000000002_1.jpg",
         "product_name": "Apple iPhone 5c - 32GB (Unlocked) Smartphone - White Blue Green Pink Yellow",
         "Item_ID": "161770166670",
         "": "http://ebay.com/itm/161770166670",
@@ -2838,7 +2845,7 @@ var result = [
         "Sum_of_Buyer_Count": "14",
         "Sum_of_Defect_Rate": "0.04557045405777647",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "161808703050",
@@ -2868,7 +2875,7 @@ var result = [
     {
         "ebay_Item_ID": "161846419842",
         "ebay_product_name": "Canon EOS 700D / T5I Rebel  18.0 MP Digital SLR DSLR Camera Body - BRAND NEW ",
-        "ebay_list_price": 392.2,
+        "ebay_list_price": 390.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mt1pTJPnYTzXKRXz60jOGAA/140.jpg",
         "product_name": "Canon EOS Rebel T5i / 700D 18.0 MP Digital SLR Camera - Black (Body Only)",
@@ -2888,7 +2895,7 @@ var result = [
         "Sum_of_Buyer_Count": "9",
         "Sum_of_Defect_Rate": "0.02850992028859021",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "161846419859",
@@ -2943,7 +2950,7 @@ var result = [
     {
         "ebay_Item_ID": "171445967205",
         "ebay_product_name": "NEW Nikon D5200 DSLR Camera w/ AF-S NIKKOR 18-55mm f/3.5-5.6G VR II DX Lens Kit",
-        "ebay_list_price": 412.34,
+        "ebay_list_price": 418.7,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/mFn5kYZJHrablofBo3s_acA/140.jpg",
         "ebay_msrp": 604.2,
@@ -2964,7 +2971,7 @@ var result = [
         "Sum_of_Buyer_Count": "2",
         "Sum_of_Defect_Rate": "0.02850992028859021",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "171446074828",
@@ -2997,7 +3004,7 @@ var result = [
         "ebay_product_name": "DuroMax 10000 Watt Portable Gas Electric Start Generator RV Home Standby Camping",
         "ebay_list_price": 999.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/m/mqLW5yORk0psbQ9QhPWB0-w/140.jpg",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mxkZ3xxxspuRSZrzCNlxH0g/140.jpg",
         "ebay_msrp": 1599.99,
         "product_name": "DuroMax XP10000E 10000 Watt 16 HP Generator",
         "Item_ID": "171505582466",
@@ -3023,7 +3030,7 @@ var result = [
         "ebay_product_name": "DuroMax XP4400 Portable Gas Powered Recoil Start Generator - RV Home Backup",
         "ebay_list_price": 349.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/m/mpwYLrAsaPAd5nF7_Z-X8lg/140.jpg",
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/mm06jI4P7KEtaLUbcieJ1gg/140.jpg",
         "ebay_msrp": 599.99,
         "product_name": "DuroMax XP4400 4400 Watt 7 HP Generator",
         "Item_ID": "171522572489",
@@ -3124,7 +3131,7 @@ var result = [
     {
         "ebay_Item_ID": "171838677560",
         "ebay_product_name": "LG G Flex2 H950 Unlocked Platinum Silver 4G LTE GSM (Latest Model)",
-        "ebay_list_price": 249.99,
+        "ebay_list_price": 269.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/myRUxIDGWON7YVB6Z_JfbBg/140.jpg",
         "product_name": "LG G Flex2 H950 Platinum Silver at&t Unlocked 4G LTE Model Curved OLED",
@@ -3144,7 +3151,7 @@ var result = [
         "Sum_of_Buyer_Count": "8",
         "Sum_of_Defect_Rate": "0.04987156588638472",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "171899836262",
@@ -3174,7 +3181,7 @@ var result = [
     {
         "ebay_Item_ID": "171956743651",
         "ebay_product_name": "Canon EOS 6D Body Digital SLR Camera (BLACK) - BRAND NEW ",
-        "ebay_list_price": 1155.4,
+        "ebay_list_price": 1154.34,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/m/maD7lrwt_FPYjJDDhnmmorw/140.jpg",
         "product_name": "Canon EOS 6D 20.2 MP Digital SLR Camera - Black (Body Only) (8035B002)",
@@ -3194,11 +3201,11 @@ var result = [
         "Sum_of_Buyer_Count": "8",
         "Sum_of_Defect_Rate": "0.02850992028859021",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "171988240387",
-        "ebay_product_name": "Nikon D750 24..3 MP DSLR Camera Body Only + Screen Protector - HOLIDAY SALE",
+        "ebay_product_name": "Nikon D750 24.3 MP DSLR Camera Body Only + Screen Protector - NEW",
         "ebay_list_price": 1464.39,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/m/mIYU0z8NKTBoT6fFzy2W8Rw/140.jpg",
@@ -3249,7 +3256,7 @@ var result = [
     {
         "ebay_Item_ID": "172014985267",
         "ebay_product_name": "Lenovo Yoga 3 Pro, 13.3\" QHD, Intel Core M-5Y71, 8GB RAM, 512GB, Win 10 - Silver",
-        "ebay_list_price": 849,
+        "ebay_list_price": 899,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/m/mD-mwy2-hBbXkTRy-3PXjAQ/140.jpg",
         "ebay_msrp": 1649.99,
@@ -3270,15 +3277,16 @@ var result = [
         "Sum_of_Buyer_Count": "1",
         "Sum_of_Defect_Rate": "0.04866989117291415",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "172016199280",
         "ebay_product_name": "Blue Microphones Bluebird/Scarlett 2i2 Bundle",
-        "ebay_list_price": 299.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/m/mgB77mrOkjKO5UabJtAjYVg/140.jpg",
-        "ebay_msrp": 499.98,
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This listing was ended by the seller because the item is no longer available.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Blue Microphones Bluebird/Scarlett 2i2 Bundle",
         "Item_ID": "172016199280",
         "": "http://ebay.com/itm/172016199280",
@@ -3296,14 +3304,16 @@ var result = [
         "Sum_of_Buyer_Count": "8",
         "Sum_of_Defect_Rate": "0.0112811689122622",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "172046305010",
         "ebay_product_name": "LEGO Star Wars Millennium Falcon 75105",
-        "ebay_list_price": 149.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/m/mai4WVIlwMo64FrKWN58xdQ/140.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This listing was ended by the seller because the item is no longer available.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Lego STAR WARS TFA Millennium Falcon 75105 The Force Awakens Building Kit",
         "Item_ID": "172046305010",
         "": "http://ebay.com/itm/172046305010",
@@ -3321,7 +3331,7 @@ var result = [
         "Sum_of_Buyer_Count": "13",
         "Sum_of_Defect_Rate": "0.03909750438849539",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "181330425458",
@@ -3351,7 +3361,7 @@ var result = [
     {
         "ebay_Item_ID": "181442940824",
         "ebay_product_name": "Nikon 35mm f/1.8G AF-S DX Lens for Nikon Digital SLR Cameras Brand New",
-        "ebay_list_price": 159.95,
+        "ebay_list_price": 164.95,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/mTzXxCh0e1fkvPTDaYB2-Pg/140.jpg",
         "ebay_msrp": 299.95,
@@ -3505,7 +3515,7 @@ var result = [
     {
         "ebay_Item_ID": "181928464838",
         "ebay_product_name": "Motorola Google Nexus 6 XT1103 - 32GB - Unlocked (Midnight Blue) - Mint",
-        "ebay_list_price": 254.98,
+        "ebay_list_price": 249.98,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mxI_cgnMjD5WS5jmWWl_c6A/140.jpg",
         "product_name": "Nexus 6 XT1103 (Latest Model) - 32GB - Midnight Blue (Unlocked) Smartphone",
@@ -3525,7 +3535,7 @@ var result = [
         "Sum_of_Buyer_Count": "9",
         "Sum_of_Defect_Rate": "0.05520136011050898",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "190716062892",
@@ -3580,11 +3590,9 @@ var result = [
     {
         "ebay_Item_ID": "191132884570",
         "ebay_product_name": "Zmodo 4CH NVR 720P HD IP Network Home Surveillance Security Camera System 1TB",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_list_price": 229.98,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mCsOBDGo3vz87dfm4x5Bt8g/140.jpg",
         "product_name": "Zmodo 4CH NVR 720P HD IP Network Home Surveillance Security Camera System 1TB",
         "Item_ID": "191132884570",
         "": "http://ebay.com/itm/191132884570",
@@ -3602,7 +3610,7 @@ var result = [
         "Sum_of_Buyer_Count": "14",
         "Sum_of_Defect_Rate": "0.0255915338280808",
         "check_product_name": "pass",
-        "check_list_price": "fail"
+        "check_list_price": "pass"
     },
     {
         "ebay_Item_ID": "191606315542",
@@ -3657,7 +3665,7 @@ var result = [
     {
         "ebay_Item_ID": "191692263383",
         "ebay_product_name": "HPI Savage XS Flux 4WD Waterproof R/C Truck 2.4GHz RTR 1/10 106571",
-        "ebay_list_price": 287.95,
+        "ebay_list_price": 299.95,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/m/mgZBk2pzmPJ-yiI9VGaPP1Q/140.jpg",
         "ebay_msrp": 539,
@@ -3678,7 +3686,7 @@ var result = [
         "Sum_of_Buyer_Count": "5",
         "Sum_of_Defect_Rate": "0.0135417193289085",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "191714822231",
@@ -3710,11 +3718,9 @@ var result = [
     {
         "ebay_Item_ID": "191715897020",
         "ebay_product_name": "Asus - ZenWatch 2 Smartwatch 49mm Stainless Steel - Gunmetal/Brown Leather",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_list_price": 149.99,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mtuAr-h3k4_dMUHtoZP591Q/140.jpg",
         "product_name": "Asus ZenWatch 2 Smartwatch 49mm Stainless Steel - Gunmetal Brown Leather Android",
         "Item_ID": "191715897020",
         "": "http://ebay.com/itm/191715897020",
@@ -3732,12 +3738,12 @@ var result = [
         "Sum_of_Buyer_Count": "17",
         "Sum_of_Defect_Rate": "0.07092965699305186",
         "check_product_name": "fail",
-        "check_list_price": "fail"
+        "check_list_price": "pass"
     },
     {
         "ebay_Item_ID": "191723376704",
         "ebay_product_name": "Westinghouse - 50\" Class (50\" Diag.) - LED - 1080p - HDTV - Black",
-        "ebay_list_price": 349.99,
+        "ebay_list_price": 379.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/meNFytS6WBvgmZ9FSYPvoeQ/140.jpg",
         "ebay_msrp": 399.99,
@@ -3758,12 +3764,12 @@ var result = [
         "Sum_of_Buyer_Count": "9",
         "Sum_of_Defect_Rate": "0.07092965699305186",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "191724400601",
         "ebay_product_name": "HTC Desire EYE - 16GB 5.2\" GSM AT&T Unlocked Android Dual 13MP Camera Waterproof",
-        "ebay_list_price": 179.99,
+        "ebay_list_price": 199.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/pict/191724400601404000000001_1.jpg",
         "product_name": "HTC Desire EYE - 16GB 5.2\" GSM AT&T Unlocked Android Dual 13MP Camera Waterproof",
@@ -3783,15 +3789,16 @@ var result = [
         "Sum_of_Buyer_Count": "32",
         "Sum_of_Defect_Rate": "0.05656807587873042",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "191744865545",
         "ebay_product_name": "[609048] NIKE AIR MAX 95 MENS 2015 RUNNING SNEAKERS PICK SIZE & COLOR",
-        "ebay_list_price": 69.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/pict/191744865545404000000006_1.jpg",
-        "ebay_msrp": 170,
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This listing was ended by the seller because the item is no longer available.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "[609048] NIKE AIR MAX 95 MENS 2015 RUNNING SNEAKERS PICK SIZE & COLOR",
         "Item_ID": "191744865545",
         "": "http://ebay.com/itm/191744865545",
@@ -3809,7 +3816,7 @@ var result = [
         "Sum_of_Buyer_Count": "21",
         "Sum_of_Defect_Rate": "0.02511943288642318",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "191747512283",
@@ -3970,7 +3977,7 @@ var result = [
     {
         "ebay_Item_ID": "191768996631",
         "ebay_product_name": "Leather Case Cover RCA Viking Pro 10.1 inch 10.1\" Detachable 2-in-1 Tablet PC",
-        "ebay_list_price": 12.99,
+        "ebay_list_price": 11.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/pict/191768996631404000000001_1.jpg",
         "product_name": "Leather Case Cover RCA Viking Pro 10.1 inch 10.1\" Detachable 2-in-1 Tablet PC",
@@ -3990,7 +3997,7 @@ var result = [
         "Sum_of_Buyer_Count": "140",
         "Sum_of_Defect_Rate": "0.01539972325135027",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "201221338226",
@@ -4096,7 +4103,7 @@ var result = [
     {
         "ebay_Item_ID": "201443445981",
         "ebay_product_name": "Sharp - 50\" Class (49.7\" Diag.) - LED - 1080p - Smart - HDTV Roku TV - Black",
-        "ebay_list_price": 429.99,
+        "ebay_list_price": 399.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/mQj6vOyNsH6hq8sYI7QrvCw/140.jpg",
         "ebay_msrp": 499.99,
@@ -4117,11 +4124,11 @@ var result = [
         "Sum_of_Buyer_Count": "57",
         "Sum_of_Defect_Rate": "0.07092965699305186",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "201457102426",
-        "ebay_product_name": "LG Electronics 55EG9100 55\" Class 1080p Smart Curved OLED 3D TV with webOS 2.0",
+        "ebay_product_name": "LG Electronics 55EG9100  1080p Smart Curved OLED 3D TV with webOS 2.0 BUNDLE !!!",
         "ebay_list_price": 1629.52,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mD9Qp_v1p2SWLDLnPfrpZjA/140.jpg",
@@ -4252,7 +4259,6 @@ var result = [
         "ebay_list_price": 39.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/m/m6MW-MgH3yQvkfARgvTX3yQ/140.jpg",
-        "ebay_msrp": 59.99,
         "product_name": "AT&T GoPhone - ZTE Maven 4G with 8GB Memory No-Contract Cell Phone - Blue",
         "Item_ID": "201482493967",
         "": "http://ebay.com/itm/201482493967",
@@ -4275,9 +4281,9 @@ var result = [
     {
         "ebay_Item_ID": "201483780246",
         "ebay_product_name": "Amazon Kindle Fire 7 7\" 5th Gen 2015 Light Weight Shock Proof Kids Case Cover",
-        "ebay_list_price": 19.59,
+        "ebay_list_price": 17.59,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/pict/201483780246404000000006_1.jpg",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/201483780246404000000005_1.jpg",
         "product_name": "Amazon Kindle Fire 7 7\" 5th Gen 2015 Light Weight Shock Proof Kids Case Cover",
         "Item_ID": "201483780246",
         "": "http://ebay.com/itm/201483780246",
@@ -4295,7 +4301,7 @@ var result = [
         "Sum_of_Buyer_Count": "82",
         "Sum_of_Defect_Rate": "0.01539972325135027",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "201485294775",
@@ -4326,7 +4332,7 @@ var result = [
     {
         "ebay_Item_ID": "221475972645",
         "ebay_product_name": "LT295/55R20 / 10 Ply Nitto Trail Grappler M/T 120 Q Mud Tire (1)",
-        "ebay_list_price": 330.99,
+        "ebay_list_price": 323.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/mlB-g9-rJvS9FgxDo1yZ88A/140.jpg",
         "product_name": "20x9 BMF BATL 08 468B 8x6.5 00 125.2 LT295 55R20 Nitto Trail Grappler Wheels &",
@@ -4346,12 +4352,12 @@ var result = [
         "Sum_of_Buyer_Count": "4",
         "Sum_of_Defect_Rate": "0.0115307549809081",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "221655627212",
         "ebay_product_name": "35X12.50R17 / 10 Ply Nitto Trail Grappler M/T 121 Q Mud Tire (1)",
-        "ebay_list_price": 307.99,
+        "ebay_list_price": 297.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/mlB-g9-rJvS9FgxDo1yZ88A/140.jpg",
         "product_name": "4 35x12.50R17 Nitto Tires Trail Grappler M T LT 35 12.50 17 Tire 10ply R17",
@@ -4371,7 +4377,7 @@ var result = [
         "Sum_of_Buyer_Count": "5",
         "Sum_of_Defect_Rate": "0.0115307549809081",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "221720113574",
@@ -4429,6 +4435,7 @@ var result = [
         "ebay_list_price": 59.95,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/pict/221793503339404000000002_1.jpg",
+        "ebay_msrp": 149.99,
         "product_name": "Garmin Vivosmart Activity Tracker Fitness Band w/Smart Notification -Multi Color",
         "Item_ID": "221793503339",
         "": "http://ebay.com/itm/221793503339",
@@ -4477,9 +4484,11 @@ var result = [
     {
         "ebay_Item_ID": "221895110125",
         "ebay_product_name": "Apple iPhone 6 - 128GB - (Factory Unlocked) Smartphone - Gold Silver Gray",
-        "ebay_list_price": 479.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/pict/221895110125404000000003_1.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Apple iPhone 6 - 128GB - (Factory Unlocked) Smartphone - Gold Silver Gray",
         "Item_ID": "221895110125",
         "": "http://ebay.com/itm/221895110125",
@@ -4497,7 +4506,7 @@ var result = [
         "Sum_of_Buyer_Count": "10",
         "Sum_of_Defect_Rate": "0.05656807587873042",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "221901087716",
@@ -4528,9 +4537,11 @@ var result = [
     {
         "ebay_Item_ID": "221930336775",
         "ebay_product_name": "Samsung Galaxy Note 3 SM-N900V 32GB Android Verizon 4G LTE 13.0MP White / Black",
-        "ebay_list_price": 164.77,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/221930336775404000000002_1.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Samsung Galaxy Note 3 SM-N900V 32GB Android Verizon 4G LTE 13.0MP White / Black",
         "Item_ID": "221930336775",
         "": "http://ebay.com/itm/221930336775",
@@ -4548,7 +4559,7 @@ var result = [
         "Sum_of_Buyer_Count": "18",
         "Sum_of_Defect_Rate": "0.05656807587873042",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "221932209195",
@@ -4578,10 +4589,10 @@ var result = [
     },
     {
         "ebay_Item_ID": "221950977883",
-        "ebay_product_name": "LG G Flex2 LS996 - 32GB 5.5\"  Sprint + GSM Unlocked Android Phone ",
-        "ebay_list_price": 209.99,
+        "ebay_product_name": "LG G Flex2 LS996 - 32GB 5.5\" GSM Unlocked Android Smartphone ",
+        "ebay_list_price": 189.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/221950977883404000000001_1.jpg",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/221950977883404000000002_1.jpg",
         "product_name": "LG G Flex2 LS996 - 32GB 5.5\"  Sprint + GSM Unlocked Android Phone ",
         "Item_ID": "221950977883",
         "": "http://ebay.com/itm/221950977883",
@@ -4598,8 +4609,8 @@ var result = [
         "Sum_of_Seller_rating": "0.9816430534432615",
         "Sum_of_Buyer_Count": "45",
         "Sum_of_Defect_Rate": "0.05656807587873042",
-        "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "221962443272",
@@ -4629,7 +4640,7 @@ var result = [
     {
         "ebay_Item_ID": "221963411322",
         "ebay_product_name": "Nike Air Jordan 11 Retro XI 72-10 72 10 Black Red White 378037-002 Sz: 3.5y-16",
-        "ebay_list_price": 239.95,
+        "ebay_list_price": 369.95,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/pict/2219634113224040_2.jpg",
         "product_name": "Nike Air Jordan 11 Retro XI 72-10 72 10 Black Red White 378037-002 Sz: 3.5y-16",
@@ -4654,10 +4665,11 @@ var result = [
     {
         "ebay_Item_ID": "221975758641",
         "ebay_product_name": "New FitBit Charge Wireless Activity + Sleep Tracker Wristband - Slate/Small",
-        "ebay_list_price": 97.95,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/m/mp7X_oWft5Dsj7H1T_dsdPw/140.jpg",
-        "ebay_msrp": 129.95,
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Fitbit FB404SLS Charge Small Slate Wireless Activity Tracker Sleep Wristband",
         "Item_ID": "221975758641",
         "": "http://ebay.com/itm/221975758641",
@@ -4675,14 +4687,16 @@ var result = [
         "Sum_of_Buyer_Count": "32",
         "Sum_of_Defect_Rate": "0.03088611776364687",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "221982900879",
         "ebay_product_name": "Nike Air Jordan Retro 4 IV White Black Gym Red 308497-106 Alternate Sz: 7.5 - 14",
-        "ebay_list_price": 219.95,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/2219829008794040_1.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This listing has ended. ",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Nike Air Jordan Retro 4 IV White Black Gym Red 308497-106 Alternate Sz: 7.5 - 14",
         "Item_ID": "221982900879",
         "": "http://ebay.com/itm/221982900879",
@@ -4700,7 +4714,7 @@ var result = [
         "Sum_of_Buyer_Count": "12",
         "Sum_of_Defect_Rate": "0.02085361895488478",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "230801203533",
@@ -4731,7 +4745,7 @@ var result = [
     {
         "ebay_Item_ID": "231136827105",
         "ebay_product_name": "New Catalytic Converter Silverado Yukon Full Size Truck Suburban Chevy 1999-2007",
-        "ebay_list_price": 233.4,
+        "ebay_list_price": 238.09,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/mquLCiOq6L68e-fqI2P6oEw/140.jpg",
         "product_name": "New Catalytic Converter Silverado Yukon Full Size Truck Suburban Chevy 1999-2007",
@@ -4751,7 +4765,7 @@ var result = [
         "Sum_of_Buyer_Count": "15",
         "Sum_of_Defect_Rate": "0.03071329450443415",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "231326982694",
@@ -4784,7 +4798,7 @@ var result = [
         "ebay_product_name": "Samsung Galaxy S5 SM-G900A 16GB Android AT&T 4G LTE GSM UNLOCKED Cell Phone (A+)",
         "ebay_list_price": 239.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/231577624399404000000001_1.jpg",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/231577624399404000000002_1.jpg",
         "product_name": "Samsung Galaxy S5 SM-G900A 16GB Android AT&T 4G LTE GSM UNLOCKED Cell Phone (A+)",
         "Item_ID": "231577624399",
         "": "http://ebay.com/itm/231577624399",
@@ -4861,10 +4875,11 @@ var result = [
     {
         "ebay_Item_ID": "231668272723",
         "ebay_product_name": "Tree Stand Climber Climbing Hunting Deer Bow Game Hunt Portable 300lb",
-        "ebay_list_price": 99.25,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/m/mo7qlownIqtKyqN7-c9z1Aw/140.jpg",
-        "ebay_msrp": 239.99,
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Tree Stand Climber Climbing Hunting Deer Bow Game Hunt Portable 300lb",
         "Item_ID": "231668272723",
         "": "http://ebay.com/itm/231668272723",
@@ -4882,14 +4897,14 @@ var result = [
         "Sum_of_Buyer_Count": "22",
         "Sum_of_Defect_Rate": "0.02956221116873038",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "231675769269",
         "ebay_product_name": "Apple iPad Air 2 9.7\" Verizon AT&T T-Mobile 128GB WiFi + 4G LTE UNLOCKED Tablet",
         "ebay_list_price": 549.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/pict/231675769269404000000001_1.jpg",
+        "galleryURL": "http://thumbs2.ebaystatic.com/pict/231675769269404000000002_1.jpg",
         "product_name": "Apple iPad Air 2 9.7\" Verizon AT&T T-Mobile 128GB WiFi + 4G LTE UNLOCKED Tablet",
         "Item_ID": "231675769269",
         "": "http://ebay.com/itm/231675769269",
@@ -4914,7 +4929,7 @@ var result = [
         "ebay_product_name": "Apple iPad mini 3 A1600 7.9\" Retina Display 64GB WiFi + 4G LTE UNLOCKED Tablet",
         "ebay_list_price": 399.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/231675772051404000000002_1.jpg",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/231675772051404000000003_1.jpg",
         "product_name": "Apple iPad mini 3 A1600 7.9\" Retina Display 64GB WiFi + 4G LTE UNLOCKED Tablet",
         "Item_ID": "231675772051",
         "": "http://ebay.com/itm/231675772051",
@@ -4937,9 +4952,11 @@ var result = [
     {
         "ebay_Item_ID": "231732745890",
         "ebay_product_name": "Vizio E28h-C1 28\" Full Array LED Smart WiFI HDTV w/ Internet Apps",
-        "ebay_list_price": 149.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/m/m5-22CrRAuZhMnBH7C3cFng/140.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Vizio E-Series E28HC1 28\" 720p HD Internet TV",
         "Item_ID": "231732745890",
         "": "http://ebay.com/itm/231732745890",
@@ -4957,7 +4974,7 @@ var result = [
         "Sum_of_Buyer_Count": "16",
         "Sum_of_Defect_Rate": "0.0526508226691042",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "231772112351",
@@ -5168,11 +5185,10 @@ var result = [
     {
         "ebay_Item_ID": "252155795749",
         "ebay_product_name": "Turtle Beach Ear Force Stealth 500X Wireless DTS 7.1 Gaming Headset for Xbox One",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_list_price": 149.95,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/mc9yk6LYk7apOZlp1q7xioA/140.jpg",
+        "ebay_msrp": 229.95,
         "product_name": "Turtle Beach Ear Force Stealth 500X Wireless DTS 7.1 Gaming Headset for Xbox One",
         "Item_ID": "252155795749",
         "": "http://ebay.com/itm/252155795749",
@@ -5220,7 +5236,7 @@ var result = [
     {
         "ebay_Item_ID": "252207751153",
         "ebay_product_name": "Microsoft Certified Xbox One 500GB Gaming Console - 4 GAME BUNDLE",
-        "ebay_list_price": 334.95,
+        "ebay_list_price": 329.95,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/meKj4W9grA5xyXIqXal_QFQ/140.jpg",
         "ebay_msrp": 599.95,
@@ -5241,12 +5257,12 @@ var result = [
         "Sum_of_Buyer_Count": "10",
         "Sum_of_Defect_Rate": "0.04460112651300284",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "252208042708",
         "ebay_product_name": "Microsoft Surface Pro 64GB or 128GB 10.6\" Intel Core i5 Wi-Fi 4GB DDR3 Windows 8",
-        "ebay_list_price": 294.99,
+        "ebay_list_price": 269.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/pict/2522080427084040_1.jpg",
         "product_name": "Microsoft Surface Pro 64GB or 128GB 10.6\" Intel Core i5 Wi-Fi 4GB DDR3 Windows 8",
@@ -5266,11 +5282,11 @@ var result = [
         "Sum_of_Buyer_Count": "9",
         "Sum_of_Defect_Rate": "0.044229761102374",
         "check_product_name": "pass",
-        "check_list_price": "fail"
+        "check_list_price": "pass"
     },
     {
         "ebay_Item_ID": "252214208812",
-        "ebay_product_name": "Apple iPhone 6 a1549 128GB Space Gray T-Mobile GSM Unlocked",
+        "ebay_product_name": "Apple iPhone 6 a1549 128GB Space Gray T-Mobile",
         "ebay_list_price": 469.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/mvKpFRp4cH55r6oObLN1JwA/140.jpg",
@@ -5324,10 +5340,11 @@ var result = [
     {
         "ebay_Item_ID": "271875949357",
         "ebay_product_name": "Apple AirPort Extreme Wireless Router 802.11ac WiFi ME918LL/A A1521 NEW OTHER",
-        "ebay_list_price": 109.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/m/mekWM7Aapmitr-30oNXzIrg/140.jpg",
-        "ebay_msrp": 199.99,
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Apple AirPort Extreme 1331 Mbps 3-Port Gigabit Wireless AC Router (ME918LL/A)",
         "Item_ID": "271875949357",
         "": "http://ebay.com/itm/271875949357",
@@ -5345,7 +5362,7 @@ var result = [
         "Sum_of_Buyer_Count": "45",
         "Sum_of_Defect_Rate": "0.04877053956415336",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "271876179198",
@@ -5477,10 +5494,11 @@ var result = [
     {
         "ebay_Item_ID": "271976089125",
         "ebay_product_name": "61 Key Electronic Music Electric Keyboard Piano - Silver",
-        "ebay_list_price": 49.59,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/m/mh6n7kQAMydvPx3LcwE97dg/140.jpg",
-        "ebay_msrp": 195.99,
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "61 Key Electronic Music Electric Keyboard Piano - Silver",
         "Item_ID": "271976089125",
         "": "http://ebay.com/itm/271976089125",
@@ -5498,7 +5516,7 @@ var result = [
         "Sum_of_Buyer_Count": "42",
         "Sum_of_Defect_Rate": "0.02277020472762547",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "271982385576",
@@ -5579,7 +5597,7 @@ var result = [
     {
         "ebay_Item_ID": "272064152004",
         "ebay_product_name": "Nikon D7000 16.2MP DSLR Camera with 3.0-Inch LCD (Body Only)",
-        "ebay_list_price": 379,
+        "ebay_list_price": 349,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/mhrN7eKgMHWPs_c2m32lXYA/140.jpg",
         "ebay_msrp": 799.99,
@@ -5600,7 +5618,7 @@ var result = [
         "Sum_of_Buyer_Count": "6",
         "Sum_of_Defect_Rate": "0.02426084883166428",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "281371966045",
@@ -5632,7 +5650,7 @@ var result = [
         "ebay_product_name": "Apple iPhone 5c - 16GB - Verizon (Unlocked) Smartphone - Blue Green Pink White",
         "ebay_list_price": 169.88,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/pict/281500983541404000000006_1.jpg",
+        "galleryURL": "http://thumbs2.ebaystatic.com/pict/281500983541404000000002_1.jpg",
         "product_name": "Apple iPhone 5c - 16GB - Verizon (Unlocked) Smartphone - Blue Green Pink White",
         "Item_ID": "281500983541",
         "": "http://ebay.com/itm/281500983541",
@@ -5682,7 +5700,7 @@ var result = [
     {
         "ebay_Item_ID": "281629040887",
         "ebay_product_name": "LEGO Minecraft Creative Adventures The Mine 21118",
-        "ebay_list_price": 91.99,
+        "ebay_list_price": 99.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/m/m5YoQJ9_1YuQG0hR2qcwwcg/140.jpg",
         "product_name": "LEGO 21118 Minecraft The Mine 922 Pieces- Building Set",
@@ -5702,7 +5720,7 @@ var result = [
         "Sum_of_Buyer_Count": "28",
         "Sum_of_Defect_Rate": "0.02989930981369764",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "281690228240",
@@ -5734,9 +5752,11 @@ var result = [
     {
         "ebay_Item_ID": "281691456830",
         "ebay_product_name": "Apple iPhone 6 - 16GB AT&T (Factory Unlocked) Smartphone Silver Space Gray Gold",
-        "ebay_list_price": 434.88,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/pict/281691456830404000000001_1.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Apple iPhone 6 - 16GB AT&T (Factory Unlocked) Smartphone Silver Space Gray Gold",
         "Item_ID": "281691456830",
         "": "http://ebay.com/itm/281691456830",
@@ -5754,14 +5774,16 @@ var result = [
         "Sum_of_Buyer_Count": "11",
         "Sum_of_Defect_Rate": "0.04661525713222735",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "281757332083",
         "ebay_product_name": "Apple iPhone 6 Plus - 64GB AT&T (Factory Unlocked) Smartphone",
-        "ebay_list_price": 499.88,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/281757332083404000000001_1.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Apple iPhone 6 Plus - 64GB AT&T (Factory Unlocked) Smartphone",
         "Item_ID": "281757332083",
         "": "http://ebay.com/itm/281757332083",
@@ -5779,14 +5801,14 @@ var result = [
         "Sum_of_Buyer_Count": "10",
         "Sum_of_Defect_Rate": "0.04661525713222735",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "281789449080",
         "ebay_product_name": "Apple iPhone 5s - 16GB (AT&T) Smartphone - Gold - Silver - Gray",
         "ebay_list_price": 209.88,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/pict/281789449080404000000003_1.jpg",
+        "galleryURL": "http://thumbs1.ebaystatic.com/pict/281789449080404000000002_1.jpg",
         "product_name": "Apple iPhone 5s - 16GB (AT&T) Smartphone - Gold - Silver - Gray",
         "Item_ID": "281789449080",
         "": "http://ebay.com/itm/281789449080",
@@ -5838,7 +5860,7 @@ var result = [
         "ebay_product_name": "Olympus E-P5 16.1 MP Mirrorless Camera with VF-4  Viewfinder and 17mm f/1.8 Lens",
         "ebay_list_price": 699,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/pict/281821078781404000000001_3.jpg",
+        "galleryURL": "http://thumbs2.ebaystatic.com/pict/281821078781404000000002_3.jpg",
         "ebay_msrp": 1249,
         "product_name": "Olympus E-P5 16.1 MP Mirrorless Camera with VF-4  Viewfinder and 17mm f/1.8 Lens",
         "Item_ID": "281821078781",
@@ -5862,11 +5884,9 @@ var result = [
     {
         "ebay_Item_ID": "281829358569",
         "ebay_product_name": "Apple iPhone 5s - 64GB - Verizon (Factory Unlocked) Smartphone Gold Gray Silver ",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_list_price": 279.88,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/pict/281829358569404000000002_1.jpg",
         "product_name": "Apple iPhone 5s - 64GB - Verizon (Factory Unlocked) Smartphone Gold Gray Silver ",
         "Item_ID": "281829358569",
         "": "http://ebay.com/itm/281829358569",
@@ -5884,7 +5904,7 @@ var result = [
         "Sum_of_Buyer_Count": "10",
         "Sum_of_Defect_Rate": "0.04661525713222735",
         "check_product_name": "pass",
-        "check_list_price": "fail"
+        "check_list_price": "pass"
     },
     {
         "ebay_Item_ID": "281850097558",
@@ -6071,9 +6091,11 @@ var result = [
     {
         "ebay_Item_ID": "291484668528",
         "ebay_product_name": "Apple iPhone 5c 16GB Verizon + GSM Unlocked Smartphone 16 GB 4G LTE Clean ESN",
-        "ebay_list_price": 169.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/pict/291484668528404000000001_1.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Apple iPhone 5c 16GB Verizon + GSM Unlocked Smartphone 16 GB 4G LTE Clean ESN",
         "Item_ID": "291484668528",
         "": "http://ebay.com/itm/291484668528",
@@ -6091,7 +6113,7 @@ var result = [
         "Sum_of_Buyer_Count": "21",
         "Sum_of_Defect_Rate": "0.04877053956415336",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "291500777071",
@@ -6122,7 +6144,7 @@ var result = [
     {
         "ebay_Item_ID": "291559290707",
         "ebay_product_name": "Pentair IntelliFlo 3 HP Variable Speed Pool Pump 4x160 VS-3050 with Timer 011018",
-        "ebay_list_price": 879.99,
+        "ebay_list_price": 869.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/m/myYl1gBn17ggO-jBrzg09og/140.jpg",
         "product_name": "Pentair IntelliFlo VS-3050 In-Ground 3HP Pool Pump",
@@ -6142,7 +6164,7 @@ var result = [
         "Sum_of_Buyer_Count": "7",
         "Sum_of_Defect_Rate": "0.03073997233748271",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "291567279728",
@@ -6222,11 +6244,12 @@ var result = [
     },
     {
         "ebay_Item_ID": "291620002866",
-        "ebay_product_name": "Apple Grade C Laptop MacBook Pro MC724LL/A-FR Intel Core i7 2620M (2.70 GHz) 4 G",
-        "ebay_list_price": 629.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/m/mgLf00Pwaz33dzdFCRO929A/140.jpg",
-        "ebay_msrp": 799.99,
+        "ebay_product_name": "Apple Notebook MC724LL/A-FR 13.3\" Intel Core i7 2620M(2.70GHz) 500GB HDD 4GB Mem",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Apple MacBook Pro A1278 13.3\" Laptop (February 2011) - Customized",
         "Item_ID": "291620002866",
         "": "http://ebay.com/itm/291620002866",
@@ -6244,7 +6267,7 @@ var result = [
         "Sum_of_Buyer_Count": "1",
         "Sum_of_Defect_Rate": "0.04254303310203304",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "291624674994",
@@ -6325,7 +6348,7 @@ var result = [
     {
         "ebay_Item_ID": "291629505339",
         "ebay_product_name": "Dell Inspiron i5558-5718SLV Intel i5 15.6\" FULL HD Touchscreen 8GB 1TB Win 10",
-        "ebay_list_price": 499.99,
+        "ebay_list_price": 509.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/m/mJOTB7N-k7lrZPHhxsFgWXw/140.jpg",
         "ebay_msrp": 699,
@@ -6346,14 +6369,14 @@ var result = [
         "Sum_of_Buyer_Count": "17",
         "Sum_of_Defect_Rate": "0.04843927603392498",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "291641140998",
         "ebay_product_name": "Otterbox Defender Phone Case for iPhone 6",
         "ebay_list_price": 24.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/pict/291641140998404000000010_1.jpg",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/291641140998404000000001_1.jpg",
         "product_name": "Otterbox Defender Phone Case for iPhone 6",
         "Item_ID": "291641140998",
         "": "http://ebay.com/itm/291641140998",
@@ -6376,7 +6399,7 @@ var result = [
     {
         "ebay_Item_ID": "291650136693",
         "ebay_product_name": "VIZIO S4251W-B4 5.1 Sound Bar Speaker - Wireless Speaker(s) - Black - 40 Hz - 20",
-        "ebay_list_price": 203.35,
+        "ebay_list_price": 205.89,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/m4RqFtMAldgY60RS9-yZfZQ/140.jpg",
         "product_name": "Vizio S4251W-B4 Speaker System",
@@ -6479,7 +6502,7 @@ var result = [
     {
         "ebay_Item_ID": "300788562674",
         "ebay_product_name": "100 LP Premium Record Album Mailers Book Box Variable Depth Laser Disc Mailers",
-        "ebay_list_price": 46.75,
+        "ebay_list_price": 46.25,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mzmLQ0sxauLrREmSjfNyS7Q/140.jpg",
         "ebay_msrp": 99.96,
@@ -6500,7 +6523,7 @@ var result = [
         "Sum_of_Buyer_Count": "90",
         "Sum_of_Defect_Rate": "0.007611228584991154",
         "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
         "ebay_Item_ID": "300921213041",
@@ -6631,11 +6654,11 @@ var result = [
         "check_list_price": "pass"
     },
     {
-        "ebay_Item_ID": "301562525757",
-        "ebay_product_name": "LEGO Star WARS Ewok Village 10236",
-        "ebay_list_price": 249.99,
+        "ebay_Item_ID": "301562479489",
+        "ebay_product_name": "Fitbit Aria Wi-Fi Smart Scale - Black (FB201B)",
+        "ebay_list_price": 110.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/m/m9Z3rDvmgmHi-n6l0Ia1EdA/140.jpg",
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/mEQSTiPHUCr8kbLdl3FBhrg/140.jpg",
         "product_name": "LEGO Star Wars Ewok Village Play Set 10236 - Open Box -",
         "Item_ID": "301562525757",
         "": "http://ebay.com/itm/301562525757",
@@ -6653,14 +6676,14 @@ var result = [
         "Sum_of_Buyer_Count": "13",
         "Sum_of_Defect_Rate": "0.02989930981369764",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "301633120282",
-        "ebay_product_name": "4 New 10x16.5 Skid Steer Tires 10 Ply Bobcat Case John Deere 10-16.5 Rim Guard ",
-        "ebay_list_price": 439.5,
+        "ebay_Item_ID": "301562525757",
+        "ebay_product_name": "LEGO Star WARS Ewok Village 10236",
+        "ebay_list_price": 249.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/m/mzU1-o8CptB_XVbV2nzCPZg/140.jpg",
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/m9Z3rDvmgmHi-n6l0Ia1EdA/140.jpg",
         "product_name": "4 New 10x16.5 Skid Steer Tires 10 Ply Bobcat Case John Deere 10-16.5 Rim Guard ",
         "Item_ID": "301633120282",
         "": "http://ebay.com/itm/301633120282",
@@ -6677,16 +6700,15 @@ var result = [
         "Sum_of_Seller_rating": "0.9953974179942432",
         "Sum_of_Buyer_Count": "7",
         "Sum_of_Defect_Rate": "0.02224498961432662",
-        "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "301637395512",
-        "ebay_product_name": "Drywall Painters Walking Stilts Taping Finishing Tools - Adjustable 48\" - 64\"",
-        "ebay_list_price": 136.79,
+        "ebay_Item_ID": "301633120282",
+        "ebay_product_name": "4 New 10x16.5 Skid Steer Tires 10 Ply Bobcat Case John Deere 10-16.5 Rim Guard ",
+        "ebay_list_price": 434.5,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/m/mWDb4W6c-i-Uzo5NEuSWUlg/140.jpg",
-        "ebay_msrp": 539.99,
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mzU1-o8CptB_XVbV2nzCPZg/140.jpg",
         "product_name": "Drywall Painters Walking Stilts Taping Finishing Tools - Adjustable 48\" - 64\"",
         "Item_ID": "301637395512",
         "": "http://ebay.com/itm/301637395512",
@@ -6703,17 +6725,16 @@ var result = [
         "Sum_of_Seller_rating": "0.9945765435508575",
         "Sum_of_Buyer_Count": "29",
         "Sum_of_Defect_Rate": "0.01772336926731226",
-        "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "301659967400",
-        "ebay_product_name": "15x15 5in1 Digital Transfer Sublimation Heat Press Machine T-Shirt Mug w/ Gloves",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_Item_ID": "301637395512",
+        "ebay_product_name": "Drywall Painters Walking Stilts Taping Finishing Tools - Adjustable 48\" - 64\"",
+        "ebay_list_price": 136.79,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mWDb4W6c-i-Uzo5NEuSWUlg/140.jpg",
+        "ebay_msrp": 539.99,
         "product_name": "15x15 5in1 Digital Transfer Sublimation Heat Press Machine T-Shirt Mug w Gloves",
         "Item_ID": "301659967400",
         "": "http://ebay.com/itm/301659967400",
@@ -6734,11 +6755,13 @@ var result = [
         "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "301674757943",
-        "ebay_product_name": "1000 Yard Rechargeable Waterproof LCD Shock Vibra Remote Pet Dog Training Collar",
-        "ebay_list_price": 34.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/m/mTw5N7QsoxHikU5DzF4JLKA/140.jpg",
+        "ebay_Item_ID": "301659967400",
+        "ebay_product_name": "15x15 5in1 Digital Transfer Sublimation Heat Press Machine T-Shirt Mug w/ Gloves",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "1000 Yard Rechargeable Waterproof LCD Shock Vibra Remote Pet Dog Training Collar",
         "Item_ID": "301674757943",
         "": "http://ebay.com/itm/301674757943",
@@ -6755,16 +6778,15 @@ var result = [
         "Sum_of_Seller_rating": "0.9964462787768338",
         "Sum_of_Buyer_Count": "81",
         "Sum_of_Defect_Rate": "0.02491597381921104",
-        "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "301722981086",
-        "ebay_product_name": "Beats Solo 2 On-Ear Headphones - Assorted Colors",
-        "ebay_list_price": 99.99,
+        "ebay_Item_ID": "301674757943",
+        "ebay_product_name": "1000 Yard Rechargeable Waterproof LCD Shock Vibra Remote Pet Dog Training Collar",
+        "ebay_list_price": 34.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/pict/301722981086404000000009_3.jpg",
-        "ebay_msrp": 199.99,
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/mTw5N7QsoxHikU5DzF4JLKA/140.jpg",
         "product_name": "Beats Solo 2 On-Ear Headphones - Assorted Colors",
         "Item_ID": "301722981086",
         "": "http://ebay.com/itm/301722981086",
@@ -6781,15 +6803,17 @@ var result = [
         "Sum_of_Seller_rating": "0.9896414870488476",
         "Sum_of_Buyer_Count": "123",
         "Sum_of_Defect_Rate": "0.02989930981369764",
-        "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "301767156716",
-        "ebay_product_name": "HAND HELD CONTROLLER for Western 56462 Straight Snow Plow Blade Cab Command",
-        "ebay_list_price": 162.49,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/m/m-ArM3s8ylkzKm1SpV48eJQ/140.jpg",
+        "ebay_Item_ID": "301722981086",
+        "ebay_product_name": "Beats Solo 2 On-Ear Headphones - Assorted Colors",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "HAND HELD CONTROLLER for Western 56462 Straight Snow Plow Blade Cab Command",
         "Item_ID": "301767156716",
         "": "http://ebay.com/itm/301767156716",
@@ -6806,17 +6830,15 @@ var result = [
         "Sum_of_Seller_rating": "0.9953974179942432",
         "Sum_of_Buyer_Count": "12",
         "Sum_of_Defect_Rate": "0.02224498961432662",
-        "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "301784179462",
-        "ebay_product_name": "Acer Chromebook 11 CB3-111-C4HT Intel Celeron N2840 (2.16 GHz) 2 GB Memory 16 GB",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_Item_ID": "301767156716",
+        "ebay_product_name": "HAND HELD CONTROLLER for Western 56462 Straight Snow Plow Blade Cab Command",
+        "ebay_list_price": 162.49,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/m-ArM3s8ylkzKm1SpV48eJQ/140.jpg",
         "product_name": "Acer Chromebook 11 CB3-111-C4HT Intel Celeron N2840 2.16 GHz 2 GB Memory 16 GB",
         "Item_ID": "301784179462",
         "": "http://ebay.com/itm/301784179462",
@@ -6837,12 +6859,12 @@ var result = [
         "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "301808502206",
-        "ebay_product_name": "Kenwood DDX372BT 6.2\" DVD Receiver with Built in Bluetooth DDX372BT",
-        "ebay_list_price": 217.98,
+        "ebay_Item_ID": "301784179462",
+        "ebay_product_name": "Acer Chromebook 11 CB3-111-C4HT Intel Celeron N2840 (2.16 GHz) 2 GB Memory 16 GB",
+        "ebay_list_price": 129.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/m/ms9aFPBxbwPXUXXXsQlehPQ/140.jpg",
-        "ebay_msrp": 329.99,
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mzvfPtpJNvFvL5C9HAr4_jA/140.jpg",
+        "ebay_msrp": 199.99,
         "product_name": "Kenwood DDX372BT AM FM CD DVD USB Double DIN Car Stereo Receiver With Bluetooth",
         "Item_ID": "301808502206",
         "": "http://ebay.com/itm/301808502206",
@@ -6860,14 +6882,15 @@ var result = [
         "Sum_of_Buyer_Count": "16",
         "Sum_of_Defect_Rate": "0.02513024823781796",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "301812780541",
-        "ebay_product_name": "Panasonic NN-SN661S Microwave Oven",
-        "ebay_list_price": 160.99,
+        "ebay_Item_ID": "301808502206",
+        "ebay_product_name": "Kenwood DDX372BT 6.2\" DVD Receiver with Built in Bluetooth DDX372BT",
+        "ebay_list_price": 217.98,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/m/mUcfjP0dhCKSnOHk53Q51VA/140.jpg",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/ms9aFPBxbwPXUXXXsQlehPQ/140.jpg",
+        "ebay_msrp": 329.99,
         "product_name": "Panasonic NN-SN661S 1200 Watts Microwave Oven",
         "Item_ID": "301812780541",
         "": "http://ebay.com/itm/301812780541",
@@ -6885,14 +6908,15 @@ var result = [
         "Sum_of_Buyer_Count": "22",
         "Sum_of_Defect_Rate": "0.04118952341188116",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "301820595299",
-        "ebay_product_name": "Bucket Hay Bale Spear Universal Attachment with HD 39\" spike stabilizer spears",
-        "ebay_list_price": 199,
+        "ebay_Item_ID": "301812780541",
+        "ebay_product_name": "Panasonic NN-SN661S Microwave Oven",
+        "ebay_list_price": 154.23,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/m/mGWf150Yu7mjuVpYEDOtFrQ/140.jpg",
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/mUcfjP0dhCKSnOHk53Q51VA/140.jpg",
+        "ebay_msrp": 159.95,
         "product_name": "Bucket Hay Bale Spear Universal Attachment with HD 39\" spike stabilizer spears",
         "Item_ID": "301820595299",
         "": "http://ebay.com/itm/301820595299",
@@ -6909,16 +6933,17 @@ var result = [
         "Sum_of_Seller_rating": "0.9974285282105582",
         "Sum_of_Buyer_Count": "8",
         "Sum_of_Defect_Rate": "0.01282672732018345",
-        "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "301829164156",
-        "ebay_product_name": "EVGA GeForce GTX TITAN X DirectX 12 12G-P4-2990-RX 12GB 384-Bit GDDR5 PCI Expres",
-        "ebay_list_price": 899.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/m/mf3SkMxww-84l68gq3xsqWA/140.jpg",
-        "ebay_msrp": 999.99,
+        "ebay_Item_ID": "301820595299",
+        "ebay_product_name": "Bucket Hay Bale Spear Universal Attachment with HD 39\" spike stabilizer spears",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This listing has ended.  The seller has relisted this item or one like this. ",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "EVGA GeForce GTX TITAN X DirectX 12 12G-P4-2990-RX 12GB 384-Bit GDDR5 PCI Expres",
         "Item_ID": "301829164156",
         "": "http://ebay.com/itm/301829164156",
@@ -6935,15 +6960,16 @@ var result = [
         "Sum_of_Seller_rating": "0.9926277380930167",
         "Sum_of_Buyer_Count": "1",
         "Sum_of_Defect_Rate": "0.04254303310203304",
-        "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "310876494116",
-        "ebay_product_name": "Casio Men's DW9052-1V G-Shock Black Stainless Steel and Resin Digital Watch",
-        "ebay_list_price": 43.95,
+        "ebay_Item_ID": "301829164156",
+        "ebay_product_name": "EVGA GeForce GTX TITAN X DirectX 12 12G-P4-2990-RX 12GB 384-Bit GDDR5 PCI Expres",
+        "ebay_list_price": 899.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/m/mx1C_Idk-DtdmOJZhlBsknQ/140.jpg",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mf3SkMxww-84l68gq3xsqWA/140.jpg",
+        "ebay_msrp": 999.99,
         "product_name": "Casio DW9052-1V Wrist Watches For Men",
         "Item_ID": "310876494116",
         "": "http://ebay.com/itm/310876494116",
@@ -6961,14 +6987,14 @@ var result = [
         "Sum_of_Buyer_Count": "43",
         "Sum_of_Defect_Rate": "0.03126738053380214",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "310913145259",
-        "ebay_product_name": "Front & Rear Shock Struts & Springs 4 Piece Set Kit NEW for 93-02 Toyota Corolla",
-        "ebay_list_price": 190.99,
+        "ebay_Item_ID": "310876494116",
+        "ebay_product_name": "Casio Men's DW9052-1V G-Shock Black Stainless Steel and Resin Digital Watch",
+        "ebay_list_price": 43.95,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/m/mmcjqIYbLguc-RkMyLfD4qg/140.jpg",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mx1C_Idk-DtdmOJZhlBsknQ/140.jpg",
         "product_name": "Front & Rear Shock Struts & Springs 4 Piece Set Kit NEW for 93-02 Toyota Corolla",
         "Item_ID": "310913145259",
         "": "http://ebay.com/itm/310913145259",
@@ -6985,15 +7011,15 @@ var result = [
         "Sum_of_Seller_rating": "0.9976634246036976",
         "Sum_of_Buyer_Count": "11",
         "Sum_of_Defect_Rate": "0.01550827579493001",
-        "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "310916560120",
-        "ebay_product_name": "ARNOTT Air Shocks Rear Left LH & Right RH Pair Set for Chevy GMC Cadillac",
-        "ebay_list_price": 374.85,
+        "ebay_Item_ID": "310913145259",
+        "ebay_product_name": "Front & Rear Shock Struts & Springs 4 Piece Set Kit NEW for 93-02 Toyota Corolla",
+        "ebay_list_price": 187.46,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/m/m-Z94PCoVu4G7doCCs34J8Q/140.jpg",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/mmcjqIYbLguc-RkMyLfD4qg/140.jpg",
         "product_name": "Shock Absorber-Air Suspension Rear Arnott AS-2700",
         "Item_ID": "310916560120",
         "": "http://ebay.com/itm/310916560120",
@@ -7011,14 +7037,14 @@ var result = [
         "Sum_of_Buyer_Count": "7",
         "Sum_of_Defect_Rate": "0.01550827579493001",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "310919932747",
-        "ebay_product_name": "4 NEW P265/70-17 COOPER DISCOVERER AT3 70R R17 TIRES ",
-        "ebay_list_price": 524,
+        "ebay_Item_ID": "310916560120",
+        "ebay_product_name": "ARNOTT Air Shocks Rear Left LH & Right RH Pair Set for Chevy GMC Cadillac",
+        "ebay_list_price": 374.85,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/m/mZ0jztjtFY4-RufoBfeJksg/140.jpg",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/m-Z94PCoVu4G7doCCs34J8Q/140.jpg",
         "product_name": "bridgestone dueler a t p 265 70 r 17 113 s rh s 2657017 265 70 17 265 70 17",
         "Item_ID": "310919932747",
         "": "http://ebay.com/itm/310919932747",
@@ -7036,14 +7062,14 @@ var result = [
         "Sum_of_Buyer_Count": "8",
         "Sum_of_Defect_Rate": "0.01306502908115026",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "311134755528",
-        "ebay_product_name": "Apple iPhone 5c - 16GB (Unlocked) Smartphone - White Blue Green Pink Yellow",
-        "ebay_list_price": 169.88,
+        "ebay_Item_ID": "310919932747",
+        "ebay_product_name": "4 NEW P265/70-17 COOPER DISCOVERER AT3 70R R17 TIRES ",
+        "ebay_list_price": 564,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/pict/311134755528404000000001_2.jpg",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/mxZ97tAtm-3pIMqRUlPbFOA/140.jpg",
         "product_name": "Apple iPhone 5c - 16GB (Unlocked) Smartphone - White Blue Green Pink Yellow",
         "Item_ID": "311134755528",
         "": "http://ebay.com/itm/311134755528",
@@ -7060,17 +7086,15 @@ var result = [
         "Sum_of_Seller_rating": "0.9864483572533167",
         "Sum_of_Buyer_Count": "56",
         "Sum_of_Defect_Rate": "0.04661525713222735",
-        "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "311174182410",
-        "ebay_product_name": "Husqvarna 460 Rancher 24\" .050 Gauge 3/8 Gas Chain Saw Chainsaw - 966048324",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_Item_ID": "311134755528",
+        "ebay_product_name": "Apple iPhone 5c - 16GB (Unlocked) Smartphone - White Blue Green Pink Yellow",
+        "ebay_list_price": 169.88,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/pict/311134755528404000000001_2.jpg",
         "product_name": "Husqvarna 460 Rancher Chainsaw",
         "Item_ID": "311174182410",
         "": "http://ebay.com/itm/311174182410",
@@ -7091,11 +7115,13 @@ var result = [
         "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "311241524505",
-        "ebay_product_name": "Apple iPhone 5s - 16GB (Factory Unlocked) Smartphone - Gold - Silver - Gray",
-        "ebay_list_price": 249.88,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/pict/311241524505404000000001_1.jpg",
+        "ebay_Item_ID": "311174182410",
+        "ebay_product_name": "Husqvarna 460 Rancher 24\" .050 Gauge 3/8 Gas Chain Saw Chainsaw - 966048324",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Apple iPhone 5s - 16GB (Factory Unlocked) Smartphone - Gold - Silver - Gray",
         "Item_ID": "311241524505",
         "": "http://ebay.com/itm/311241524505",
@@ -7112,15 +7138,15 @@ var result = [
         "Sum_of_Seller_rating": "0.9864483572533167",
         "Sum_of_Buyer_Count": "10",
         "Sum_of_Defect_Rate": "0.04661525713222735",
-        "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "311292411598",
-        "ebay_product_name": "LG G3 D850 - 32GB - AT&T (Unlocked) Smartphone - Black or White",
-        "ebay_list_price": 169.88,
+        "ebay_Item_ID": "311241524505",
+        "ebay_product_name": "Apple iPhone 5s - 16GB (Factory Unlocked) Smartphone - Gold - Silver - Gray",
+        "ebay_list_price": 249.88,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/pict/311292411598404000000002_1.jpg",
+        "galleryURL": "http://thumbs2.ebaystatic.com/pict/311241524505404000000001_1.jpg",
         "product_name": "LG G3 D850 - 32GB - AT&T (Unlocked) Smartphone - Black or White",
         "Item_ID": "311292411598",
         "": "http://ebay.com/itm/311292411598",
@@ -7137,16 +7163,15 @@ var result = [
         "Sum_of_Seller_rating": "0.9864483572533167",
         "Sum_of_Buyer_Count": "13",
         "Sum_of_Defect_Rate": "0.04661525713222735",
-        "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "311337705635",
-        "ebay_product_name": "Ray-Ban Sunglasses - Your choice in color, size and style: Wayfarers or Aviators",
-        "ebay_list_price": 69.99,
+        "ebay_Item_ID": "311292411598",
+        "ebay_product_name": "LG G3 D850 - 32GB - AT&T (Unlocked) Smartphone - Black or White",
+        "ebay_list_price": 169.88,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/311337705635404000000001_5.jpg",
-        "ebay_msrp": 170,
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/311292411598404000000001_1.jpg",
         "product_name": "Ray-Ban Sunglasses - Your choice in color size and style: Wayfarers or Aviators",
         "Item_ID": "311337705635",
         "": "http://ebay.com/itm/311337705635",
@@ -7164,14 +7189,14 @@ var result = [
         "Sum_of_Buyer_Count": "24",
         "Sum_of_Defect_Rate": "0.03126738053380214",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "311338200711",
-        "ebay_product_name": "Samsung Galaxy Note 4 SM-N910A - 32GB AT&T (Unlocked) Smartphone - Black - White",
-        "ebay_list_price": 299.88,
+        "ebay_Item_ID": "311337705635",
+        "ebay_product_name": "Ray-Ban Sunglasses - Your choice in color, size and style: Wayfarers or Aviators",
+        "ebay_list_price": 79.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/311338200711404000000002_1.jpg",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/311337705635404000001961_1.jpg",
         "product_name": "Samsung Galaxy Note 4 SM-N910A - 32GB AT&T (Unlocked) Smartphone - Black - White",
         "Item_ID": "311338200711",
         "": "http://ebay.com/itm/311338200711",
@@ -7188,15 +7213,15 @@ var result = [
         "Sum_of_Seller_rating": "0.9864483572533167",
         "Sum_of_Buyer_Count": "14",
         "Sum_of_Defect_Rate": "0.04661525713222735",
-        "check_product_name": "pass",
+        "check_product_name": "fail",
         "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "311359575814",
-        "ebay_product_name": "Apple iPhone 6 - 16GB AT&T (Factory Unlocked) Smartphone Gold Space Gray Silver",
-        "ebay_list_price": 429.88,
+        "ebay_Item_ID": "311338200711",
+        "ebay_product_name": "Samsung Galaxy Note 4 SM-N910A - 32GB AT&T (Unlocked) Smartphone - Black - White",
+        "ebay_list_price": 299.88,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/pict/311359575814404000000002_1.jpg",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/311338200711404000000002_1.jpg",
         "product_name": "Apple iPhone 6 - 16GB AT&T (Factory Unlocked) Smartphone Gold Space Gray Silver",
         "Item_ID": "311359575814",
         "": "http://ebay.com/itm/311359575814",
@@ -7213,15 +7238,15 @@ var result = [
         "Sum_of_Seller_rating": "0.9864483572533167",
         "Sum_of_Buyer_Count": "3",
         "Sum_of_Defect_Rate": "0.04661525713222735",
-        "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "311375550600",
-        "ebay_product_name": "Apple iPhone 6 - 128GB - (Factory Unlocked) Smartphone - Gold Silver Gray",
-        "ebay_list_price": 499.88,
+        "ebay_Item_ID": "311359575814",
+        "ebay_product_name": "Apple iPhone 6 - 16GB AT&T (Factory Unlocked) Smartphone Gold Space Gray Silver",
+        "ebay_list_price": 419.88,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/pict/311375550600404000000003_1.jpg",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/311359575814404000000002_1.jpg",
         "product_name": "Apple iPhone 6 - 128GB - (Factory Unlocked) Smartphone - Gold Silver Gray",
         "Item_ID": "311375550600",
         "": "http://ebay.com/itm/311375550600",
@@ -7238,15 +7263,15 @@ var result = [
         "Sum_of_Seller_rating": "0.9864483572533167",
         "Sum_of_Buyer_Count": "30",
         "Sum_of_Defect_Rate": "0.04661525713222735",
-        "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "311383771119",
-        "ebay_product_name": "Apple iPhone 6 - 128GB - AT&T (Factory Unlocked) Smartphone - Gold Gray Silver",
-        "ebay_list_price": 509.88,
+        "ebay_Item_ID": "311375550600",
+        "ebay_product_name": "Apple iPhone 6 - 128GB - (Factory Unlocked) Smartphone - Gold Silver Gray",
+        "ebay_list_price": 499.88,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/311383771119404000000002_1.jpg",
+        "galleryURL": "http://thumbs1.ebaystatic.com/pict/311375550600404000000002_1.jpg",
         "product_name": "Apple iPhone 6 - 128GB - AT&T (Factory Unlocked) Smartphone - Gold Gray Silver",
         "Item_ID": "311383771119",
         "": "http://ebay.com/itm/311383771119",
@@ -7263,15 +7288,17 @@ var result = [
         "Sum_of_Seller_rating": "0.9864483572533167",
         "Sum_of_Buyer_Count": "13",
         "Sum_of_Defect_Rate": "0.04661525713222735",
-        "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "311441957514",
-        "ebay_product_name": "NETGEAR Wireless Router N900 Dual Band Gigabit WNDR4500",
-        "ebay_list_price": 39.95,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/m/m6ES-8Tm7wuKBP4u2Ar6H1g/140.jpg",
+        "ebay_Item_ID": "311383771119",
+        "ebay_product_name": "Apple iPhone 6 - 128GB - AT&T (Factory Unlocked) Smartphone - Gold Gray Silver",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Netgear N600 450 Mbps 4-Port Gigabit Wireless N Router (WNDR4500)",
         "Item_ID": "311441957514",
         "": "http://ebay.com/itm/311441957514",
@@ -7289,16 +7316,14 @@ var result = [
         "Sum_of_Buyer_Count": "55",
         "Sum_of_Defect_Rate": "0.03126738053380214",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "311452608014",
-        "ebay_product_name": "Apple iPhone 6 - 64GB AT&T (Factory Unlocked) Smartphone Gold Silver Gray",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_Item_ID": "311441957514",
+        "ebay_product_name": "NETGEAR Wireless Router N900 Dual Band Gigabit WNDR4500",
+        "ebay_list_price": 39.95,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/m6ES-8Tm7wuKBP4u2Ar6H1g/140.jpg",
         "product_name": "Apple iPhone 6 - 64GB AT&T (Factory Unlocked) Smartphone Gold Silver Gray",
         "Item_ID": "311452608014",
         "": "http://ebay.com/itm/311452608014",
@@ -7315,15 +7340,17 @@ var result = [
         "Sum_of_Seller_rating": "0.9864483572533167",
         "Sum_of_Buyer_Count": "6",
         "Sum_of_Defect_Rate": "0.04661525713222735",
-        "check_product_name": "pass",
+        "check_product_name": "fail",
         "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "311469058091",
-        "ebay_product_name": "NEW KREG K5MS POCKET HOLE JIG MASTER SYSTEM & DVD KIT FREE SKO3 675 SCREW SET",
-        "ebay_list_price": 159,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/m/mLnCLx01wPQrCwAmyTIyuhA/140.jpg",
+        "ebay_Item_ID": "311452608014",
+        "ebay_product_name": "Apple iPhone 6 - 64GB AT&T (Factory Unlocked) Smartphone Gold Silver Gray",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "KREG K5MS POCKET HOLE JIG MASTER SYSTEM & DVD KIT SKO3 675 SCREW SET",
         "Item_ID": "311469058091",
         "": "http://ebay.com/itm/311469058091",
@@ -7341,15 +7368,16 @@ var result = [
         "Sum_of_Buyer_Count": "18",
         "Sum_of_Defect_Rate": "0.02832953748282258",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "311483527345",
-        "ebay_product_name": "Samsung UN55JU7500 - 55-Inch Curved 4K 120hz Ultra HD Smart 3D LED HDTV",
-        "ebay_list_price": 1449,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/m/mic-TyOmRD0wE0xNpbjxVEw/140.jpg",
-        "ebay_msrp": 1997.99,
+        "ebay_Item_ID": "311469058091",
+        "ebay_product_name": "NEW KREG K5MS POCKET HOLE JIG MASTER SYSTEM & DVD KIT FREE SKO3 675 SCREW SET",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Samsung UN55JU7500 - 55-Inch Curved 4K 120hz Ultra HD Smart 3D LED HDTV",
         "Item_ID": "311483527345",
         "": "http://ebay.com/itm/311483527345",
@@ -7366,15 +7394,16 @@ var result = [
         "Sum_of_Seller_rating": "0.9931924129265282",
         "Sum_of_Buyer_Count": "5",
         "Sum_of_Defect_Rate": "0.04199284327884536",
-        "check_product_name": "pass",
-        "check_list_price": "pass"
+        "check_product_name": "fail",
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "311485744857",
-        "ebay_product_name": "Canon EOS Rebel T5 18MP DSLR Camera 18-55 & 75-300mm Lens & Flash Pro Bundle",
-        "ebay_list_price": 449,
+        "ebay_Item_ID": "311483527345",
+        "ebay_product_name": "Samsung UN55JU7500 - 55-Inch Curved 4K 120hz Ultra HD Smart 3D LED HDTV",
+        "ebay_list_price": 1449,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/m/mcfjlhXcbQyRHdiYgbwZFlA/140.jpg",
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/mic-TyOmRD0wE0xNpbjxVEw/140.jpg",
+        "ebay_msrp": 1997.99,
         "product_name": "Canon EOS Rebel T5 Digital SLR Camera with EF-S 18-55mm IS II + EF 75-300mm f/4-5.6 III Bundle",
         "Item_ID": "311485744857",
         "": "http://ebay.com/itm/311485744857",
@@ -7392,15 +7421,14 @@ var result = [
         "Sum_of_Buyer_Count": "5",
         "Sum_of_Defect_Rate": "0.04199284327884536",
         "check_product_name": "fail",
-        "check_list_price": "pass"
+        "check_list_price": "fail"
     },
     {
-        "ebay_Item_ID": "311497787874",
-        "ebay_product_name": "New Fitbit Aria Wi-Fi Weight + Body Fat + BMI Digital Smart Scale - Black",
-        "ebay_list_price": 109.95,
+        "ebay_Item_ID": "311485744857",
+        "ebay_product_name": "Canon EOS Rebel T5 18MP DSLR Camera 18-55 & 75-300mm Lens & Flash Pro Bundle",
+        "ebay_list_price": 449,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/m/mzqronlpBlEnbc9C3sWTrgg/140.jpg",
-        "ebay_msrp": 129.95,
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/mcfjlhXcbQyRHdiYgbwZFlA/140.jpg",
         "product_name": "Braun Series 9 9090cc Electric Shaver With Cleaning Center",
         "Item_ID": "311500536043",
         "": "http://ebay.com/itm/311500536043",
@@ -7423,9 +7451,11 @@ var result = [
     {
         "ebay_Item_ID": "311500536043",
         "ebay_product_name": "Braun Series 9 9090cc Electric Shaver with Cleaning Center",
-        "ebay_list_price": 299.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/m/m2lcGXcD13tLhLhcBnAzk5w/140.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Apple iPhone 6 - 16GB - Verizon (Factory Unlocked) Smartphone ",
         "Item_ID": "311501280776",
         "": "http://ebay.com/itm/311501280776",
@@ -7500,7 +7530,7 @@ var result = [
     {
         "ebay_Item_ID": "320943459089",
         "ebay_product_name": "SanDisk Ultra Class 10 32GB microSD micro SDHC SD UHS-I U1 TF Flash Memory Card",
-        "ebay_list_price": 13.69,
+        "ebay_list_price": 13.49,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/myOIW_Ol4G8OB2yIxEAYgyQ/140.jpg",
         "product_name": "Sony PlayStation 4 (Latest Model)- 500 GB Black Console",
@@ -7525,7 +7555,7 @@ var result = [
     {
         "ebay_Item_ID": "321459436277",
         "ebay_product_name": "Sony PlayStation 4 (PS4) (Latest Model)- 500 GB Jet Black Console",
-        "ebay_list_price": 309.99,
+        "ebay_list_price": 299.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/mzvzEUIknaQclZ801YCY1ew/140.jpg",
         "product_name": "Microsoft Xbox One (Latest Model)- with Kinect 500 GB Black Console",
@@ -7626,7 +7656,7 @@ var result = [
     {
         "ebay_Item_ID": "321719776922",
         "ebay_product_name": "LT305/70R17 / 10 Ply Nitto Terra Grappler Tires 125 R Set of 4",
-        "ebay_list_price": 1023.96,
+        "ebay_list_price": 931.96,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mXaWyI8tLXC9KmhP32fwgxw/140.jpg",
         "product_name": "Nikon Speedlight SB-700 AF Shoe Mount Flash",
@@ -7676,7 +7706,7 @@ var result = [
     {
         "ebay_Item_ID": "321802275893",
         "ebay_product_name": "195/65R15 General Altimax Arctic 91 Q Snow/Winter Tires Set of 4",
-        "ebay_list_price": 287.96,
+        "ebay_list_price": 275.96,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/mPfS0lSLnHKCN4RuQtFFo6Q/140.jpg",
         "product_name": "Charriol Women's 'St. Tropez' Mother of Pearl Dial Heart Bracelet Watch",
@@ -7701,11 +7731,10 @@ var result = [
     {
         "ebay_Item_ID": "321814589857",
         "ebay_product_name": "Charriol Women's 'St. Tropez' Mother of Pearl Dial Heart Bracelet Watch",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_list_price": 808,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs2.ebaystatic.com/m/mn1_FMfs7z8JEI_Nrop2r0Q/140.jpg",
+        "ebay_msrp": 1295,
         "product_name": "Garmin nuvi 55LMT Automotive Mountable",
         "Item_ID": "321824047976",
         "": "http://ebay.com/itm/321824047976",
@@ -7728,10 +7757,11 @@ var result = [
     {
         "ebay_Item_ID": "321824047976",
         "ebay_product_name": "Garmin nuvi 55LMT GPS Navigation System with Lifetime Maps and Traffic 5\" Displa",
-        "ebay_list_price": 109.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/m/mVoM6M55bT04m7thFU_IokA/140.jpg",
-        "ebay_msrp": 179.99,
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Nikon Nikkor 18-35mm F/3.5-4.5 FX AF-S ED G Lens",
         "Item_ID": "321844849622",
         "": "http://ebay.com/itm/321844849622",
@@ -7754,7 +7784,7 @@ var result = [
     {
         "ebay_Item_ID": "321844849622",
         "ebay_product_name": "Nikon AF-S NIKKOR 18-35mm f/3.5-4.5G ED Lens + UV Filter & Cleaning Kit",
-        "ebay_list_price": 620.52,
+        "ebay_list_price": 615.15,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mSHSVJGhVkfDSlzd_ANDsIQ/140.jpg",
         "product_name": "P235 75R15 Firestone Winterforce UV 105 S Snow Winter Tires Set of 4",
@@ -7779,7 +7809,7 @@ var result = [
     {
         "ebay_Item_ID": "321866396731",
         "ebay_product_name": "P235/75R15 Firestone Winterforce UV 105 S Snow/Winter Tires Set of 4",
-        "ebay_list_price": 319.96,
+        "ebay_list_price": 315.96,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/m/mPfS0lSLnHKCN4RuQtFFo6Q/140.jpg",
         "product_name": "ROBO 3D R1 Plus Fully Assembled 3D Printer 8\" x 9\" x 10\" Maximum Build",
@@ -7880,10 +7910,11 @@ var result = [
     {
         "ebay_Item_ID": "321937590431",
         "ebay_product_name": "HP 250 G3 Notebook PC - Intel Core i3 4005U 1.7GHz Dual-Core, 4GB DDR3, 500GB HD",
-        "ebay_list_price": 279.97,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/m/mwdBeYf7dNFKZ93pors-ktA/140.jpg",
-        "ebay_msrp": 429,
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Microsoft Surface Pro 3 12\" Windows Tablet 256GB SSD Intel Core i5 8GB RAM",
         "Item_ID": "321945424869",
         "": "http://ebay.com/itm/321945424869",
@@ -8010,9 +8041,11 @@ var result = [
     {
         "ebay_Item_ID": "321951854867",
         "ebay_product_name": "HP 255 G4 Notebook - AMD Quad-Core A8-7410 Processor 1.4GHz, 8GB RAM, 1TB HDD, 1",
-        "ebay_list_price": 329.97,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/m/mJW3J_VX39h1GSG2jEJPiZg/140.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Samsung UN40J5200 40\" 1080p HDTV Wi-Fi Smart LED TV 2015 Model",
         "Item_ID": "321954082033",
         "": "http://ebay.com/itm/321954082033",
@@ -8035,7 +8068,7 @@ var result = [
     {
         "ebay_Item_ID": "321954082033",
         "ebay_product_name": "Samsung - 40\" Class (40\" Diag.) - LED - 1080p - Smart - HDTV - Black",
-        "ebay_list_price": 349.99,
+        "ebay_list_price": 379.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/msTX3I1-DJegtsWUXTxWbwg/140.jpg",
         "ebay_msrp": 429.99,
@@ -8191,7 +8224,7 @@ var result = [
         "ebay_product_name": "Samsung Galaxy Note 3 SM-N900V 32GB Verizon AT&T T-Mobile UNLOCKED Cell Phone",
         "ebay_list_price": 249.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/pict/331590331886404000000003_2.jpg",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/331590331886404000000001_1.jpg",
         "product_name": "Apple iPhone 5S 4\" Retina Display A1533 64GB 4G GSM UNLOCKED Cell Phone",
         "Item_ID": "331597233946",
         "": "http://ebay.com/itm/331597233946",
@@ -8214,11 +8247,9 @@ var result = [
     {
         "ebay_Item_ID": "331597233946",
         "ebay_product_name": "Apple iPhone 5S 4\" Retina Display A1533 64GB 4G GSM UNLOCKED Cell Phone",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_list_price": 374.99,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/331597233946404000000001_1.jpg",
         "product_name": "Samsung Galaxy S5 SM-G900V 16GB Verizon AT&T T-Mobile GSM UNLOCKED Cell Phone RF",
         "Item_ID": "331606294482",
         "": "http://ebay.com/itm/331606294482",
@@ -8241,9 +8272,9 @@ var result = [
     {
         "ebay_Item_ID": "331606294482",
         "ebay_product_name": "Samsung Galaxy S5 SM-G900V 16GB Verizon AT&T T-Mobile GSM UNLOCKED Cell Phone RF",
-        "ebay_list_price": 209.99,
+        "ebay_list_price": 219.49,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs3.ebaystatic.com/pict/331606294482404000000001_2.jpg",
+        "galleryURL": "http://thumbs3.ebaystatic.com/pict/3316062944824040_5.jpg",
         "product_name": "Samsung Galaxy Note 4 N910V 32GB Verizon T-Mobile AT&T GSM UNLOCKED Cell Phone",
         "Item_ID": "331628908059",
         "": "http://ebay.com/itm/331628908059",
@@ -8293,10 +8324,11 @@ var result = [
     {
         "ebay_Item_ID": "331651439785",
         "ebay_product_name": "Microsoft Surface 2 RT 10.6\" 32GB 2GB Windows RT 8.1 Wi-Fi Tablet PC - Grade A",
-        "ebay_list_price": 169.95,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/m/mO8lBvDmAKORePZXTJr1jWg/140.jpg",
-        "ebay_msrp": 449,
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Pioneer AVH-X4700BS Double DIN DVD CD MP3 Player 7-Inch LCD Bluetooth Siris Eyes",
         "Item_ID": "331671161630",
         "": "http://ebay.com/itm/331671161630",
@@ -8370,10 +8402,10 @@ var result = [
     {
         "ebay_Item_ID": "331713216154",
         "ebay_product_name": "Samsung UN48JU6400 - 48-Inch 4K Ultra HD Smart LED HDTV",
-        "ebay_list_price": 699.99,
+        "ebay_list_price": 697.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mouD_KMUy3WQXFmdQSBNxuQ/140.jpg",
-        "ebay_msrp": 747.99,
+        "ebay_msrp": 797.99,
         "product_name": "Samsung Galaxy S5 SM-G900V 16GB Verizon AT&T T-Mobile GSM UNLOCKED CellPhone SRF",
         "Item_ID": "331717694525",
         "": "http://ebay.com/itm/331717694525",
@@ -8448,9 +8480,11 @@ var result = [
     {
         "ebay_Item_ID": "331727317212",
         "ebay_product_name": "DEWALT DCS331B 20V 20 Volt Max Lithium Ion Cordless Jig Saw Tool New DCS331",
-        "ebay_list_price": 134.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/m/mcYIgPsPW8LO83p351MDNfg/140.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This listing has ended. ",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "DeWALT DCD771C2 20V Li-Ion 1/2\"  Cordless Drill/Driver",
         "Item_ID": "331729269280",
         "": "http://ebay.com/itm/331729269280",
@@ -8476,7 +8510,7 @@ var result = [
         "ebay_list_price": 94.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/m_x1R8SlgcHkZgSa7FuFXNw/140.jpg",
-        "ebay_msrp": 149.99,
+        "ebay_msrp": 169.99,
         "product_name": "Apple iPhone 6 Plus a1522 64GB Smartphone for T-Mobile Gold Silver or Gray",
         "Item_ID": "331733865666",
         "": "http://ebay.com/itm/331733865666",
@@ -8655,7 +8689,7 @@ var result = [
     {
         "ebay_Item_ID": "351332376246",
         "ebay_product_name": "EXhaust Manifold W/ Catalytic Converter Civic Honda Del Sol 96-2000 5Yr Warranty",
-        "ebay_list_price": 165.04,
+        "ebay_list_price": 165.33,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mI3YNYckhoRoZAH6yKE7i0g/140.jpg",
         "product_name": "Logitech H390 Silver/Black Headband Headsets",
@@ -8732,11 +8766,10 @@ var result = [
     {
         "ebay_Item_ID": "351510480247",
         "ebay_product_name": "NEW Gelish Harmony 18G Professional Salon Gel LED Nail Polish Curing Light Lamp",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_list_price": 172.99,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs4.ebaystatic.com/m/mLk2jQ_G2WAQiQ0WYD8zFiA/140.jpg",
+        "ebay_msrp": 399.99,
         "product_name": "Microsoft Surface 2 64GB Wi-Fi 10.6in - Magnesium (Latest Model)",
         "Item_ID": "351510792266",
         "": "http://ebay.com/itm/351510792266",
@@ -8811,7 +8844,7 @@ var result = [
     {
         "ebay_Item_ID": "351550869419",
         "ebay_product_name": " Logitech K400 Wireless Touch Keyboard with Built-In Multi-Touch Touchpad ",
-        "ebay_list_price": 21.99,
+        "ebay_list_price": 23.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/m/mZvoQxK7Wv5bB1X3ymfQgxw/140.jpg",
         "product_name": "Slim Leather Case Cover with Bluetooth keyboard for Samsung Galaxy Tab A tablet",
@@ -8838,7 +8871,7 @@ var result = [
         "ebay_product_name": "Slim Leather Case Cover with Bluetooth keyboard for Samsung Galaxy Tab A tablet",
         "ebay_list_price": 26.59,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/351556465247404000000002_1.jpg",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/351556465247404000000003_1.jpg",
         "product_name": "Apple iPad 4th Generation 9.7 Retina display 128GB WiFi + 4G GSM UNLOCKED Tablet",
         "Item_ID": "351557810124",
         "": "http://ebay.com/itm/351557810124",
@@ -8861,9 +8894,11 @@ var result = [
     {
         "ebay_Item_ID": "351557810124",
         "ebay_product_name": "Apple iPad 4th Generation 9.7 Retina display 128GB WiFi + 4G GSM UNLOCKED Tablet",
-        "ebay_list_price": 369.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/pict/351557810124404000000002_1.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Samsung Galaxy S6 G920A 32GB AT&T 4G LTE GSM UNLOCKED Cell Phone",
         "Item_ID": "351588697855",
         "": "http://ebay.com/itm/351588697855",
@@ -8992,9 +9027,11 @@ var result = [
     {
         "ebay_Item_ID": "351605575901",
         "ebay_product_name": "LG G3 Android Phone Verizon VS985 32GB Black White  Blue  Red ",
-        "ebay_list_price": 144.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/pict/351605575901404000000001_1.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Apple iPad 4th Generation 16GB Wi-Fi + Cellular (AT&T) 9.7in - Black (MD516LL/A)",
         "Item_ID": "351611748327",
         "": "http://ebay.com/itm/351611748327",
@@ -9016,7 +9053,7 @@ var result = [
     },
     {
         "ebay_Item_ID": "351611748327",
-        "ebay_product_name": "NEW Apple iPad 4 with Retina Display 9.7\" 16 GB Wi-Fi - Black (MD516LL/A)",
+        "ebay_product_name": "NEW Apple iPad 4 with Retina Display 16GB Wi-Fi + 4G AT&T - Black (MD516LL/A)",
         "ebay_list_price": 341.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/m/mBrvuTobsh2f3w6T7Abg2lg/140.jpg",
@@ -9094,11 +9131,10 @@ var result = [
     {
         "ebay_Item_ID": "360868277080",
         "ebay_product_name": "All Purpose Hydraulic Recline Barber Chair Salon Beauty Spa Shampoo Equipment",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_list_price": 315.99,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs1.ebaystatic.com/m/mweBwB044pLN7GaCHA6FI3w/140.jpg",
+        "ebay_msrp": 526.65,
         "product_name": "p 305 35 r 19 ll nitto nt 05 r drag radial tire set of 2",
         "Item_ID": "360885280284",
         "": "http://ebay.com/itm/360885280284",
@@ -9272,11 +9308,9 @@ var result = [
     {
         "ebay_Item_ID": "361219073890",
         "ebay_product_name": "Samsung Galaxy Tab 4 SM-T530 16GB 10.1\" Tablet - Black (SM-T530NYKAXAR)",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_list_price": 184.95,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mrPqzHzo1uQxuuWN9gwdSUw/140.jpg",
         "product_name": "Samsung Galaxy S4 SGH-M919 - 16GB - GSM UNLOCKED (A)",
         "Item_ID": "361224564767",
         "": "http://ebay.com/itm/361224564767",
@@ -9553,9 +9587,11 @@ var result = [
     {
         "ebay_Item_ID": "361450265697",
         "ebay_product_name": "Pair Adjustable Chrome Dumbbells Weight 100lb Kit Set Total Titan Fitness",
-        "ebay_list_price": 119,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/m/m7MlTv-uL1BMLh-xf2G2nAA/140.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This listing has ended.  The seller has relisted this item or one like this. ",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Apple iPhone 5s - 16GB - Gold (Unlocked) Smartphone",
         "Item_ID": "361450736713",
         "": "http://ebay.com/itm/361450736713",
@@ -9678,7 +9714,7 @@ var result = [
     {
         "ebay_Item_ID": "370776358502",
         "ebay_product_name": "Headlights Headlamps Left & Right Pair Set NEW for 97-03 Pontiac Grand Prix",
-        "ebay_list_price": 64.7,
+        "ebay_list_price": 62.11,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mRngxtVo-UjCXQb-4DBVmwg/140.jpg",
         "product_name": "Mirror Towing Manual Left & Right Pair Set of 2 for Dodge Ram 1500 2500 3500",
@@ -9728,7 +9764,7 @@ var result = [
     {
         "ebay_Item_ID": "370826179588",
         "ebay_product_name": "Towing Manual Side View Mirrors Left & Right Pair Set for 88-98 Chevy GMC Truck",
-        "ebay_list_price": 115.94,
+        "ebay_list_price": 114.75,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/m7SEtGNd3oXs4u-UQl_bMBA/140.jpg",
         "product_name": "2 Front Wheel Hubs & Bearings Pair Set w/ ABS for Chevy GMC Truck 4X4 4WD AWD",
@@ -9753,7 +9789,7 @@ var result = [
     {
         "ebay_Item_ID": "370911039868",
         "ebay_product_name": "2 Front Wheel Hubs & Bearings Pair Set w/ ABS for Chevy GMC Truck 4X4 4WD AWD",
-        "ebay_list_price": 69.86,
+        "ebay_list_price": 63.88,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/mhWINYP_koeSAmw4sNUZ95A/140.jpg",
         "product_name": "Headlights Headlamps Left & Right Pair Set for Dodge Grand Caravan Voyager",
@@ -9778,7 +9814,7 @@ var result = [
     {
         "ebay_Item_ID": "371039735916",
         "ebay_product_name": "Headlights Headlamps Left & Right Pair Set for Dodge Grand Caravan Voyager",
-        "ebay_list_price": 64.95,
+        "ebay_list_price": 64.79,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/mbENuUfFtUWk0tx-Dz486pQ/140.jpg",
         "product_name": "Headlights Headlamps Pair Set of 2 for 07-13 Chevy Suburban Tahoe Pickup Truck",
@@ -9803,7 +9839,7 @@ var result = [
     {
         "ebay_Item_ID": "371040328926",
         "ebay_product_name": "Headlights Headlamps Pair Set of 2 for 07-13 Chevy Suburban Tahoe Pickup Truck",
-        "ebay_list_price": 105.74,
+        "ebay_list_price": 102.74,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mNvCHKQh9fNak-cLZu1fiQg/140.jpg",
         "product_name": "Side View Mirrors Power Heated Towing Pair Set for Silverado Tahoe Sierra Yukon",
@@ -9828,7 +9864,7 @@ var result = [
     {
         "ebay_Item_ID": "371146231998",
         "ebay_product_name": "Side View Mirrors Power Heated Towing Pair Set for Silverado Tahoe Sierra Yukon",
-        "ebay_list_price": 108.75,
+        "ebay_list_price": 108.8,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mBKka9zbBTo-h5zX60hScMA/140.jpg",
         "product_name": "Genuine LG Tone Ultra HBS-800 Wireless Bluetooth Neckband JBL Stereo Headset Black",
@@ -9980,7 +10016,7 @@ var result = [
     {
         "ebay_Item_ID": "371385445155",
         "ebay_product_name": "Rear Step Bumper Pad Bracket Chrome Silverado GMC Sierra 1500 2500 3500 Truck",
-        "ebay_list_price": 208.4,
+        "ebay_list_price": 212.58,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs4.ebaystatic.com/m/mC637ficiUK3MXKEXMLuyrw/140.jpg",
         "product_name": "Air Mover Blower Carpet Dryer Floor Drying Industrial Fan - 1 3 hp",
@@ -10031,7 +10067,7 @@ var result = [
     {
         "ebay_Item_ID": "371444454712",
         "ebay_product_name": "Darex Work Sharp Drill Doctor WSKTS Electric All Purpose Knife & Tool Sharpener",
-        "ebay_list_price": 69.96,
+        "ebay_list_price": 67.93,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs1.ebaystatic.com/m/mKJigqSZwmJavZQm9gtKwZg/140.jpg",
         "product_name": "Milwaukee M12 Li-Ion Large Heated Women's Jacket Kit Black 2399-L",
@@ -10056,10 +10092,11 @@ var result = [
     {
         "ebay_Item_ID": "371454014395",
         "ebay_product_name": "Milwaukee 2399-L M12 Heated Women's Jacket Kit - Large",
-        "ebay_list_price": 194,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/m/mq2e-0dTXn7ta2IF16Tkn3w/140.jpg",
-        "ebay_msrp": 346,
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This listing was ended by the seller because the item is no longer available.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Dyson DC44 Animal - Blue Gray - Vacuum Cleaner",
         "Item_ID": "371459298183",
         "": "http://ebay.com/itm/371459298183",
@@ -10392,7 +10429,7 @@ var result = [
     {
         "ebay_Item_ID": "380964696702",
         "ebay_product_name": "Nikon AF-S NIKKOR 85mm f/1.8G Lens 2201",
-        "ebay_list_price": 407,
+        "ebay_list_price": 429,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/m5HFgciYVWVoaHc8n1I916g/140.jpg",
         "product_name": "ASUS MS MX279H 27\" Widescreen LED LCD Monitor built-in Speakers",
@@ -10545,7 +10582,7 @@ var result = [
     {
         "ebay_Item_ID": "381327064981",
         "ebay_product_name": "ThinkPad Laptop T420 Intel Core i5 2520M (2.50 GHz) 4 GB Memory 320 GB HDD Intel",
-        "ebay_list_price": 239.99,
+        "ebay_list_price": 219.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/mW4BYDTHjB-WvC--g7SrkSw/140.jpg",
         "ebay_msrp": 299.99,
@@ -10571,7 +10608,7 @@ var result = [
     {
         "ebay_Item_ID": "381351484518",
         "ebay_product_name": "New Primos Alpha Dogg Electronic Predator Game Call E Caller ",
-        "ebay_list_price": 189.99,
+        "ebay_list_price": 214.99,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mxLkclC22_VJYdsakFT6lcw/140.jpg",
         "product_name": "King KB2410-1-EC-B2 240 208V 10 000 7 500W Large Area Industrial Electric Heater",
@@ -10622,10 +10659,11 @@ var result = [
     {
         "ebay_Item_ID": "381463722923",
         "ebay_product_name": "Beats By Dre Solo 2 Black On Ear Wired Headphones",
-        "ebay_list_price": 69.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/m/mlJgkMFoLcvucTsNuWXcqJw/140.jpg",
-        "ebay_msrp": 199.95,
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Surefire 12 Pack Boxed 123A Lithium Batteries",
         "Item_ID": "381482537127",
         "": "http://ebay.com/itm/381482537127",
@@ -10673,9 +10711,9 @@ var result = [
     {
         "ebay_Item_ID": "381488694700",
         "ebay_product_name": "Genuine LG Tone Ultra HBS-800 Wireless Bluetooth Neckband JBL Stereo Headset",
-        "ebay_list_price": 38.99,
+        "ebay_list_price": 39.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/pict/381488694700404000000002_1.jpg",
+        "galleryURL": "http://thumbs1.ebaystatic.com/pict/381488694700404000000001_1.jpg",
         "product_name": "Apple iPhone 5s - 16GB - Gold (Factory Unlocked) Smartphone",
         "Item_ID": "381493915707",
         "": "http://ebay.com/itm/381493915707",
@@ -10722,10 +10760,10 @@ var result = [
     },
     {
         "ebay_Item_ID": "381494735267",
-        "ebay_product_name": "Apple iPhone 6 a1549 16GB T-Mobile GSM Unlocked Gold Silver or Gray",
+        "ebay_product_name": "Apple iPhone 6 a1549 16GB T-Mobile",
         "ebay_list_price": 399.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/381494735267404000000001_1.jpg",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/381494735267404000000003_1.jpg",
         "ebay_msrp": 649,
         "product_name": "HID Xenon/Led Headlight Conversion KIT H1 H3 H4 H7 H10/9005 9006 880/881 9004/7",
         "Item_ID": "390883328013",
@@ -10751,7 +10789,7 @@ var result = [
         "ebay_product_name": "HID Xenon/Led Headlight Conversion KIT H1 H3 H4 H7 H10/9005 9006 880/881 9004/7",
         "ebay_list_price": 19.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs2.ebaystatic.com/pict/390883328013404000000003_4.jpg",
+        "galleryURL": "http://thumbs2.ebaystatic.com/pict/390883328013404000000010_5.jpg",
         "product_name": "Rockville RPG122K Dual 12\" Powered Speakers Bluetooth Mic Speaker Stands Cables",
         "Item_ID": "390973318423",
         "": "http://ebay.com/itm/390973318423",
@@ -10824,7 +10862,7 @@ var result = [
     },
     {
         "ebay_Item_ID": "391158210881",
-        "ebay_product_name": "Pet Dog Cat Cage Crate Kennel and Bed Cushion Warm  Soft Cozy House XX-Large",
+        "ebay_product_name": "Pet Dog Cat Cage Crate Kennel and Bed Cushion Warm  Soft Cozy House X-Large",
         "ebay_list_price": 53.96,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/mDAuDXO8IR-1GTsepZACcAw/140.jpg",
@@ -10929,7 +10967,7 @@ var result = [
     {
         "ebay_Item_ID": "391317492270",
         "ebay_product_name": "Canon EF 50 mm f/1.8 II Autofocus Lens Standard NEW",
-        "ebay_list_price": 89,
+        "ebay_list_price": 107,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mZTv7sMfHLFawfv4uaeq8kg/140.jpg",
         "product_name": "DEWALT 10\" 15 Amp -Pro Compact Jobsite Table Saw DWE7480 RECON",
@@ -10980,11 +11018,9 @@ var result = [
     {
         "ebay_Item_ID": "391334569806",
         "ebay_product_name": "Apple LCD LED Display Assembly MacBook Pro 13\" Retina Late 2013 A1502 661-8153",
-        "ebay_list_price": "",
-        "ebay_msrp": "",
-        "ebay_status": "This item is out of stock.",
-        "galleryURL": "",
-        "recal_perc_off": "",
+        "ebay_list_price": 252.99,
+        "ebay_status": "Active",
+        "galleryURL": "http://thumbs3.ebaystatic.com/m/mgp4FGqwv8ZetY5NswbrbKw/140.jpg",
         "product_name": "Zmodo KHI8-YARUZ4ZN 8-Channel H.264 960H DVR Security System with 4 700TVL IR Cameras (White)",
         "Item_ID": "391338893129",
         "": "http://ebay.com/itm/391338893129",
@@ -11032,10 +11068,11 @@ var result = [
     {
         "ebay_Item_ID": "391351953363",
         "ebay_product_name": "DEWALT 12-1/2\" Thickness Planer with Three Knife Cutter-Head DW734 RECON",
-        "ebay_list_price": 364.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/m/mrFbyUuUW5IfrVSrFR8zQ1A/140.jpg",
-        "ebay_msrp": 499.99,
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This listing was ended by the seller because there was an error in the listing.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "Polk Audio PSW505 BLACK 12\" Home Audio Powered Subwoofer",
         "Item_ID": "391353570784",
         "": "http://ebay.com/itm/391353570784",
@@ -11058,10 +11095,11 @@ var result = [
     {
         "ebay_Item_ID": "391353570784",
         "ebay_product_name": "Polk Audio PSW505 BLACK 12\" Home Audio Powered Subwoofer",
-        "ebay_list_price": 174.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs1.ebaystatic.com/m/mduhR1jF23FfbT4eNrYRFHw/140.jpg",
-        "ebay_msrp": 589.95,
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This listing has ended. ",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "LAVA HD2805 HDTV DIGITAL ROTOR AMPLIFIED OUTDOOR TV ANTENNA HD UHF VHF FM CABLE",
         "Item_ID": "400570377055",
         "": "http://ebay.com/itm/400570377055",
@@ -11084,9 +11122,11 @@ var result = [
     {
         "ebay_Item_ID": "400570377055",
         "ebay_product_name": "HDTV 1080P Outdoor Amplified Antenna Digital HD TV 150 Mile 360 Rotor UHF/VHF/FM",
-        "ebay_list_price": 33.99,
-        "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/m/msdRwTu0xe_Gnrz21Ey4adw/140.jpg",
+        "ebay_list_price": "",
+        "ebay_msrp": "",
+        "ebay_status": "This item is out of stock.",
+        "galleryURL": "",
+        "recal_perc_off": "",
         "product_name": "DuroMax XP10000EH 18HP Dual Fuel Propane/Gas Powered Portable Electric Start Generator 10000-watt",
         "Item_ID": "400785406253",
         "": "http://ebay.com/itm/400785406253",
@@ -11135,7 +11175,7 @@ var result = [
     {
         "ebay_Item_ID": "400886960242",
         "ebay_product_name": "Proactiv Renewing Cleanser 8oz ~ Micro-Crystal Formula  Proactive ",
-        "ebay_list_price": 28.95,
+        "ebay_list_price": 28.75,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mqyu9_sxF-fyarL3R7Htf2g/140.jpg",
         "ebay_msrp": 59.95,
@@ -11161,7 +11201,7 @@ var result = [
     {
         "ebay_Item_ID": "400897438181",
         "ebay_product_name": "Fender Flares for Chevy Silverado 99-06 Set of 4 Paintable Matte Black OE Style",
-        "ebay_list_price": 89.36,
+        "ebay_list_price": 75.53,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs2.ebaystatic.com/m/mszN0kcam9XyQCbQPIob48A/140.jpg",
         "product_name": "Pet Dog Cat Cage Crate Kennel and Bed Cushion Warm Soft Cozy House X-large",
@@ -11185,7 +11225,7 @@ var result = [
     },
     {
         "ebay_Item_ID": "400928882910",
-        "ebay_product_name": "Pet Dog Cat Cage Crate Kennel and Bed Cushion Warm  Soft Cozy House X-large",
+        "ebay_product_name": "Pet Dog Cat Cage Crate Kennel and Bed Cushion Warm  Soft Cozy House Large",
         "ebay_list_price": 44.96,
         "ebay_status": "Active",
         "galleryURL": "http://thumbs3.ebaystatic.com/m/mDAuDXO8IR-1GTsepZACcAw/140.jpg",
@@ -11316,7 +11356,7 @@ var result = [
         "ebay_product_name": "Apple iPhone 5S 16GB Smartphone for AT&T A1533  4G LTE Silver Gold Grey",
         "ebay_list_price": 199.99,
         "ebay_status": "Active",
-        "galleryURL": "http://thumbs4.ebaystatic.com/pict/401044980095404000000001_1.jpg",
+        "galleryURL": "http://thumbs4.ebaystatic.com/pict/401044980095404000000002_1.jpg",
         "product_name": "Fitbit Aria FB201B Wi-Fi Black Smart Scale ",
         "Item_ID": "898628002045",
         "": "311497787874",
