@@ -16,26 +16,26 @@ var amazon      = require('amazon-product-api');
 var json2csv    = require('json2csv');
 
 //START: Amazon API still testing ======================================================
-var params = {
-        keywords: ['371039735916'],
-        // add additional fields
-        outputSelector: ['AspectHistogram'],
+// var params = {
+//         keywords: ['371039735916'],
+//         // add additional fields
+//         outputSelector: ['AspectHistogram'],
 
-        paginationInput: {
-          entriesPerPage: 1
-        }
-      };
-      ebay.xmlRequest({
-        serviceName: 'Finding',
-        opType: 'findItemsByKeywords',
-        appId: 'RideSnap-b66a-448f-9063-46ba6dbe1a3e',
-        params: params,
-        parser: ebay.parseResponseJson    // (default)
-      },
-      // gets all the items together in a merged array
-      function itemsCallback(error, itemsResponse) {
-        console.log("FAIL", itemsResponse.searchResult.item)
-        });
+//         paginationInput: {
+//           entriesPerPage: 1
+//         }
+//       };
+//       ebay.xmlRequest({
+//         serviceName: 'Finding',
+//         opType: 'findItemsByKeywords',
+//         appId: 'RideSnap-b66a-448f-9063-46ba6dbe1a3e',
+//         params: params,
+//         parser: ebay.parseResponseJson    // (default)
+//       },
+//       // gets all the items together in a merged array
+//       function itemsCallback(error, itemsResponse) {
+//         console.log("FAIL", itemsResponse.searchResult.item)
+//         });
 
 var client = amazon.createClient({
   awsId: "",
@@ -43,16 +43,16 @@ var client = amazon.createClient({
   awsTag: ""
 });
 
- console.log("amazon client", client)
+ // console.log("amazon client", client)
 
-client.itemSearch({
-  keywords: 'Zmodo 8 CH HDMI DVR 4 CCTV Outdoor Home Surveillance Security Camera',
-  responseGroup: 'ItemAttributes,Offers,Images'
-}).then(function(results){
-  console.log("results", results);
-}).catch(function(err){
-  console.log("errror", err);
-});
+// client.itemSearch({
+//   keywords: 'Zmodo 8 CH HDMI DVR 4 CCTV Outdoor Home Surveillance Security Camera',
+//   responseGroup: 'ItemAttributes,Offers,Images'
+// }).then(function(results){
+//   console.log("results", results);
+// }).catch(function(err){
+//   console.log("errror", err);
+// });
 //END: for testing ======================================================
 
 //User uploads formated CSV file. Make sure column headers are formated with no spaces.
@@ -81,8 +81,8 @@ app.get('/export', function(req, res){
   fs.readFile(result, 'utf8', function(err, data){
     new_result = JSON.parse(data.slice(13));
 
-
-
+    //calculate the % off
+    //use ebay_list price and ebay msrp. If values are empty then use original listprice and msrp.
     for(var obj in new_result){
       console.log(new_result[obj])
       if(new_result[obj].ebay_list_price !== "" && (new_result[obj].ebay_msrp !== "" || new_result[obj].msrp !== "")){
@@ -96,10 +96,13 @@ app.get('/export', function(req, res){
         }
       }
     }
+    for(x in new_result){
+      new_result[x].Sum_of_GMV = parseInt(new_result[x].Sum_of_GMV);
+    }
 
-    var sort_by_GMV = _.sortBy(new_result, 'Sum_of_GMV');
+    var sort_by_GMV = _.sortBy(new_result, 'Sum_of_GMV').reverse();
 
-    var fields = ['product_name',  'Item_ID',   'Item_Condition', 'ebay_status',  'Vertical',  'Seller_Name', 'Account_Manager', 'MSRP', 'ebay_msrp',  'list_price', 'ebay_list_price', 'recal_perc_off', '%_off', 'Sum_of_GMV',  'Sum_of_Qty',  'Sum_of_Views/SI', 'Sum_of_Seller_rating',  'Sum_of_Buyer_Count',  'Sum_of_Defect_Rate']
+    var fields = ['product_name',  'Item_ID', 'ebay_url', 'Item_Condition', 'Vertical',  'Seller_Name', 'Account_Manager', 'MSRP',  'list_price', '%_off', 'Sum_of_GMV',  'Sum_of_Qty',  'Sum_of_Views/SI', 'Sum_of_Seller_rating',  'Sum_of_Buyer_Count',  'Sum_of_Defect_Rate', 'ebay_status', 'ebay_msrp', 'ebay_list_price', 'recal_perc_off']
 
 
     json2csv({data: sort_by_GMV, fields: fields}, function(err, csv){

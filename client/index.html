@@ -15,12 +15,19 @@
       var app = angular.module('myApp', []);
       app.controller('resultController', function ($scope, $window){
         console.log("test", $window.result);
+        for (gmv in $window.result){
+          $window.result[gmv].Sum_of_GMV = parseInt($window.result[gmv].Sum_of_GMV)
+        }
+
         $scope.results = $window.result;
 
-        $scope.sortType = 'msrp';
+        $scope.sortType = 'Sum_of_GMV';
         $scope.sortReverse = true;
         $scope.search_product_name = '';
       });
+
+
+
     </script>
 </head>
 <body>
@@ -68,68 +75,69 @@
         <tr>
           <th>No.</th>
           <th>
-            <a href="#" ng-click="sortType = 'ebay_Item_ID'">
-              Item_ID
-            <span ng-show="sortType == 'Item_ID'" class="fa fa-caret-down"></span>
+            <a href="#" ng-click="sortType = ''">
+              Product Name
           </a>
           </th>
           <th>
-            <a href="#" ng-click="sortType = 'Vertical'">
-              Category
-            <span ng-show="sortType == 'product_name'" class="fa fa-caret-down"></span>
+            <a href="#" ng-click="sortType = ''">
+              Item ID
           </a>
           </th>
           <th>
-            <a href="#" ng-click="sortType = 'ebay_product_name'">
-              Ebay Product Name
-            <span ng-show="sortType == 'product_name'" class="fa fa-caret-down"></span>
+            <a href="#" ng-click="sortType = ''">
+              Ebay URL
           </a>
           </th>
           <th>
-            <a href="#" ng-click="sortType = 'ebay_status'">
-              Current Availability
-              <span ng-show="sortType == 'ebay_status' && !sortReverse" class="fa fa-caret-down"></span>
+            <a href="#" ng-click="sortType = ''">
+              Item Condition
             </a>
           </th>
           <th>
-            <a href="#" ng-click="sortType = 'ebay_msrp'">
-              MSRP
-            <span ng-show="sortType == 'msrp'" class="fa fa-caret-down"></span>
+            <a href="#" ng-click="sortType = ''">
+              Vertical
           </a>
           </th>
           <th>
-            <a href="#" ng-click="sortType = 'list_price'">
-              CSV List Price
-            <span ng-show="sortType == 'list_price'" class="fa fa-caret-down"></span>
+            <a href="#" ng-click="sortType = ''">
+              Seller Name
           </a>
           </th>
           <th>
-            <a href="#" ng-click="sortType = 'ebay_list_price'">
-              Ebay List Price
-            <span ng-show="sortType == 'list_price'; sortReverse = !sortReverse" class="fa fa-angle-down"></span>
+            <a href="#" ng-click="sortType = ''">
+              Account Manager
             </a>
           </th>
-          <th>Seller Name</th>
-          <th>Account Manager</th>
-          <th>Image</th>
-          <th>GMV</th>
+          <th>EBAY MSRP</th>
+          <th>EBAY List Price</th>
+          <th>% off</th>
+          <th>
+            <a href="#" ng-click="sortType = ''">
+              Sum of GMV
+            </a>
+          </th>
+          <th>CSV list price</th>
+          <th>IMAGE</th>
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="product in results | orderBy:sortType:sortReverse | filter:product_name">
+        <tr ng-repeat="product in results | orderBy: '-Sum_of_GMV'">
           <td>{{$index}}</td>
-          <td>{{product.ebay_Item_ID}}</td>
-          <td>{{product.Vertical}}</td>
           <td>{{product.ebay_product_name}}</td>
-          <td>{{product.ebay_status}}</td>
-          <td>{{product.ebay_msrp}}</td>
-          <td>{{product.list_price | number:2}}</td>
-          <td>{{product.ebay_list_price}}</td>
+          <td>{{product.ebay_Item_ID}}</td>
+          <td>{{product.ebay_url}}</td>
+          <td>{{product.Item_Condition}}</td>
+          <td>{{product.Vertical}}</td>
           <td>{{product.Seller_Name}}</td>
           <td>{{product.Account_Manager}}</td>
+          <td>{{product.ebay_msrp}}</td>
+          <td>{{product.ebay_list_price}}</td>
+          <td>na</td>
+          <td>{{product.Sum_of_GMV}}</td>
+          <td>{{product.list_price | number:2}}</td>
           <td><img ng-src="{{product.galleryURL}}"></td>
           <!-- <td class="good" ng-if="product.check_product_name && product.check_list_price == 'pass'">GOOD</td> -->
-          <td>{{product.Sum_of_GMV}}</td>
         </tr>
       </tbody>
     </table>
