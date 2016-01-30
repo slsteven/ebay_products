@@ -14,67 +14,48 @@ var multer      = require('multer');
 var ebay        = require('ebay-api');
 var amazon      = require('amazon-product-api');
 var json2csv    = require('json2csv');
+var mongoose    = require('mongoose');
 
-//START: Amazon API still testing ======================================================
-// var params = {
-//         keywords: ['371039735916'],
-//         // add additional fields
-//         outputSelector: ['AspectHistogram'],
 
-//         paginationInput: {
-//           entriesPerPage: 1
-//         }
-//       };
-//       ebay.xmlRequest({
-//         serviceName: 'Finding',
-//         opType: 'findItemsByKeywords',
-//         appId: 'RideSnap-b66a-448f-9063-46ba6dbe1a3e',
-//         params: params,
-//         parser: ebay.parseResponseJson    // (default)
-//       },
-//       // gets all the items together in a merged array
-//       function itemsCallback(error, itemsResponse) {
-//         console.log("FAIL", itemsResponse.searchResult.item)
-//         });
+// set up a static file server that points to the "client" directory
+app.use(express.static(path.join(__dirname, './client')));
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
+require('./server/config/mongoose.js');
+// var route_setter = require('./server/config/routes.js');
+// route_setter(app);
 
-var client = amazon.createClient({
-  awsId: "",
-  awsSecret: "",
-  awsTag: ""
-});
+var upload = multer({ dest: './uploads/'});
 
- // console.log("amazon client", client)
-
-// client.itemSearch({
-//   keywords: 'Zmodo 8 CH HDMI DVR 4 CCTV Outdoor Home Surveillance Security Camera',
-//   responseGroup: 'ItemAttributes,Offers,Images'
-// }).then(function(results){
-//   console.log("results", results);
-// }).catch(function(err){
-//   console.log("errror", err);
-// });
-//END: for testing ======================================================
 
 //User uploads formated CSV file. Make sure column headers are formated with no spaces.
 // 'product_name',  'Item_ID',   'Item_Condition', 'ebay_status',  'Vertical',  'Seller_Name', 'Account_Manager', 'MSRP', 'ebay_msrp',  'list_price', 'ebay_list_price', 'recal_perc_off', '%_off', 'Sum_of_GMV',  'Sum_of_Qty',  'Sum_of_Views/SI', 'Sum_of_Seller_rating',  'Sum_of_Buyer_Count',  'Sum_of_Defect_Rate'
-app.post('/scrape', multer({ dest: './uploads/'}).single('upl'), function(req, res){
-  //convert excel to json
-  xls('./uploads/'+req.file.filename, function(err, data) {
-    if(err) {
-      console.log("error converting")
-    }
-    else {
-      //call convertToJSON method to change CSV to right format
-      original_json = convertToJSON(data);
-      fs.writeFile("original.json", JSON.stringify(original_json, null, 4),
+// app.post('/scrape', upload.single('file'), function(req, res){
+//     console.log(req.file);
+//     res.json({success: true});
+//   //convert excel to json
+//   // xls('./uploads/'+req.file.filename, function(err, data) {
+//   //   if(err) {
+//   //     console.log("error converting")
+//   //   }
+//   //   else {
+//   //     //call convertToJSON method to change CSV to right format
+//   //     original_json = convertToJSON(data);
+//   //     fs.writeFile("original.json", JSON.stringify(original_json, null, 4),
 
-      function(err){
-        console.log("fille succesfully written");
-        res.status(204).end();
-      })
-    }
-  })
+//   //     function(err){
+//   //       console.log("fille succesfully written");
+//   //       res.status(204).end();
+//   //     })
+//   //   }
+//   // })
+// })
+
+app.post('/scrape', upload.single('file'), function(req, res){
+    console.log(req.file);
+
 })
+
 
 app.get('/export', function(req, res){
   var result = './client/static/json/result.json';
@@ -315,16 +296,49 @@ function convertToJSON(array) {
   return jsonData;
 };
 
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json());
-// require('./server/config/mongoose.js');
-// require('./server/config/routes.js')(app);
 
-// set up a static file server that points to the "client" directory
-app.use(express.static(path.join(__dirname, './client')));
 
 app.listen(8000, function() {
   console.log('cool stuff on: 8000');
 });
 
 
+//START: Amazon API still testing ======================================================
+// var params = {
+//         keywords: ['371039735916'],
+//         // add additional fields
+//         outputSelector: ['AspectHistogram'],
+
+//         paginationInput: {
+//           entriesPerPage: 1
+//         }
+//       };
+//       ebay.xmlRequest({
+//         serviceName: 'Finding',
+//         opType: 'findItemsByKeywords',
+//         appId: 'RideSnap-b66a-448f-9063-46ba6dbe1a3e',
+//         params: params,
+//         parser: ebay.parseResponseJson    // (default)
+//       },
+//       // gets all the items together in a merged array
+//       function itemsCallback(error, itemsResponse) {
+//         console.log("FAIL", itemsResponse.searchResult.item)
+//         });
+
+var client = amazon.createClient({
+  awsId: "",
+  awsSecret: "",
+  awsTag: ""
+});
+
+ // console.log("amazon client", client)
+
+// client.itemSearch({
+//   keywords: 'Zmodo 8 CH HDMI DVR 4 CCTV Outdoor Home Surveillance Security Camera',
+//   responseGroup: 'ItemAttributes,Offers,Images'
+// }).then(function(results){
+//   console.log("results", results);
+// }).catch(function(err){
+//   console.log("errror", err);
+// });
+//END: for testing ======================================================

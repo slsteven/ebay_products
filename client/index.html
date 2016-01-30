@@ -9,55 +9,62 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
+    <!-- bower progress bar -->
+    <script src="./bower_components/ngprogress/build/ngprogress.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./bower_components/ngprogress/ngProgress.css">
+
     <script src="./static/json/result.json"></script>
     <link rel="stylesheet" type="text/css" href="./static/css/style.css">
-    <script type="text/javascript">
-      var app = angular.module('myApp', []);
-      app.controller('resultController', function ($scope, $window){
-        console.log("test", $window.result);
-        for (gmv in $window.result){
-          $window.result[gmv].Sum_of_GMV = parseInt($window.result[gmv].Sum_of_GMV)
-        }
 
-        $scope.results = $window.result;
-
-        $scope.sortType = 'Sum_of_GMV';
-        $scope.sortReverse = true;
-        $scope.search_product_name = '';
-      });
-
-
-
-    </script>
+    <script src="./static/js/app.js"></script>
+    <script src="./static/js/resultController.js"></script>
 </head>
 <body>
+<div class="container" ng-controller='resultController'>
 
-  <div class="container">
 
-  <div class="row" ng-controller='resultController'>
+  <div class="row alert alert-info" progressbar.color('green');>
+    <form>
+      <div class="form-group">
+        <label for="inputFile">Upload file</label>
+        <input type="file" file-model="myFile"/>
+      </div>
+        <button class="btn btn-default" ng-click="uploadFile()">upload me</button>
+    </form>
+  </div>
+
+
+
+  <div class="row">
     <div class="alert alert-info">
       <p>Sort Type: {{ sortType }}</p>
       <p>Sort Reverse: {{ sortReverse }}</p>
       <p>Search Query: {{ product_name }}</p>
     </div>
+  </div>
 
     <h1>Ebay Merchandise Product Check</h1>
-    <form method="post", enctype="multipart/form-data", action="/scrape">
-      <p>
-      <input type="file" name="upl" />
-      </p>
-      <p>
-      <input type="submit" name="submit">
-      </p>
-    </form>
+  <div class="row">
+    <div class="alert alert-info">
+      <!-- <form method="post", enctype="multipart/form-data", action="/scrape">
+        <p>
+        <input type="file" name="upl" />
+        </p>
+        <p>
+        <input type="submit" name="submit">
+        </p>
+      </form> -->
+    </div>
+  </div>
     <div class="button_request">
-    <form method="get", action="/get_results">
-      <button id="see_results" class="btn btn-info col-md-12">See Your Results</button>
-    </form>
+      <form method="get", action="/get_results">
+        <button id="see_results" class="btn btn-info col-md-12">See Your Results</button>
+      </form>
 
-    <form method="get", action="/export">
-      <button id="see_results" class="btn btn-warning col-md-12">Export your results to CSV</button>
-    </form>
+      <form method="get", action="/export">
+        <button id="see_results" class="btn btn-warning col-md-12">Export your results to CSV</button>
+      </form>
+    </div>
 
     <form class="search_bar">
       <div class="form-group">
@@ -69,7 +76,7 @@
         </div>
       </div>
     </form>
-
+  <div class="row" style="align-left">
     <table id="myTable" class="table table-bordered table-striped">
       <thead>
         <tr>
@@ -142,7 +149,6 @@
       </tbody>
     </table>
   </div>
-  </div>
-
+</div>
 </body>
 </html>
