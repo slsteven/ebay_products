@@ -14,25 +14,120 @@ var multer      = require('multer');
 var ebay        = require('ebay-api');
 var amazon      = require('amazon-product-api');
 var json2csv    = require('json2csv');
-var mongoose    = require('mongoose');
 
+var Grid        = require('gridfs-stream');
+var mongo       = require('mongodb');
 
 // set up a static file server that points to the "client" directory
 app.use(express.static(path.join(__dirname, './client')));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-require('./server/config/mongoose.js');
+// require('./server/config/mongoose.js');
 // var route_setter = require('./server/config/routes.js');
 // route_setter(app);
 
-var upload = multer({ dest: './uploads/'});
+var storage = multer.diskStorage({
+  destination: function(req, file, callback){
+    callback(null, './uploads/')
+  },
+  filename: function(req, file, callback){
+    callback(null, "testing")
+  }
+})
+
+var upload = multer({storage: storage});
+
+var mongoose = require('mongoose');
+// database name
+mongoose.connect('mongodb://localhost/ebay_query');
+var conn = mongoose.connection;
+Grid.mongo = mongoose.mongo;
+var gfs = Grid(conn.db);
+
+
+
+// app.get('/get_results2', function(req, res){
+//   var most_recent = gfs.files.findOne({filename: "testing"}, function(err, file){
+//     console.log(file);
+//     var readstream = gfs.createReadStream({
+//       filename: file.filename
+//     })
+//       //call convertToJSON method to change CSV to right format
+//       // convert excel to json
+//       xls(readstream, function(err, data) {
+//         if(err) {
+//           console.log("error converting")
+//         }
+//         else {
+//           //call convertToJSON method to change CSV to right format
+//           original_json = convertToJSON(data);
+//           fs.writeFile("original.json", JSON.stringify(original_json, null, 4),
+
+//           function(err){
+//             console.log("fille succesfully written");
+//             res.status(204).end();
+//           })
+//         }
+//       })
+//   })
+
+// })
+
+
+
 
 
 //User uploads formated CSV file. Make sure column headers are formated with no spaces.
 // 'product_name',  'Item_ID',   'Item_Condition', 'ebay_status',  'Vertical',  'Seller_Name', 'Account_Manager', 'MSRP', 'ebay_msrp',  'list_price', 'ebay_list_price', 'recal_perc_off', '%_off', 'Sum_of_GMV',  'Sum_of_Qty',  'Sum_of_Views/SI', 'Sum_of_Seller_rating',  'Sum_of_Buyer_Count',  'Sum_of_Defect_Rate'
-// app.post('/scrape', upload.single('file'), function(req, res){
-//     console.log(req.file);
-//     res.json({success: true});
+app.post('/scrape', upload.single('file'), function(req, res){
+    var path = req.file.path;
+    var source = fs.createReadStream(path);
+    var writestream = gfs.createWriteStream({
+        filename: req.file.filename
+    });
+    source.pipe(writestream);
+          writestream.on('close', function (file) {
+        // do something with `file`
+        console.log("testtttting", file.filename);
+      });
+    // var options = {
+    //   filename : "testing",
+    //   };
+    // gfs.exist(options, function (err, found){
+    //   if(err){
+    //     console.log("error");
+    //   }
+    //   else {
+    //     console.log("File exists");
+    //     res.json({success: true});
+    //   }
+    // })
+
+    var most_recent = gfs.files.findOne({filename: "testing"}, function(err, file){
+    console.log(file);
+    var readstream = gfs.createReadStream({
+      filename: file.filename
+    })
+      //call convertToJSON method to change CSV to right format
+      // convert excel to json
+      xls(readstream, function(err, data) {
+        if(err) {
+          console.log("error converting")
+        }
+        else {
+          //call convertToJSON method to change CSV to right format
+          original_json = convertToJSON(data);
+          fs.writeFile("original.json", JSON.stringify(original_json, null, 4),
+
+          function(err){
+            console.log("fille succesfully written");
+            res.json({success: true});
+          })
+        }
+      })
+  })
+
+
 //   //convert excel to json
 //   // xls('./uploads/'+req.file.filename, function(err, data) {
 //   //   if(err) {
@@ -49,11 +144,6 @@ var upload = multer({ dest: './uploads/'});
 //   //     })
 //   //   }
 //   // })
-// })
-
-app.post('/scrape', upload.single('file'), function(req, res){
-    console.log(req.file);
-
 })
 
 

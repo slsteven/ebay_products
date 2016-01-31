@@ -45,7 +45,7 @@
 
     <h1>Ebay Merchandise Product Check</h1>
   <div class="row">
-    <div class="alert alert-info">
+    <!-- <div class="alert alert-info"> -->
       <!-- <form method="post", enctype="multipart/form-data", action="/scrape">
         <p>
         <input type="file" name="upl" />
@@ -54,11 +54,11 @@
         <input type="submit" name="submit">
         </p>
       </form> -->
-    </div>
+    <!-- </div> -->
   </div>
     <div class="button_request">
       <form method="get", action="/get_results">
-        <button id="see_results" class="btn btn-info col-md-12">See Your Results</button>
+        <button id="see_results" class="btn btn-info col-md-12" ng-click="test()">See Your Results</button>
       </form>
 
       <form method="get", action="/export">
