@@ -31,7 +31,7 @@ var storage = multer.diskStorage({
     callback(null, './uploads/')
   },
   filename: function(req, file, callback){
-    callback(null, "testing")
+    callback(null, "product_list")
   }
 })
 
@@ -45,105 +45,67 @@ Grid.mongo = mongoose.mongo;
 var gfs = Grid(conn.db);
 
 
+var Schema = mongoose.Schema;
 
-// app.get('/get_results2', function(req, res){
-//   var most_recent = gfs.files.findOne({filename: "testing"}, function(err, file){
-//     console.log(file);
-//     var readstream = gfs.createReadStream({
-//       filename: file.filename
-//     })
-//       //call convertToJSON method to change CSV to right format
-//       // convert excel to json
-//       xls(readstream, function(err, data) {
-//         if(err) {
-//           console.log("error converting")
-//         }
-//         else {
-//           //call convertToJSON method to change CSV to right format
-//           original_json = convertToJSON(data);
-//           fs.writeFile("original.json", JSON.stringify(original_json, null, 4),
-
-//           function(err){
-//             console.log("fille succesfully written");
-//             res.status(204).end();
-//           })
-//         }
-//       })
-//   })
-
-// })
+var FileSchema = new mongoose.Schema({
+  scan_date: {type: Date, default: new Date},
+  scan_name: String,
+  original: [],
+  output: []
+})
+mongoose.model('File', FileSchema);
+var File = mongoose.model('File')
 
 
 
-
-
-//User uploads formated CSV file. Make sure column headers are formated with no spaces.
+//User uploads formated CSV/xlsx file. Make sure column headers are formated with no spaces.
 // 'product_name',  'Item_ID',   'Item_Condition', 'ebay_status',  'Vertical',  'Seller_Name', 'Account_Manager', 'MSRP', 'ebay_msrp',  'list_price', 'ebay_list_price', 'recal_perc_off', '%_off', 'Sum_of_GMV',  'Sum_of_Qty',  'Sum_of_Views/SI', 'Sum_of_Seller_rating',  'Sum_of_Buyer_Count',  'Sum_of_Defect_Rate'
-app.post('/scrape', upload.single('file'), function(req, res){
-    var path = req.file.path;
-    var source = fs.createReadStream(path);
-    var writestream = gfs.createWriteStream({
-        filename: req.file.filename
-    });
-    source.pipe(writestream);
-          writestream.on('close', function (file) {
-        // do something with `file`
-        console.log("testtttting", file.filename);
-      });
-    // var options = {
-    //   filename : "testing",
-    //   };
-    // gfs.exist(options, function (err, found){
-    //   if(err){
-    //     console.log("error");
-    //   }
-    //   else {
-    //     console.log("File exists");
-    //     res.json({success: true});
-    //   }
-    // })
+app.post('/upload', upload.single('file'), function(req, res){
+  var path = req.file.path;
+  var source = fs.createReadStream(path);
+  var writestream = gfs.createWriteStream({
+    filename: req.file.filename
+  });
+  source.pipe(writestream);
 
-    var most_recent = gfs.files.findOne({filename: "testing"}, function(err, file){
-    console.log(file);
-    var readstream = gfs.createReadStream({
-      filename: file.filename
-    })
-      //call convertToJSON method to change CSV to right format
-      // convert excel to json
-      xls(readstream, function(err, data) {
-        if(err) {
-          console.log("error converting")
-        }
-        else {
-          //call convertToJSON method to change CSV to right format
-          original_json = convertToJSON(data);
-          fs.writeFile("original.json", JSON.stringify(original_json, null, 4),
+  gfs.files.findOne({filename: "product_list"}, function(err, file){
 
-          function(err){
-            console.log("fille succesfully written");
-            res.json({success: true});
-          })
-        }
-      })
+  var readstream = gfs.createReadStream({
+    filename: file.filename
   })
 
+    //call convertToJSON method to change CSV to right format
+    // convert excel to json
+    xls(readstream, function(err, data) {
+      if(err) {
+        console.log("error converting")
+      }
+      else {
+        //call convertToJSON method to change CSV to right format
+        original_json = convertToJSON(data);
 
-//   //convert excel to json
-//   // xls('./uploads/'+req.file.filename, function(err, data) {
-//   //   if(err) {
-//   //     console.log("error converting")
-//   //   }
-//   //   else {
-//   //     //call convertToJSON method to change CSV to right format
-//   //     original_json = convertToJSON(data);
-//   //     fs.writeFile("original.json", JSON.stringify(original_json, null, 4),
+        var file = new File ({
+          scan_name: "0000",
+          original: original_json
+        })
+        file.save(function(err, result){
+          if(err){
+            console.log("document did no save");
+          } else {
+            console.log("document saved", result);
+            res.json({success: true});
+          }
+        })
 
-//   //     function(err){
-//   //       console.log("fille succesfully written");
-//   //       res.status(204).end();
-//   //     })
-//   //   }
-//   // })
+        // fs.writeFile("original.json", JSON.stringify(original_json, null, 4),
+
+        // function(err){
+        //   console.log("fille succesfully written");
+        //   res.json({success: true});
+        // })
+      }
+    })
+  })
 })
 
 
@@ -192,59 +154,63 @@ app.get('/export', function(req, res){
 //compare original.json with output.json
 app.get('/get_results', function(req, res){
   get_item(function(data){
-  var output = 'output.json';
-  output = jsonfile.readFileSync(output);
+    File.findOne({scan_name: "0000"}, function(err, result){
 
-  var original = 'original.json';
-  original = jsonfile.readFileSync(original);
+    var output = result.output[0];
+    var original = result.original[0];
 
-  var sorted_output = _.sortBy(output, 'ebay_Item_ID');
-  var sorted_original = _.sortBy(original, 'Item_ID');
+    var sorted_output = _.sortBy(output, 'ebay_Item_ID');
+    var sorted_original = _.sortBy(original, 'Item_ID');
 
+    for(var x in sorted_original){
+      if(sorted_original[x].Item_ID != undefined){
 
-  for(var x in sorted_original){
+        sorted_output[x] = _.extend(sorted_output[x], sorted_original[x]);
 
-    // var account_info = _.pick(sorted_original[x], 'Vertical', 'Seller_Name', 'Account_Manager', 'list_price', 'Sum_of_GMV');
-    sorted_output[x] = _.extend(sorted_output[x], sorted_original[x]);
-
-    // var pick_from_original = _.pick(sorted_original[x], 'Item_ID', 'product_name', 'list_price', 'status');
-    var check_id = _.isMatch(sorted_original[x], sorted_output[x].Item_ID)
-    if(check_id){
-      for(var y in sorted_original[x]){
-        switch (true) {
-          case (y === 'product_name'):
-            if(sorted_original[x].product_name == sorted_output[x].ebay_product_name){
-              sorted_output[x].check_product_name = "pass";
+        var check_id = _.isMatch(sorted_original[x], sorted_output[x].Item_ID)
+        if(check_id){
+          for(var y in sorted_original[x]){
+            switch (true) {
+              case (y === 'product_name'):
+                if(sorted_original[x].product_name == sorted_output[x].ebay_product_name){
+                  sorted_output[x].check_product_name = "pass";
+                }
+                else{
+                  sorted_output[x].check_product_name = "fail";
+                }
+              case (y === 'list_price'):
+                if(sorted_original[x].list_price == sorted_output[x].ebay_list_price){
+                  sorted_output[x].check_list_price = "pass";
+                }
+                else{
+                  sorted_output[x].check_list_price = "fail";
+                }
+              break;
             }
-            else{
-              sorted_output[x].check_product_name = "fail";
-            }
-          case (y === 'list_price'):
-            if(sorted_original[x].list_price == sorted_output[x].ebay_list_price){
-              sorted_output[x].check_list_price = "pass";
-            }
-            else{
-              sorted_output[x].check_list_price = "fail";
-            }
-          break;
+          }
         }
       }
     }
-  }
-  console.log(sorted_output);
-  fs.writeFile("./client/static/json/result.json", 'var result = ' + JSON.stringify(sorted_output, null, 4), function(err){
-    console.log("fille succesfully written")
+    console.log(sorted_output);
+    fs.writeFile("./client/static/json/result.json", 'var result = ' + JSON.stringify(sorted_output, null, 4), function(err){
+      console.log("fille succesfully written")
+      })
+    })
+    console.log("END")
+    res.status(204).end();
   })
-})
-console.log("END")
-res.status(204).end();
 })
 
 //method loops through array of objects in original.json to grab url
 //pass url to ebay API to gather info
 function get_item(callback2){
-  var original = 'original.json'
-  var original_json = jsonfile.readFileSync(original);
+  // var original = 'original.json'
+  // var original_json = jsonfile.readFileSync(original);
+  File.findOne({scan_name: "0000"}, function(err, result){
+    if(err){
+      console.log("can not find document");
+    } else {
+  var original_json = result.original;
   var array_of_urls = [];
 
   for(var item in original_json){
@@ -294,7 +260,6 @@ function get_item(callback2){
         //if ebay returns count of 0, then manually grab product listing by crawling website with cheerio
         else if(itemsResponse.searchResult.$.count == 0){
           request("http://ebay.com/itm/"+url, function(error, response, html){
-          console.log(error);
           //check for errors
             if(!error){
               //utilize the cheerio library on returned html
@@ -319,7 +284,7 @@ function get_item(callback2){
           })
         }
         else{ //if we are able to find product with ebay call and count is 0 then store info
-          console.log("a;lsdkjf;alksdjf", itemsResponse.searchResult.item.discountPriceInfo)
+          // console.log("a;lsdkjf;alksdjf", itemsResponse.searchResult.item.discountPriceInfo)
         json = {
           ebay_Item_ID: itemsResponse.searchResult.item.itemId,
           ebay_product_name: itemsResponse.searchResult.item.title,
@@ -339,7 +304,18 @@ function get_item(callback2){
       });
     },
     function (error){
-      console.log("DONE", arr, arr.length);
+      File.findOne({scan_name: "0000"}, function(err, data){
+        console.log("DA", data.output)
+        data.output.push(arr);
+
+        data.save(function(err, res){
+        if(err){
+          console.log("output did not save");
+        } else {
+          console.log("output saved");
+        }
+       })
+      });
       // JSON.stringify(json, null, 4) - the data to write, here we do an extra step by calling JSON.stringify to make JSON easier to read
       // Parameter 3 :  callback function - a callback function to let us know the status of our
       fs.writeFile('output.json', JSON.stringify(arr, null, 4), 'utf-8',
@@ -351,7 +327,10 @@ function get_item(callback2){
       })
     })
   console.log("orig leng", original_json.length)
+    }
+  });
 }
+
 
 //method creats an array of objects.
 function convertToJSON(array) {
@@ -374,7 +353,7 @@ function convertToJSON(array) {
     myRow = beg_of_string.concat(end_of_string);
 
     var row = myRow.split(',');
-    console.log("ROW", row)
+    // console.log("ROW", row)
 
     var data = {};
     for ( var x = 0; x < row.length; x++ )
@@ -391,6 +370,15 @@ function convertToJSON(array) {
 app.listen(8000, function() {
   console.log('cool stuff on: 8000');
 });
+
+
+
+
+
+
+
+
+
 
 
 //START: Amazon API still testing ======================================================

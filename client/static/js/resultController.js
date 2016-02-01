@@ -12,11 +12,12 @@ app.controller('resultController', function ($scope, $window, ngProgressFactory,
 
   $scope.progressbar = ngProgressFactory.createInstance();
   $scope.progressbar.setHeight('13px');
+
   $scope.myFile = {};
   $scope.uploadFile = function(){
     $scope.progressbar.start();
     var file = $scope.myFile;
-    var uploadUrl = "/scrape";
+    var uploadUrl = "/upload";
     fileUpload.uploadFileToUrl(file, uploadUrl, function(data){
       if(data.success == true){
         $scope.progressbar.complete();
@@ -25,6 +26,9 @@ app.controller('resultController', function ($scope, $window, ngProgressFactory,
     });
   };
 
+  $scope.get_results = function(){
+
+  }
 
 });
 
