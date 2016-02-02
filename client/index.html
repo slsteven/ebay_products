@@ -27,38 +27,39 @@
     <form>
       <div class="form-group">
         <label for="inputFile">Upload file</label>
-        <input type="file" file-model="myFile"/>
+        <input type="file" file-model="upload_info.myFile"/>
+
+        <label for="email">Email</label>
+        <input type="email" ng-model="upload_info.email"></input>
       </div>
         <button class="btn btn-default" ng-click="uploadFile()">upload me</button>
     </form>
   </div>
 
-
-
-  <div class="row">
+{{filename}}
+  <div class="row alert alert-info">
+    <form class="search_bar">
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-search"></i></div>
+          <input type="text" class="form-control" placeholder="search file name" ng-model="search.filename">
+        </div>
+        <button type="submit" class="btn btn-default" ng-click="search_results(search)">Search</button>
+      </div>
+    </form>
+  </div>
+  <!-- <div class="row">
     <div class="alert alert-info">
       <p>Sort Type: {{ sortType }}</p>
       <p>Sort Reverse: {{ sortReverse }}</p>
       <p>Search Query: {{ product_name }}</p>
     </div>
-  </div>
+  </div> -->
 
     <h1>Ebay Merchandise Product Check</h1>
-  <div class="row">
-    <!-- <div class="alert alert-info"> -->
-      <!-- <form method="post", enctype="multipart/form-data", action="/scrape">
-        <p>
-        <input type="file" name="upl" />
-        </p>
-        <p>
-        <input type="submit" name="submit">
-        </p>
-      </form> -->
-    <!-- </div> -->
-  </div>
     <div class="button_request">
-      <form method="get", action="/get_results">
-        <button id="see_results" class="btn btn-info col-md-12" ng-click="get_results()">See Your Results</button>
+      <form>
+        <button id="see_results" class="btn btn-info col-md-12" ng-click="get_results(filename)">See Your Results</button>
       </form>
 
       <form method="get", action="/export">
@@ -126,6 +127,7 @@
           </th>
           <th>CSV list price</th>
           <th>IMAGE</th>
+          <th>EBAY Status</th>
         </tr>
       </thead>
       <tbody>
@@ -144,6 +146,7 @@
           <td>{{product.Sum_of_GMV}}</td>
           <td>{{product.list_price | number:2}}</td>
           <td><img ng-src="{{product.galleryURL}}"></td>
+          <td>{{product.ebay_status}}</td>
           <!-- <td class="good" ng-if="product.check_product_name && product.check_list_price == 'pass'">GOOD</td> -->
         </tr>
       </tbody>
