@@ -21,33 +21,54 @@
 </head>
 <body>
 <div class="container" ng-controller='resultController'>
+  <h2>Ebay Merchandise Product Query</h2>
+  <p>Step 1A: Enter email and upload formated excel document. Please make sure titles in column headers have no space. Example: Sum_of_GMV.</p>
+  <!-- <div class="col-md-6 form-group">
+    <label for="textbox1">Label1</label>
+    <input class="form-control" id="textbox1" type="text"/>
+</div>
+<div class="col-md-6 form-group">
+    <label for="textbox2">Label2</label>
+    <input class="form-control" id="textbox2" type="text"/>
+</div>
+<span class="clearfix"> -->
 
+  <div class="row" progressbar.color('green');>
+    <form class="col-md-4">
+      <div class="form-group">
+        <label for="email" cass="form-control">Email</label>
+        <input type="email" ng-model="upload_info.email" class="form-control input-md"></input>
+      </div>
 
-  <div class="row alert alert-info" progressbar.color('green');>
-    <form>
       <div class="form-group">
         <label for="inputFile">Upload file</label>
-        <input type="file" file-model="upload_info.myFile"/>
-
-        <label for="email">Email</label>
-        <input type="email" ng-model="upload_info.email"></input>
+        <input type="file" file-model="upload_info.myFile"></input>
       </div>
-        <button class="btn btn-default" ng-click="uploadFile()">upload me</button>
+
+        <button class="btn btn-default" ng-click="uploadFile()">upload</button>
     </form>
   </div>
 
+  <br>
+
+  <div class="row">
+    <div class="col-md-12">
+      <p>Step 2B: Use this if you have already completed the scan and just need to grab your data.
+    </div>
+  </div>
 {{filename}}
-  <div class="row alert alert-info">
-    <form class="search_bar">
+  <div class="row">
+    <form class="search_bar col-md-4">
       <div class="form-group">
         <div class="input-group">
           <div class="input-group-addon"><i class="fa fa-search"></i></div>
-          <input type="text" class="form-control" placeholder="search file name" ng-model="search.filename">
+          <input type="text" class="form-control" placeholder="ex: ebay_file.xlsx" ng-model="search.filename">
         </div>
-        <button type="submit" class="btn btn-default" ng-click="search_results(search)">Search</button>
+        <button type="submit" class="btn btn-default" ng-click="search_results(search)">Search File</button>
       </div>
     </form>
   </div>
+
   <!-- <div class="row">
     <div class="alert alert-info">
       <p>Sort Type: {{ sortType }}</p>
@@ -56,27 +77,56 @@
     </div>
   </div> -->
 
-    <h1>Ebay Merchandise Product Check</h1>
-    <div class="button_request">
-      <form>
-        <button id="see_results" class="btn btn-info col-md-12" ng-click="get_results(filename)">See Your Results</button>
-      </form>
+    <div class="row button_request">
+      <div class="col-md-12">
+        <p>Step 2: Click see results to begin scan. Process will take a moment depending on size of file. Status bar will disapear when complete.</p>
+      </div>
+      <div class="col-md-6">
+        <form>
+          <button id="see_results" class="col-md-12" ng-click="get_results(filename)">See Your Results</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <form>
+          <button id="see_results" class="col-md-12" ng-click="export_results(filename)">Export your results to CSV</button>
+        </form>
+      </div>
 
-      <form method="get", action="/export">
-        <button id="see_results" class="btn btn-warning col-md-12">Export your results to CSV</button>
+      <form class="search_bar col-md-12">
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon"><i class="fa fa-search"></i></div>
+
+            <input type="text" class="form-control" placeholder="search product name" ng-model="product_name">
+
+          </div>
+        </div>
       </form>
     </div>
 
-    <form class="search_bar">
-      <div class="form-group">
-        <div class="input-group">
-          <div class="input-group-addon"><i class="fa fa-search"></i></div>
+    <table class="table table-bordered" style="background-color: whitesmoke">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Number of files scanned</td>
+          <td>{{results.length}}</td>
+        </tr>
+        <tr>
+          <td>Number of Active listings</td>
+          <td>{{ebay_status_counter}}/{{results.length}}</td>
+        </tr>
+        <tr>
+          <td>Number of found MSRP's</td>
+          <td>{{ebay_msrp_counter}}/{{results.length}}</td>
+        </tr>
+      </tbody>
+    </table>
 
-          <input type="text" class="form-control" placeholder="search product name" ng-model="product_name">
-
-        </div>
-      </div>
-    </form>
   <div class="row" style="align-left">
     <table id="myTable" class="table table-bordered table-striped">
       <thead>

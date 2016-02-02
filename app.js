@@ -134,26 +134,32 @@ app.post('/upload', upload.single('myFile'), function(req, res){
   })
 })
 
-app.get('/export', function(req, res){
-  var result = './client/static/json/result.json';
-  fs.readFile(result, 'utf8', function(err, data){
-    new_result = JSON.parse(data.slice(13));
+app.get('/export/:id', function(req, res){
+  Res.findOne({file_name: req.params.id}, function(err, data){
+    if(err){
+      console.log("error finding results for export");
+    } else {
+      console.log("data for exporting", data.result);
+      var new_result = data.result;
+  // var result = './client/static/json/result.json';
+  // fs.readFile(result, 'utf8', function(err, data){
+  //   new_result = JSON.parse(data.slice(13));
 
     //calculate the % off
     //use ebay_list price and ebay msrp. If values are empty then use original listprice and msrp.
-    for(var obj in new_result){
-      console.log(new_result[obj])
-      if(new_result[obj].ebay_list_price !== "" && (new_result[obj].ebay_msrp !== "" || new_result[obj].msrp !== "")){
-        if(new_result[obj].ebay_msrp !== ""){
-          var recal_perc_off = ((parseInt(new_result[obj].ebay_msrp) - parseInt(new_result[obj].ebay_list_price))/parseInt(new_result[obj].ebay_msrp));
-          new_result[obj].recal_perc_off = recal_perc_off;
-        }
-        else{
-          var recal_perc_off = ((parseInt(new_result[obj].msrp) - parseInt(new_result[obj].ebay_list_price))/parseInt(new_result[obj].msrp));
-          new_result[obj].recal_perc_off = recal_perc_off;
-        }
-      }
-    }
+    // for(var obj in new_result){
+    //   console.log(new_result[obj])
+    //   if(new_result[obj].ebay_list_price !== "" && (new_result[obj].ebay_msrp !== "" || new_result[obj].msrp !== "")){
+    //     if(new_result[obj].ebay_msrp !== ""){
+    //       var recal_perc_off = ((parseInt(new_result[obj].ebay_msrp) - parseInt(new_result[obj].ebay_list_price))/parseInt(new_result[obj].ebay_msrp));
+    //       new_result[obj].recal_perc_off = recal_perc_off;
+    //     }
+    //     else{
+    //       var recal_perc_off = ((parseInt(new_result[obj].msrp) - parseInt(new_result[obj].ebay_list_price))/parseInt(new_result[obj].msrp));
+    //       new_result[obj].recal_perc_off = recal_perc_off;
+    //     }
+    //   }
+    // }
     for(x in new_result){
       new_result[x].Sum_of_GMV = parseInt(new_result[x].Sum_of_GMV);
     }
@@ -172,6 +178,8 @@ app.get('/export', function(req, res){
         });
       }
     })
+  // })
+    }
   })
 })
 
@@ -232,7 +240,6 @@ app.get('/search_results/:id', function(req, res){
     if(err){
       console.log("cant find")
     } else {
-      console.log(data)
       res.send({result: data});
     }
   })

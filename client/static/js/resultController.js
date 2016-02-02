@@ -34,14 +34,40 @@ app.controller('resultController', function ($scope, $window, ngProgressFactory,
       console.log(res);
       $scope.progressbar.complete();
       $scope.results = res.result;
+      table_data(res);
     })
   }
   $scope.search_results = function(data){
     console.log(data.filename)
     fileUpload.search_results(data.filename, function(res){
-      console.log(res.result.result)
+
+      $scope.filename = res.result.file_name;
       $scope.results = res.result.result;
+      table_data(res);
+
     })
+  }
+  $scope.export_results = function(data){
+    fileUpload.export_results(data, function(res){
+
+    })
+  }
+
+  function table_data(res){
+    var ebay_status_counter = 0;
+    var ebay_msrp_counter = 0;
+    var all_data = res.result.result;
+
+    for(item in all_data){
+      if(all_data[item].ebay_status == "Active"){
+        ebay_status_counter++;
+      }
+      if(all_data[item].MSRP !== ""){
+        ebay_msrp_counter++;
+      }
+    }
+    $scope.ebay_status_counter = ebay_status_counter;
+    $scope.ebay_msrp_counter = ebay_msrp_counter;
   }
 
 });
@@ -65,16 +91,19 @@ app.factory('fileUpload', function($http){
     .error(function(){
     });
   }
-
   factory.get_results = function(filename, callback){
     $http.get('/get_results/'+filename).success(function(output){
       callback(output);
     })
   }
-
   factory.search_results = function(filename, callback){
-    console.log("insidefac")
     $http.get('/search_results/' + filename).success(function(output){
+      callback(output);
+    })
+  }
+  factory.export_results = function(filename, callback){
+    console.log("export results factory")
+    $http.get('/export/' + filename).success(function(output){
       callback(output);
     })
   }
