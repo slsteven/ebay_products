@@ -1,16 +1,12 @@
 # Ebay Query #
 
-System to automate querying top performing Ebay products for client at Ebay.
+System to automate querying top performing Ebay products
 
 Tools used:
 * Node.js
 * AngularJS
 * EBAY API
 
-Also used node modeuls such as: async, cheerio, underscore, json2csv
-
-How it works:
-
-Interface allows user to upload CSV document so application can crawl Ebay web pages and Ebay API for product details. This system eleminates the need for the user manually check hundreds of rows of internal data with online listings. On completion, user can export file for complete report. Visual data table also provided using AnguarJS.
+Developed application with Node.js to query top performing items. This helps reduce the working time from five hours to one minute. Interface allows user to upload CSV document which gets converted to JSON. Application crawls Ebay web pages and Ebay API for product details eliminating the need for the user to manually check hundreds of rows of internal data with online listings. On completion, user can export file with complete report or view data from visual tables.
 
 Created by: Steven Lam

@@ -1,17 +1,13 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var MessageSchema = new mongoose.Schema({
-  to: String,
-  from: String,
-  body: String,
-  created_at: {type: Date, default: new Date},
-  fromCity: String,
-  fromState: String,
-  sid: String,
-  _tabb: {type: Schema.Types.ObjectId, ref: 'Tabb'},
-  _business: {type: Schema.Types.ObjectId, ref: 'Business'}
+var FileSchema = new mongoose.Schema({
+  scan_date: {type: Date, default: new Date},
+  file_name: String,
+  user: String,
+  original: [],
+  output: []
+})
 
-});
-
-mongoose.model('Message', MessageSchema);
+mongoose.model('File', FileSchema);
+var File = mongoose.model('File')

@@ -38,38 +38,18 @@ var storage = multer.diskStorage({
   }
 })
 
- var upload = multer({storage: storage});
-
+var upload = multer({storage: storage});
 
 var mongoose = require('mongoose');
-// database name
-mongoose.connect('mongodb://localhost/ebay_query');
+require('./server/config/mongoose.js');
+
 var conn = mongoose.connection;
 Grid.mongo = mongoose.mongo;
 var gfs = Grid(conn.db);
 
-
-var Schema = mongoose.Schema;
-var FileSchema = new mongoose.Schema({
-  scan_date: {type: Date, default: new Date},
-  file_name: String,
-  user: String,
-  original: [],
-  output: []
-})
-
-mongoose.model('File', FileSchema);
 var File = mongoose.model('File')
-
-var ResSchema = new mongoose.Schema({
-  file_name: String,
-  scan_date: {type: Date, default: new Date},
-  user: String,
-  result: []
-})
-
-mongoose.model('Res', ResSchema);
 var Res = mongoose.model('Res');
+
 
 //User uploads formated CSV/xlsx file. Make sure column headers are formated with no spaces.
 // 'product_name',  'Item_ID',   'Item_Condition', 'ebay_status',  'Vertical',  'Seller_Name', 'Account_Manager', 'MSRP', 'ebay_msrp',  'list_price', 'ebay_list_price', 'recal_perc_off', '%_off', 'Sum_of_GMV',  'Sum_of_Qty',  'Sum_of_Views/SI', 'Sum_of_Seller_rating',  'Sum_of_Buyer_Count',  'Sum_of_Defect_Rate'
@@ -77,8 +57,6 @@ app.post('/upload', upload.single('myFile'), function(req, res){
   console.log("upload", req.file)
   var path = req.file.path;
   var source = fs.createReadStream(path);
-
-
   //check if files already exist
   var options = {
     filename: req.file.originalname
@@ -225,12 +203,10 @@ app.get('/get_results/:id', function(req, res){
       }
     })
   })
-
     // fs.writeFile("./client/static/json/result.json", 'var result = ' + JSON.stringify(sorted_output, null, 4), function(err){
     //   console.log("fille succesfully written")
     //   })
     // })
-
   })
 })
 
@@ -329,7 +305,7 @@ function get_item(filename, callback2){
                 })
               }
               else{ //if we are able to find product with ebay call and count is 0 then store info
-                // console.log("a;lsdkjf;alksdjf", itemsResponse.searchResult.item.discountPriceInfo)
+                // console.log("+++++++++++", itemsResponse.searchResult.item.discountPriceInfo)
               json = {
                 ebay_Item_ID: itemsResponse.searchResult.item.itemId,
                 ebay_product_name: itemsResponse.searchResult.item.title,
@@ -374,7 +350,6 @@ function get_item(filename, callback2){
     }
   });
 }
-
 
 //method creats an array of objects.
 function convertToJSON(array) {

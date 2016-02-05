@@ -79,7 +79,7 @@
 
     <div class="row button_request">
       <div class="col-md-12">
-        <p>Step 2: Click see results to begin scan. Process will take a moment depending on size of file. Status bar will disapear when complete.</p>
+        <p>Step 3: Click see results to begin scan. Process will take a moment depending on size of file. Status bar will disapear when complete.</p>
       </div>
       <div class="col-md-6">
         <form>
@@ -113,7 +113,7 @@
       </thead>
       <tbody>
         <tr>
-          <td>Number of files scanned</td>
+          <td>Number of products scanned</td>
           <td>{{results.length}}</td>
         </tr>
         <tr>
@@ -121,7 +121,7 @@
           <td>{{ebay_status_counter}}/{{results.length}}</td>
         </tr>
         <tr>
-          <td>Number of found MSRP's</td>
+          <td>Number of products found with MSRP</td>
           <td>{{ebay_msrp_counter}}/{{results.length}}</td>
         </tr>
       </tbody>
@@ -182,7 +182,11 @@
       </thead>
       <tbody>
         <tr ng-repeat="product in results | orderBy: '-Sum_of_GMV'">
-          <td>{{$index}}</td>
+          <td>{{$index}}
+            <label class="checkbox-inline"><input type="checkbox" value="">Option 1</label>
+<label class="checkbox-inline"><input type="checkbox" value="">Option 2</label>
+<label class="checkbox-inline"><input type="checkbox" value="">Option 3</label>
+          </td>
           <td>{{product.ebay_product_name}}</td>
           <td>{{product.ebay_Item_ID}}</td>
           <td>{{product.ebay_url}}</td>
