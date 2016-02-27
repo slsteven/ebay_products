@@ -19,14 +19,23 @@ var Grid        = require('gridfs-stream');
 var mongo       = require('mongodb');
 var mongoose = require('mongoose');
 
+var convertToJSON = require('./modules/convertToJSON');
+
 var dateFormat  = require('dateFormat');
+
 // set up a static file server that points to the "client" directory
 app.use(express.static(path.join(__dirname, './client')));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-// require('./server/config/mongoose.js');
-// var route_setter = require('./server/config/routes.js');
-// route_setter(app);
+
+require('./server/config/mongoose.js');
+
+Grid.mongo = mongoose.mongo;
+var conn = mongoose.connection;
+var gfs = Grid(conn.db);
+
+var File = mongoose.model('File')
+var Res = mongoose.model('Res');
 
 var storage = multer.diskStorage({
   destination: function(req, file, callback){
@@ -41,22 +50,11 @@ var storage = multer.diskStorage({
 
 var upload = multer({storage: storage});
 
-require('./server/config/mongoose.js');
-
-Grid.mongo = mongoose.mongo;
-var conn = mongoose.connection;
-var gfs = Grid(conn.db);
-
-var File = mongoose.model('File')
-var Res = mongoose.model('Res');
-
-
 //User uploads formated CSV/xlsx file. Make sure column headers are formated with no spaces.
 // 'product_name',  'Item_ID',   'Item_Condition', 'ebay_status',  'Vertical',  'Seller_Name', 'Account_Manager', 'MSRP', 'ebay_msrp',  'list_price', 'ebay_list_price', 'recal_perc_off', '%_off', 'Sum_of_GMV',  'Sum_of_Qty',  'Sum_of_Views/SI', 'Sum_of_Seller_rating',  'Sum_of_Buyer_Count',  'Sum_of_Defect_Rate'
 
 app.post('/upload', upload.single('myFile'), function(req, res) {
   console.log("uploaded file: ", req.file)
-
   var path = req.file.path;
   var source = fs.createReadStream(path);
   var options = {
@@ -74,7 +72,7 @@ app.post('/upload', upload.single('myFile'), function(req, res) {
 
       var writestream = gfs.createWriteStream({
         filename: req.file.originalname
-        });
+      });
 
       source.pipe(writestream);
 
@@ -94,7 +92,7 @@ app.post('/upload', upload.single('myFile'), function(req, res) {
               file_name: req.file.originalname,
               user: req.body.email,
               original: original_json
-              })
+            })
 
             file.save(function(err, result) {
               if(err) {
@@ -111,167 +109,7 @@ app.post('/upload', upload.single('myFile'), function(req, res) {
   })
 })
 
-
-app.get('/export/:id', function(req, res){
-  Res.findOne({file_name: req.params.id}, function(err, data){
-    if(err){
-      console.log("error finding results for export");
-    } else {
-      console.log("data for exporting", data.result);
-      var new_result = data.result;
-  // var result = './client/static/json/result.json';
-  // fs.readFile(result, 'utf8', function(err, data){
-  //   new_result = JSON.parse(data.slice(13));
-
-    //calculate the % off
-    //use ebay_list price and ebay msrp. If values are empty then use original listprice and msrp.
-    // for(var obj in new_result){
-    //   console.log(new_result[obj])
-    //   if(new_result[obj].ebay_list_price !== "" && (new_result[obj].ebay_msrp !== "" || new_result[obj].msrp !== "")){
-    //     if(new_result[obj].ebay_msrp !== ""){
-    //       var recal_perc_off = ((parseInt(new_result[obj].ebay_msrp) - parseInt(new_result[obj].ebay_list_price))/parseInt(new_result[obj].ebay_msrp));
-    //       new_result[obj].recal_perc_off = recal_perc_off;
-    //     }
-    //     else{
-    //       var recal_perc_off = ((parseInt(new_result[obj].msrp) - parseInt(new_result[obj].ebay_list_price))/parseInt(new_result[obj].msrp));
-    //       new_result[obj].recal_perc_off = recal_perc_off;
-    //     }
-    //   }
-    // }
-    for(x in new_result){
-      new_result[x].Sum_of_GMV = parseInt(new_result[x].Sum_of_GMV);
-    }
-
-    var sort_by_GMV = _.sortBy(new_result, 'Sum_of_GMV').reverse();
-
-    var fields = ['product_name',  'Item_ID', 'ebay_url', 'Item_Condition', 'Vertical',  'Seller_Name', 'Account_Manager', 'MSRP',  'list_price', '%_off', 'Sum_of_GMV',  'Sum_of_Qty',  'Sum_of_Views/SI', 'Sum_of_Seller_rating',  'Sum_of_Buyer_Count',  'Sum_of_Defect_Rate', 'ebay_status', 'ebay_msrp', 'ebay_list_price', 'recal_perc_off']
-
-
-    json2csv({data: sort_by_GMV, fields: fields}, function(err, csv){
-      if(!err){
-        fs.writeFile('file.csv', csv, function(err) {
-          if (err) throw err;
-          res.send("check file.csv")
-          console.log('file saved');
-        });
-      }
-    })
-  // })
-    }
-  })
-})
-
-
-app.get('/search_results/:id', function(req, res) {
-  console.log(req.params)
-  Res.findOne({file_name: req.params.id}, function(err, data) {
-    if(err){
-      console.log("cant find")
-    } else {
-      res.send({result: data});
-    }
-  })
-})
-
-app.get('/index', function(req, res) {
-  Res.find({}, {"result": 0}, function(err, result) {
-    res.send({ index: result });
-  })
-})
-
-
-//method creats an array of objects.
-function convertToJSON(array) {
-  var first = array[0].join()
-  var headers = first.split(',');
-  var jsonData = [];
-  for ( var i = 1, length = array.length; i < length; i++ )
-  {
-    var myRow = array[i].join();
-    //use regext to find when discription name ends
-    //slice that name and remove all commas
-    //concat reformated listing description back to original
-    var n = myRow.search(/\b\d{12}\b/g);
-    var new_name = myRow.slice(0, n);
-    var regex = new RegExp(',', 'g');
-    var beg_of_string = new_name.replace(/,/g,'');
-
-    beg_of_string = beg_of_string + ",";
-    var end_of_string = myRow.slice(n)
-    myRow = beg_of_string.concat(end_of_string);
-
-    var row = myRow.split(',');
-    // console.log("ROW", row)
-
-    var data = {};
-    for ( var x = 0; x < row.length; x++ )
-    {
-      data[headers[x]] = row[x];
-    }
-    jsonData.push(data);
-  }
-  return jsonData;
-};
-
-
-
-app.listen(8000, function() {
-  console.log('cool stuff on: 8000');
-});
-
-
-
-
-
-
-
-
-
-
-
-//START: Amazon API still testing ======================================================
-// var params = {
-//         keywords: ['371039735916'],
-//         // add additional fields
-//         outputSelector: ['AspectHistogram'],
-
-//         paginationInput: {
-//           entriesPerPage: 1
-//         }
-//       };
-//       ebay.xmlRequest({
-//         serviceName: 'Finding',
-//         opType: 'findItemsByKeywords',
-//         appId: 'RideSnap-b66a-448f-9063-46ba6dbe1a3e',
-//         params: params,
-//         parser: ebay.parseResponseJson    // (default)
-//       },
-//       // gets all the items together in a merged array
-//       function itemsCallback(error, itemsResponse) {
-//         console.log("FAIL", itemsResponse.searchResult.item)
-//         });
-
-var client = amazon.createClient({
-  awsId: "",
-  awsSecret: "",
-  awsTag: ""
-});
-
- // console.log("amazon client", client)
-
-// client.itemSearch({
-//   keywords: 'Zmodo 8 CH HDMI DVR 4 CCTV Outdoor Home Surveillance Security Camera',
-//   responseGroup: 'ItemAttributes,Offers,Images'
-// }).then(function(results){
-//   console.log("results", results);
-// }).catch(function(err){
-//   console.log("errror", err);
-// });
-//END: for testing ======================================================
-
-
 app.get('/get_results/:id', function(req, res) {
-
   console.log("filename", req.params.id)
   var filename = req.params.id;
 
@@ -279,7 +117,6 @@ app.get('/get_results/:id', function(req, res) {
     if (err) {
       console.log("can not find document");
     } else {
-      console.log("RESULT")
       var original_json = result.original;
       var array_of_urls = [];
 
@@ -343,9 +180,9 @@ app.get('/get_results/:id', function(req, res) {
                     var id = item.slice(20);
                     //get product name using unique class as starting point
                     $('.it-ttl').filter(function() {
-                    var data = $(this);
-                    title = data.text().slice(16);
-                    json.ebay_product_name = title;
+                      var data = $(this);
+                      title = data.text().slice(16);
+                      json.ebay_product_name = title;
                     })
                     //grab status and item id with unique class
                     $('.msgTextAlign').filter(function() {
@@ -371,7 +208,7 @@ app.get('/get_results/:id', function(req, res) {
               }
               //check if response includes msrp.
               if (_.has(itemsResponse.searchResult.item, "discountPriceInfo")) {
-                if(_.has(itemsResponse.searchResult.item.discountPriceInfo, "originalRetailPrice")) {
+                if (_.has(itemsResponse.searchResult.item.discountPriceInfo, "originalRetailPrice")) {
                 json.ebay_msrp = itemsResponse.searchResult.item.discountPriceInfo.originalRetailPrice.amount
                 }
               }
@@ -390,7 +227,7 @@ app.get('/get_results/:id', function(req, res) {
             File.findOne({file_name: filename}, function(err, data) {
               data.output = collection_of_json;
               data.save(function(err, res) {
-                if(err){
+                if (err) {
                   console.log("output did not save");
                 } else {
                   save_result(filename);
@@ -405,11 +242,8 @@ app.get('/get_results/:id', function(req, res) {
   });
 })
 
-
-
 var  save_result = function (filename) {
-
-  File.findOne({file_name: filename}, function(err, result){
+  File.findOne({file_name: filename}, function(err, result) {
     var output = result.output;
     var original = result.original;
     console.log("LENGTHHHH_______", output.length, original.length)
@@ -417,23 +251,23 @@ var  save_result = function (filename) {
     sorted_output.shift();
     var sorted_original = _.sortBy(original, 'Item_ID');
 
-    for(var x in sorted_original){
-      if(sorted_original[x].Item_ID != undefined){
+    for (var x in sorted_original){
+      if (sorted_original[x].Item_ID != undefined) {
         sorted_output[x] = _.extend(sorted_output[x], sorted_original[x]);
       }
     }
 
     Res.findOne({file_name: result.originalname}, function(err, file){
       console.log("SDF", file)
-      if(file == null){
+      if (file == null) {
         console.log("sorted_output");
         var new_res = new Res({
           user: result.user,
           file_name: result.file_name,
           result: sorted_output
         })
-        new_res.save(function(err, result){
-          if(err){
+        new_res.save(function(err, result) {
+          if (err) {
             console.log("result did no save");
           } else {
             console.log("SAVED")
@@ -446,5 +280,75 @@ var  save_result = function (filename) {
     })
   })
 }
+
+app.get('/export/:id', function(req, res){
+  Res.findOne({file_name: req.params.id}, function(err, data) {
+    if (err) {
+      console.log("error finding results for export");
+    } else {
+      console.log("data for exporting", data.result);
+      var new_result = data.result;
+    // var result = './client/static/json/result.json';
+    // fs.readFile(result, 'utf8', function(err, data){
+    //   new_result = JSON.parse(data.slice(13));
+
+      //calculate the % off
+      //use ebay_list price and ebay msrp. If values are empty then use original listprice and msrp.
+      // for(var obj in new_result){
+      //   console.log(new_result[obj])
+      //   if(new_result[obj].ebay_list_price !== "" && (new_result[obj].ebay_msrp !== "" || new_result[obj].msrp !== "")){
+      //     if(new_result[obj].ebay_msrp !== ""){
+      //       var recal_perc_off = ((parseInt(new_result[obj].ebay_msrp) - parseInt(new_result[obj].ebay_list_price))/parseInt(new_result[obj].ebay_msrp));
+      //       new_result[obj].recal_perc_off = recal_perc_off;
+      //     }
+      //     else{
+      //       var recal_perc_off = ((parseInt(new_result[obj].msrp) - parseInt(new_result[obj].ebay_list_price))/parseInt(new_result[obj].msrp));
+      //       new_result[obj].recal_perc_off = recal_perc_off;
+      //     }
+      //   }
+      // }
+    for (x in new_result) {
+      new_result[x].Sum_of_GMV = parseInt(new_result[x].Sum_of_GMV);
+    }
+
+    var sort_by_GMV = _.sortBy(new_result, 'Sum_of_GMV').reverse();
+
+    var fields = ['product_name',  'Item_ID', 'ebay_url', 'Item_Condition', 'Vertical',  'Seller_Name', 'Account_Manager', 'MSRP',  'list_price', '%_off', 'Sum_of_GMV',  'Sum_of_Qty',  'Sum_of_Views/SI', 'Sum_of_Seller_rating',  'Sum_of_Buyer_Count',  'Sum_of_Defect_Rate', 'ebay_status', 'ebay_msrp', 'ebay_list_price', 'recal_perc_off']
+
+
+    json2csv({data: sort_by_GMV, fields: fields}, function(err, csv) {
+      if (!err) {
+        fs.writeFile('file.csv', csv, function(err) {
+          if (err) throw err;
+          res.send("check file.csv")
+          console.log('file saved');
+        });
+      }
+    })
+  // })
+    }
+  })
+})
+
+app.get('/search_results/:id', function(req, res) {
+  console.log(req.params)
+  Res.findOne({file_name: req.params.id}, function(err, data) {
+    if (err) {
+      console.log("cant find")
+    } else {
+      res.send({result: data});
+    }
+  })
+})
+
+app.get('/index', function(req, res) {
+  Res.find({}, {"result": 0}, function(err, result) {
+    res.send({ index: result });
+  })
+})
+
+app.listen(8000, function() {
+  console.log('cool stuff on: 8000');
+});
 
 
