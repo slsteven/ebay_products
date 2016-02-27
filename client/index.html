@@ -21,53 +21,47 @@
 </head>
 <body>
 <div class="container" ng-controller='resultController'>
-  <h2>Ebay Merchandise Product Query</h2>
-  <p>Step 1A: Enter email and upload formated excel document. Please make sure titles in column headers have no space. Example: Sum_of_GMV.</p>
-  <!-- <div class="col-md-6 form-group">
-    <label for="textbox1">Label1</label>
-    <input class="form-control" id="textbox1" type="text"/>
-</div>
-<div class="col-md-6 form-group">
-    <label for="textbox2">Label2</label>
-    <input class="form-control" id="textbox2" type="text"/>
-</div>
-<span class="clearfix"> -->
+  <div progressbar.color('green')></div>
+  <h1>Tool to query Ebay products for detailed information</h1>
 
-  <div class="row" progressbar.color('green');>
-    <form class="col-md-4">
-      <div class="form-group">
-        <label for="email" cass="form-control">Email</label>
-        <input type="email" ng-model="upload_info.email" class="form-control input-md"></input>
-      </div>
 
-      <div class="form-group">
-        <label for="inputFile">Upload file</label>
+  <div class="row">
+    <div class="col-md-5">
+      <form class="option1">
+        <p>Upload file</p>
+        <!-- <label for="inputFile"></label> -->
         <input type="file" file-model="upload_info.myFile"></input>
-      </div>
-
-        <button class="btn btn-default" ng-click="uploadFile()">upload</button>
-    </form>
-  </div>
-
-  <br>
-
-  <div class="row">
-    <div class="col-md-12">
-      <p>Step 2B: Use this if you have already completed the scan and just need to grab your data.
+        <button ng-disabled="upload_info.myFile === undefined" ng-click="uploadFile()">upload</button>
+      </form>
+      <p>Upload formated excel document. Please make sure titles in column headers have no space. Example: Sum_of_GMV.</p>
     </div>
-  </div>
-{{filename}}
-  <div class="row">
-    <form class="search_bar col-md-4">
+    <div class="col-md-2 or">
+      <h2>OR</h2>
+    </div>
+
+
+    <form class="search_bar col-md-5 option2">
       <div class="form-group">
+        <p>Search History</p>
         <div class="input-group">
           <div class="input-group-addon"><i class="fa fa-search"></i></div>
           <input type="text" class="form-control" placeholder="ex: ebay_file.xlsx" ng-model="search.filename">
         </div>
-        <button type="submit" class="btn btn-default" ng-click="search_results(search)">Search File</button>
+        <button type="submit" class="btn btn-default" ng-click="search_results(search)">Search file and see results</button>
       </div>
     </form>
   </div>
+  <br>
+
+  <div class="history">
+    <p>Scan History:</p>
+    <div class="index" ng-repeat="idx in index">
+      <td><span>{{$index}}: </span><a href="">{{idx.file_name}}</a></td>
+    </div>
+  </div>
+
+{{filename}}
+
 
   <!-- <div class="row">
     <div class="alert alert-info">
@@ -183,9 +177,6 @@
       <tbody>
         <tr ng-repeat="product in results | orderBy: '-Sum_of_GMV'">
           <td>{{$index}}
-            <label class="checkbox-inline"><input type="checkbox" value="">Option 1</label>
-<label class="checkbox-inline"><input type="checkbox" value="">Option 2</label>
-<label class="checkbox-inline"><input type="checkbox" value="">Option 3</label>
           </td>
           <td>{{product.ebay_product_name}}</td>
           <td>{{product.ebay_Item_ID}}</td>

@@ -1,5 +1,5 @@
 {
-  "name": "ebay",
+  "name": "ebayscan",
   "version": "0.0.1",
   "dependencies": {
     "body-parser": "latest",
@@ -14,5 +14,21 @@
     "async": "latest",
     "multer": "latest",
     "json2csv": "latest"
-  }
+  },
+  "description": "System to automate querying top performing Ebay products",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slsteven/ebay_products.git"
+  },
+  "author": "steven lam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slsteven/ebay_products/issues"
+  },
+  "homepage": "https://github.com/slsteven/ebay_products#readme"
 }

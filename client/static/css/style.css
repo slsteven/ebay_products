@@ -1,8 +1,30 @@
-.search_bar {
+.option1 {
+    padding-top: 10px;
+    border: 1px solid;
+    text-align: center;
+    height: 150px;
+}
+.option1 input {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding-left: 20%;
+}
+.option2 {
+    padding-top: 10px;
+    border: 1px solid;
+    height: 150px;
+}
+
+.or {
+    text-align: center;
+}
+
+/*.search_bar {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
+*/
 .button_request .btn{
   margin-bottom: 25px;
 }
