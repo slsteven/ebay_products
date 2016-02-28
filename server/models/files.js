@@ -10,4 +10,7 @@ var FileSchema = new mongoose.Schema({
 })
 
 mongoose.model('File', FileSchema);
-var File = mongoose.model('File')
+// var File = mongoose.model('File')
+
+
+module.exports = mongoose.model('File', FileSchema);
