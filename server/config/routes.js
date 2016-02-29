@@ -1,22 +1,23 @@
 var fs            = require("fs");
 var xls           = require('excel');
-var convertToJSON = require('../../modules/convertToJSON');
 var mongoose      = require('mongoose')
-var cheerio     = require('cheerio');
 var request     = require('request');
 var xls         = require('excel');
+var json2csv    = require('json2csv');
 var jsonfile    = require('jsonfile');
 var _           = require('underscore');
 var async       = require('async');
 var ebay        = require('ebay-api');
 var File          = mongoose.model('File')
 var Res           = mongoose.model('Res');
-var save_result   = require('./save_result')
-var json2csv    = require('json2csv');
+var save_result   = require('../../modules/save_result')
+var convertToJSON = require('../../modules/convertToJSON');
+var scrape_dom    = require('../../modules/scrape_dom')
 
-module.exports = function(app, upload, gfs) {
+
   //User uploads formated CSV/xlsx file. Make sure column headers are formated with no spaces.
   // 'product_name',  'Item_ID',   'Item_Condition', 'ebay_status',  'Vertical',  'Seller_Name', 'Account_Manager', 'MSRP', 'ebay_msrp',  'list_price', 'ebay_list_price', 'recal_perc_off', '%_off', 'Sum_of_GMV',  'Sum_of_Qty',  'Sum_of_Views/SI', 'Sum_of_Seller_rating',  'Sum_of_Buyer_Count',  'Sum_of_Defect_Rate'
+module.exports = function(app, upload, gfs) {
   app.post('/upload', upload.single('myFile'), function(req, res) {
     console.log("uploaded file: ", req.file)
     var path = req.file.path;
@@ -90,7 +91,7 @@ module.exports = function(app, upload, gfs) {
     })
   });
 
-  app.get('/get_results/:id', function(req, res) {
+  app.get('/get_results/:id', function(req, response) {
     console.log("filename", req.params.id)
     var filename = req.params.id;
 
@@ -158,23 +159,11 @@ module.exports = function(app, upload, gfs) {
                   request("http://ebay.com/itm/"+item, function(error, response, html) {
                     //check for errors
                     if (!error) {
-                      //utilize the cheerio library on returned html
-                      var $ = cheerio.load(html);
-                      var id = item.slice(20);
-                      //get product name using unique class as starting point
-                      $('.it-ttl').filter(function() {
-                        var data = $(this);
-                        title = data.text().slice(16);
-                        json.ebay_product_name = title;
-                      })
-                      //grab status and item id with unique class
-                      $('.msgTextAlign').filter(function() {
-                        var data = $(this);
-                        status = data.text();
-                        json.ebay_status = status;
-                        json.ebay_Item_ID = url;
-                      });
+
+                      json = scrape_dom(json, html, item);
+
                       collection_of_json.push(json);
+
                       console.log("Cheerio", count, array_of_urls.length);
                       count++;
                       callback();
@@ -205,15 +194,17 @@ module.exports = function(app, upload, gfs) {
           function () {
             console.log(count, array_of_urls.length);
             if (count === array_of_urls.length) {
-              console.log("DONE");
               File.findOne({file_name: filename}, function(err, data) {
+
                 data.output = collection_of_json;
-                data.save(function(err, res) {
-                  if (err) {
+
+                data.save(function(error, result) {
+                  if (error) {
                     console.log("output did not save");
                   } else {
-                    save_result(filename);
-                    console.log("output saved");
+                    save_result(response, filename, function(sorted_output) {
+                    response.send({ result: sorted_output })
+                    });
                   }
                 })
               });

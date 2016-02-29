@@ -3,29 +3,49 @@ var app         = express();
 var path        = require('path');
 var bodyParser  = require("body-parser");
 var fs          = require("fs");
-var cheerio     = require('cheerio');
-var request     = require('request');
-var xls         = require('excel');
-var jsonfile    = require('jsonfile');
 var util        = require('util');
 var _           = require('underscore');
-var async       = require('async');
-var multer      = require('multer');
-var ebay        = require('ebay-api');
 var dateFormat  = require('dateFormat');
+var multer      = require('multer');
+
+var request     = require('request');
+var async       = require('async');
+var xls         = require('excel');
+var jsonfile    = require('jsonfile');
+var ebay        = require('ebay-api');
+var cheerio     = require('cheerio');
 
 var Grid        = require('gridfs-stream');
 var mongo       = require('mongodb');
-var mongoose = require('mongoose');
+var mongoose    = require('mongoose');
 
+var chalk       = require('chalk');
+var blocked     = require('blocked');
+
+var bunyan      = require('bunyan');
+var bunyanMiddleware = require('bunyan-middleware');
+var log = bunyan.createLogger({
+  name: 'myserver',
+
+  serializers: {
+    req: bunyan.stdSerializers.req,
+    res: bunyan.stdSerializers.res
+  },
+  streams: [{
+    stream: process.stdout,
+    level: 'info',
+  }]
+});
+
+//log.info('scan')
 
 
 var query_ebay = require('./server/test/test')
-
 // set up a static file server that points to the "client" directory
 app.use(express.static(path.join(__dirname, './client')));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(bunyanMiddleware({ logger: log }));
 
 require('./server/config/mongoose.js');
 
@@ -49,6 +69,37 @@ var storage = multer.diskStorage({
 
 var upload = multer({storage: storage});
 require('./server/config/routes.js')(app, upload, gfs);
+
+
+
+  var getHrDiffTime = function(time) {
+    // ts = [seconds, nanoseconds]
+    var ts = process.hrtime(time);
+    // convert seconds to miliseconds and nanoseconds to miliseconds as well
+    return (ts[0] * 1000) + (ts[1] / 1000000);
+  };
+
+  var outputDelay = function(interval, maxDelay) {
+    maxDelay = maxDelay || 100;
+
+    var before = process.hrtime();
+
+    setTimeout(function() {
+      var delay = getHrDiffTime(before) - interval;
+
+      if (delay < maxDelay) {
+        console.log('delay is %s', chalk.green(delay));
+      } else {
+        console.log('delay is %s', chalk.red(delay));
+      }
+
+      outputDelay(interval, maxDelay);
+    }, interval);
+  };
+
+ // outputDelay(300);
+
+
 
 
 app.listen(8000, function() {

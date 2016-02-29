@@ -22,7 +22,8 @@
 <body>
 <div class="container" ng-controller='resultController'>
   <div progressbar.color('green')></div>
-  <h1>Tool to query Ebay products for detailed information</h1>
+  <h1>Tool to query Ebay products for detailed information.</h1>
+  <p>(Parses data from Ebay API and item web page.)</p>
 
 
   <div class="row">
@@ -83,7 +84,8 @@
       </div>
       <div class="col-md-6">
         <form>
-          <button id="see_results" class="col-md-12" ng-click="export_results(filename)">Export your results to CSV</button>
+          <button id="see_results" class="col-md-12" ng-click="export_results(filename)">Export Results</button>
+          <p>File format: CSV</p>
         </form>
       </div>
 

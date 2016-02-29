@@ -3,7 +3,9 @@ var File        = mongoose.model('File')
 var Res         = mongoose.model('Res');
 var _           = require('underscore');
 
-var  save_result = function (filename) {
+
+
+var save_result = function (ress, filename, callback) {
   File.findOne({file_name: filename}, function(err, result) {
     var output = result.output;
     var original = result.original;
@@ -30,8 +32,7 @@ var  save_result = function (filename) {
           if (err) {
             console.log("result did no save");
           } else {
-            console.log("SAVED")
-            //res.send({result: sorted_output});
+            callback(sorted_output);
           }
         })
       } else {
@@ -40,5 +41,7 @@ var  save_result = function (filename) {
     })
   })
 }
+
+
 
 module.exports = save_result;
