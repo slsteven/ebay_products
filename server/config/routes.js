@@ -13,13 +13,13 @@ var Res           = mongoose.model('Res');
 var save_result   = require('../../modules/save_result')
 var convertToJSON = require('../../modules/convertToJSON');
 var scrape_dom    = require('../../modules/scrape_dom')
-
+var debug         = require('debug')('HTTP');
 
   //User uploads formated CSV/xlsx file. Make sure column headers are formated with no spaces.
   // 'product_name',  'Item_ID',   'Item_Condition', 'ebay_status',  'Vertical',  'Seller_Name', 'Account_Manager', 'MSRP', 'ebay_msrp',  'list_price', 'ebay_list_price', 'recal_perc_off', '%_off', 'Sum_of_GMV',  'Sum_of_Qty',  'Sum_of_Views/SI', 'Sum_of_Seller_rating',  'Sum_of_Buyer_Count',  'Sum_of_Defect_Rate'
 module.exports = function(app, upload, gfs) {
   app.post('/upload', upload.single('myFile'), function(req, res) {
-    console.log("uploaded file: ", req.file)
+    debug('uploaded file: ', req.file)
     var path = req.file.path;
     var source = fs.createReadStream(path);
     var options = {
@@ -75,7 +75,9 @@ module.exports = function(app, upload, gfs) {
   });
 
   app.get('/search_results/:id', function(req, res) {
-    console.log(req.params)
+
+    debug(req.params);
+
     Res.findOne({file_name: req.params.id}, function(err, data) {
       if (err) {
         console.log("cant find")
@@ -111,13 +113,16 @@ module.exports = function(app, upload, gfs) {
         var items = array_of_urls;
         var count = 0;
         var collection_of_json = [];
+        var num_calls_with_cheerio = 0;
 
         //query_ebay.scan(items, array_of_urls, File);
 
         async.each(items,
           function(item, callback) {
 
-           var json = {
+            debug('Scanning: ', item)
+
+            var json = {
               ebay_Item_ID: "",
               ebay_product_name: "",
               ebay_list_price: "",
@@ -145,7 +150,7 @@ module.exports = function(app, upload, gfs) {
             },
             // gets all the items together in a merged array
             function itemsCallback(error, itemsResponse) {
-              console.log("Item:", itemsResponse.ack)
+              debug('itemresponse: ', itemsResponse.ack)
                 //push empty object if failure
                 if(itemsResponse.ack === "Failure"){
                   json.ebay_Item_ID = url;
@@ -156,19 +161,49 @@ module.exports = function(app, upload, gfs) {
                 }
                 //if ebay returns count of 0, then manually grab product listing by crawling website with cheerio
                 else if (itemsResponse.searchResult.$.count == 0) {
-                  request("http://ebay.com/itm/"+item, function(error, response, html) {
-                    //check for errors
-                    if (!error) {
+                  num_calls_with_cheerio++;
+                  console.log('num_calls_cheerio: ', num_calls_with_cheerio)
 
-                      json = scrape_dom(json, html, item);
+                  //async.queue to prevent making too many async requests at a time
+                  var q = async.queue(function(task, callback) {
+                  console.log("task", task)
 
-                      collection_of_json.push(json);
+                    request("http://ebay.com/itm/"+item, function(error, response, html) {
+                      //check for errors
+                      if (!error) {
 
-                      console.log("Cheerio", count, array_of_urls.length);
-                      count++;
-                      callback();
-                    };
-                  });
+                        json = scrape_dom(json, html, item);
+
+                        collection_of_json.push(json);
+
+                        console.log("Cheerio", count, array_of_urls.length);
+                        count++;
+                        callback();
+                      };
+                    })
+                  }, 2);
+
+                  q.drain = callback;
+                  q.push(item);
+
+                  if (num_calls_with_cheerio % 3 === 0) {
+                    q.pause();
+                    console.log("we are pausedddd!", item, count)
+                    setTimeout(function(){
+                      console.log("resumed!")
+                      q.resume();
+                    }, 2000);
+                  }
+
+                  if (num_calls_with_cheerio % 5 === 0) {
+                    q.pause();
+                    console.log("we are pausedddd!", item, count)
+                    setTimeout(function(){
+                      console.log("resumed!")
+                      q.resume();
+                    }, 3000)
+                  }
+
                 } else { //if we are able to find product with ebay call and count is 0 then store info
                    console.log("EBAY API:", itemsResponse)
                 json = {

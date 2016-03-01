@@ -20,13 +20,19 @@
     text-align: center;
 }
 
+.index {
+    padding: 5px;
+
+}
 /*.search_bar {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 */
-.button_request .btn{
-  margin-bottom: 25px;
+
+.button_request .btn {
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 

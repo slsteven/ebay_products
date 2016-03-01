@@ -20,10 +20,10 @@ var mongo       = require('mongodb');
 var mongoose    = require('mongoose');
 
 var chalk       = require('chalk');
-var blocked     = require('blocked');
-
+var debug       = require('debug')('myapp');
 var bunyan      = require('bunyan');
 var bunyanMiddleware = require('bunyan-middleware');
+
 var log = bunyan.createLogger({
   name: 'myserver',
 
@@ -39,13 +39,11 @@ var log = bunyan.createLogger({
 
 //log.info('scan')
 
-
-var query_ebay = require('./server/test/test')
 // set up a static file server that points to the "client" directory
 app.use(express.static(path.join(__dirname, './client')));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(bunyanMiddleware({ logger: log }));
+//app.use(bunyanMiddleware({ logger: log }));
 
 require('./server/config/mongoose.js');
 
@@ -67,7 +65,7 @@ var storage = multer.diskStorage({
   }
 })
 
-var upload = multer({storage: storage});
+var upload = multer({ storage: storage });
 require('./server/config/routes.js')(app, upload, gfs);
 
 
@@ -103,7 +101,7 @@ require('./server/config/routes.js')(app, upload, gfs);
 
 
 app.listen(8000, function() {
-  console.log('cool stuff on: 8000');
+  debug('cool stuff on: 8000')
 });
 
 

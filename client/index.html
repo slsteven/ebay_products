@@ -47,7 +47,7 @@
         <p>Search History</p>
         <div class="input-group">
           <div class="input-group-addon"><i class="fa fa-search"></i></div>
-          <input type="text" class="form-control" placeholder="ex: ebay_file.xlsx" ng-model="search.filename">
+          <input type="text" class="form-control" placeholder="ex: ebay_file.xlsx" ng-model="search"></input>
         </div>
         <button type="submit" class="btn btn-default" ng-click="search_results(search)">Search file and see results</button>
       </div>
@@ -57,12 +57,10 @@
 
   <div class="history">
     <p>Scan History:</p>
-    <div class="index" ng-repeat="idx in index">
-      <td><span>{{$index}}: </span><a href="">{{idx.file_name}}</a></td>
-    </div>
+    <ul class="index" ng-repeat="idx in index">
+      <li><a href="" ng-click="search_results(idx.file_name)">{{idx.file_name}}</a></li>
+    </ul>
   </div>
-
-{{filename}}
 
 
   <!-- <div class="row">
@@ -75,11 +73,11 @@
 
     <div class="row button_request">
       <div class="col-md-12">
-        <p>Step 3: Click see results to begin scan. Process will take a moment depending on size of file. Status bar will disapear when complete.</p>
+        <h3>Click "See Results" after file has been uploaded to begin scan.</h3>
       </div>
       <div class="col-md-6">
         <form>
-          <button id="see_results" class="col-md-12" ng-click="get_results(filename)">See Your Results</button>
+          <button id="see_results" class="col-md-12" ng-click="get_results(filename)">See Results</button>
         </form>
       </div>
       <div class="col-md-6">

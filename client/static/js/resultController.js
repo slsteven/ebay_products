@@ -43,8 +43,8 @@ app.controller('resultController', function ($scope, $window, ngProgressFactory,
     })
   }
   $scope.search_results = function(data) {
-    console.log(data.filename)
-    scan.search_results(data.filename, function(res) {
+    console.log("file click", data)
+    scan.search_results(data, function(res) {
 
       $scope.filename = res.result.file_name;
       $scope.results = res.result.result;
