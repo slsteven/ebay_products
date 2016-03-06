@@ -1,5 +1,4 @@
 var express     = require('express');
-var app         = express();
 var path        = require('path');
 var bodyParser  = require("body-parser");
 var fs          = require("fs");
@@ -38,6 +37,8 @@ var log = bunyan.createLogger({
 });
 
 //log.info('scan')
+
+var app = express();
 
 // set up a static file server that points to the "client" directory
 app.use(express.static(path.join(__dirname, './client')));
