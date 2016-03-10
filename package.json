@@ -19,6 +19,7 @@
     "jsonfile": "^2.2.3",
     "mongoose": "latest",
     "multer": "latest",
+    "newrelic": "^1.25.5",
     "request": "latest"
   },
   "description": "System to automate querying top performing Ebay products",

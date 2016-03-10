@@ -23,13 +23,13 @@ var debug       = require('debug')('myapp');
 var bunyan      = require('bunyan');
 var bunyanMiddleware = require('bunyan-middleware');
 
+require('newrelic');
+
 var log = bunyan.createLogger({
   name: 'myserver',
 
-  serializers: {
-    req: bunyan.stdSerializers.req,
-    res: bunyan.stdSerializers.res
-  },
+  serializers: bunyan.stdSerializers,
+
   streams: [{
     stream: process.stdout,
     level: 'info',
@@ -64,10 +64,10 @@ var storage = multer.diskStorage({
     var formated_date = dateFormat(d, "mmddyyyy");
     callback(null, file.fieldname + '-' + formated_date)
   }
-})
+});
 
 var upload = multer({ storage: storage });
-require('./server/config/routes.js')(app, upload, gfs);
+require('./server/config/routes.js')(app, upload, gfs, log);
 
 
 
@@ -90,7 +90,7 @@ require('./server/config/routes.js')(app, upload, gfs);
         console.log('delay is %s', chalk.green(delay));
       } else {
         console.log('delay is %s', chalk.red(delay));
-      }
+      };
 
       outputDelay(interval, maxDelay);
     }, interval);

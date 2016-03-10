@@ -17,8 +17,11 @@ var debug         = require('debug')('HTTP');
 
   //User uploads formated CSV/xlsx file. Make sure column headers are formated with no spaces.
   // 'product_name',  'Item_ID',   'Item_Condition', 'ebay_status',  'Vertical',  'Seller_Name', 'Account_Manager', 'MSRP', 'ebay_msrp',  'list_price', 'ebay_list_price', 'recal_perc_off', '%_off', 'Sum_of_GMV',  'Sum_of_Qty',  'Sum_of_Views/SI', 'Sum_of_Seller_rating',  'Sum_of_Buyer_Count',  'Sum_of_Defect_Rate'
-module.exports = function(app, upload, gfs) {
+module.exports = function(app, upload, gfs, log) {
   app.post('/upload', upload.single('myFile'), function(req, res) {
+
+    log.info({ req: req }, 'start req for upload');
+
     debug('uploaded file: ', req.file)
     var path = req.file.path;
     var source = fs.createReadStream(path);
@@ -31,6 +34,8 @@ module.exports = function(app, upload, gfs) {
         return handleError(err);
       }
       if (found) {
+        log.info({ res: res }, "done response. File exists.")
+
         console.log("File already exists");
         res.json({success: true, file_name: req.file.originalname});
       } else {
@@ -63,6 +68,9 @@ module.exports = function(app, upload, gfs) {
                 if(err) {
                   console.log("document did no save");
                 } else {
+
+                  log.info({ req: req }, 'start req for upload');
+
                   console.log("document saved");
                   res.json({success: true, file_name: req.file.originalname});
                 }
