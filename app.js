@@ -4,7 +4,7 @@ var bodyParser  = require("body-parser");
 var fs          = require("fs");
 var util        = require('util');
 var _           = require('underscore');
-var dateFormat  = require('dateFormat');
+
 var multer      = require('multer');
 
 var request     = require('request');
