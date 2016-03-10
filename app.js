@@ -1,3 +1,5 @@
+require('newrelic');
+
 var express     = require('express');
 var path        = require('path');
 var bodyParser  = require("body-parser");
@@ -23,7 +25,6 @@ var debug       = require('debug')('myapp');
 var bunyan      = require('bunyan');
 var bunyanMiddleware = require('bunyan-middleware');
 
-require('newrelic');
 
 var log = bunyan.createLogger({
   name: 'myserver',
