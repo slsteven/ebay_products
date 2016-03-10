@@ -101,8 +101,6 @@ require('./server/config/routes.js')(app, upload, gfs, log);
 
 
 
-app.listen(8000, function() {
-  debug('cool stuff on: 8000')
-});
+app.listen(process.env.PORT || 8000);
 
 
