@@ -24,7 +24,9 @@
   },
   "description": "System to automate querying top performing Ebay products",
   "main": "app.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-util": "^3.0.7"
+  },
   "scripts": {
     "start": "node app.js"
   },
