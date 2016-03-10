@@ -60,9 +60,8 @@ var storage = multer.diskStorage({
     callback(null, './uploads/')
   },
   filename: function(req, file, callback) {
-    var d = new Date()
-    var formated_date = dateFormat(d, "mmddyyyy");
-    callback(null, file.fieldname + '-' + formated_date)
+
+    callback(null, file.fieldname)
   }
 });
 
